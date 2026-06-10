@@ -11,14 +11,14 @@
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
             color: #1a3a3a;
             background: #f8f9fa;
         }
-        
+
         .header {
             background: white;
             padding: 1.5rem 2rem;
@@ -27,7 +27,7 @@
             top: 0;
             z-index: 100;
         }
-        
+
         .header-content {
             max-width: 1200px;
             margin: 0 auto;
@@ -35,7 +35,7 @@
             align-items: center;
             gap: 1rem;
         }
-        
+
         .logo-circle {
             width: 50px;
             height: 50px;
@@ -49,44 +49,59 @@
             font-weight: bold;
             flex-shrink: 0;
         }
-        
+
         .brand-text h1 {
             font-size: 1.5rem;
             color: #1B6B5F;
             font-weight: 700;
         }
-        
+
         .brand-text p {
             font-size: 0.75rem;
             color: #1B6B5F;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
-        
+
         .hero {
             background: linear-gradient(135deg, #1B6B5F 0%, #2a8f7e 100%);
             color: white;
             padding: 4rem 2rem;
             text-align: center;
         }
-        
+
         .hero-content {
             max-width: 800px;
             margin: 0 auto;
         }
-        
+
         .hero h2 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             line-height: 1.2;
         }
-        
+
         .hero p {
             font-size: 1.25rem;
             margin-bottom: 2rem;
             opacity: 0.95;
         }
-        
+
+        .hero-stat {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin: 1.5rem auto 0.5rem;
+            max-width: 640px;
+        }
+        .hero-stat .amount { color: #ffe27a; }
+
+        .credibility-line {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            max-width: 640px;
+            margin: 0.75rem auto 2rem;
+        }
+
         .cta-button {
             display: inline-block;
             background: white;
@@ -98,25 +113,25 @@
             font-size: 1.1rem;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        
+
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
-        
+
         .section {
             max-width: 1200px;
             margin: 4rem auto;
             padding: 0 2rem;
         }
-        
+
         .section-title {
             font-size: 2rem;
             color: #1B6B5F;
             text-align: center;
             margin-bottom: 1rem;
         }
-        
+
         .section-subtitle {
             text-align: center;
             color: #666;
@@ -126,7 +141,36 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
+        /* ===== PROOF SECTION ===== */
+        .proof-section { max-width: 1100px; margin: 3.5rem auto; padding: 0 2rem; }
+        .proof-note {
+            background: #fff7e6; border: 1px dashed #d9a441; color: #8a5a00;
+            padding: 0.75rem 1rem; border-radius: 8px; text-align: center;
+            font-size: 0.85rem; margin-bottom: 1.5rem;
+        }
+        .aggregate-stat {
+            text-align: center; font-size: 1.5rem; font-weight: 700; color: #1B6B5F;
+            margin-bottom: 2rem;
+        }
+        .aggregate-stat .amount { font-size: 2rem; }
+        .testimonials-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .testimonial-card {
+            background: white; border-radius: 12px; padding: 1.75rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            border-left: 4px solid #1B6B5F;
+        }
+        .testimonial-card .quote { font-style: italic; color: #333; margin-bottom: 1rem; }
+        .testimonial-card .who { font-weight: 600; color: #1a3a3a; }
+        .testimonial-amount {
+            display: inline-block; background: #f0f8f7; color: #1B6B5F;
+            padding: 0.2rem 0.6rem; border-radius: 6px; font-weight: 700; font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
         .product-card {
             background: white;
             border-radius: 12px;
@@ -135,60 +179,75 @@
             max-width: 900px;
             margin: 0 auto 3rem;
         }
-        
+
         .product-header {
             text-align: center;
             margin-bottom: 2rem;
         }
-        
+
         .product-header h3 {
             font-size: 1.8rem;
             color: #1B6B5F;
             margin-bottom: 0.5rem;
         }
-        
+
+        .offer-outcome {
+            text-align: center; font-size: 1.15rem; font-weight: 600;
+            color: #1a3a3a; margin: 1rem auto 0; max-width: 620px;
+        }
+        .offer-outcome .amount { color: #1B6B5F; font-weight: 800; }
+
         .product-price {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 1rem;
-            margin: 1.5rem 0;
+            margin: 1.5rem 0 0.5rem;
         }
-        
+
         .price-original {
             font-size: 1.5rem;
             text-decoration: line-through;
             color: #999;
         }
-        
+
         .price-bundle {
             font-size: 2.5rem;
             color: #1B6B5F;
             font-weight: bold;
         }
-        
+        .discount-badge {
+            text-align: center; margin-bottom: 1rem;
+        }
+        .discount-badge span {
+            display: inline-block; background: #1B6B5F; color: white;
+            padding: 0.3rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;
+        }
+
         .product-items {
             list-style: none;
             margin: 2rem 0;
         }
-        
+
         .product-items li {
             padding: 0.75rem 0;
             border-bottom: 1px solid #eee;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 1rem;
         }
-        
+
         .product-items li:last-child {
             border-bottom: none;
         }
-        
+
         .item-price {
             color: #666;
             font-weight: 600;
+            white-space: nowrap;
         }
-        
+
         .guarantee {
             background: #f0f8f7;
             padding: 1.5rem;
@@ -197,14 +256,14 @@
             text-align: center;
             color: #1B6B5F;
         }
-        
+
         .resources-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
-        
+
         .resource-card {
             background: white;
             border-radius: 12px;
@@ -215,24 +274,27 @@
             color: inherit;
             display: block;
         }
-        
+
         .resource-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 8px 24px rgba(0,0,0,0.12);
         }
-        
+
         .resource-card h4 {
             color: #1B6B5F;
             font-size: 1.3rem;
             margin-bottom: 0.75rem;
         }
-        
+
         .resource-card p {
             color: #666;
             font-size: 0.95rem;
             line-height: 1.5;
         }
-        
+        .resource-card .upgrade-line {
+            margin-top: 0.85rem; font-size: 0.85rem; color: #1B6B5F; font-weight: 600;
+        }
+
         .free-badge {
             display: inline-block;
             background: #1B6B5F;
@@ -243,7 +305,7 @@
             font-weight: 600;
             margin-bottom: 0.5rem;
         }
-        
+
         .youtube-section {
             background: white;
             padding: 3rem 2rem;
@@ -252,7 +314,7 @@
             margin: 3rem auto;
             box-shadow: 0 2px 12px rgba(0,0,0,0.08);
         }
-        
+
         .youtube-embed {
             position: relative;
             padding-bottom: 56.25%;
@@ -261,7 +323,7 @@
             border-radius: 8px;
             margin-top: 1.5rem;
         }
-        
+
         .youtube-embed iframe {
             position: absolute;
             top: 0;
@@ -269,42 +331,44 @@
             width: 100%;
             height: 100%;
         }
-        
+
         .footer {
             background: #1a3a3a;
             color: white;
             padding: 3rem 2rem 2rem;
             margin-top: 5rem;
         }
-        
+
         .footer-content {
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
         }
-        
+
         .footer p {
             opacity: 0.8;
             margin: 0.5rem 0;
         }
-        
+
         @media (max-width: 768px) {
             .hero h2 {
                 font-size: 1.8rem;
             }
-            
+
             .hero p {
                 font-size: 1rem;
             }
-            
+
+            .hero-stat { font-size: 1.1rem; }
+
             .section-title {
                 font-size: 1.5rem;
             }
-            
+
             .product-card {
                 padding: 2rem 1.5rem;
             }
-            
+
             .resources-grid {
                 grid-template-columns: 1fr;
             }
@@ -328,26 +392,73 @@
         <div class="hero-content">
             <h2>Billions in Unclaimed Money. Thousands in Refunds. It Could Be Yours.</h2>
             <p>The calm, documentary channel showing Americans the money they're owed — and the exact steps to claim it.</p>
-            <a href="#free-resources" class="cta-button">Get Free Checklists →</a>
+
+            <!-- P0: dollar-denominated dream outcome. TODO(Anthony): replace {{AVG_RECOVERED}} with a real, defensible figure. DO NOT guess. -->
+            <p class="hero-stat">The average person who works through the Kit recovers <span class="amount">{{AVG_RECOVERED}}</span>.</p>
+            <!-- P0: credibility line (this is REAL — safe to show) -->
+            <p class="credibility-line">Every method is built on official 2026 sources — the DOT cash-refund rules, IRS guidance, and CFPB/FDIC fee rules — the same ones we cite in every video.</p>
+
+            <a href="#free-resources" class="cta-button">Get the Free Checklists →</a>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- P0 PROOF SECTION — sits ABOVE the price. Trust is the #1 lever. -->
+    <!-- TODO(Anthony): this whole block needs REAL data before launch:   -->
+    <!--   1. Real refund screenshots (drop images into /proof/ and embed) -->
+    <!--   2. Real testimonials: replace each {{...}} with name + amount   -->
+    <!--   3. {{TOTAL_RECOVERED}} aggregate once you have members' results -->
+    <!-- Until then this is a PLACEHOLDER scaffold — do NOT deploy as-is.  -->
+    <!-- ============================================================ -->
+    <section class="proof-section" id="proof">
+        <h2 class="section-title">Real People, Real Money Back</h2>
+
+        <div class="proof-note">⚠️ PLACEHOLDER — needs real testimonials, refund screenshots, and the recovered-total before this page goes live. (Build prompt rule: never fabricate proof.)</div>
+
+        <!-- Aggregate stat -->
+        <p class="aggregate-stat">Members have recovered <span class="amount">{{TOTAL_RECOVERED}}</span> and counting.</p>
+
+        <!-- TODO: ideally a row of real refund screenshots goes here (strongest proof). Placeholder omitted to avoid faking it. -->
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p class="quote">“{{TESTIMONIAL_1_QUOTE}}”</p>
+                <p class="who">{{TESTIMONIAL_1_NAME}}</p>
+                <span class="testimonial-amount">recovered {{TESTIMONIAL_1_AMOUNT}}</span>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">“{{TESTIMONIAL_2_QUOTE}}”</p>
+                <p class="who">{{TESTIMONIAL_2_NAME}}</p>
+                <span class="testimonial-amount">recovered {{TESTIMONIAL_2_AMOUNT}}</span>
+            </div>
+            <div class="testimonial-card">
+                <p class="quote">“{{TESTIMONIAL_3_QUOTE}}”</p>
+                <p class="who">{{TESTIMONIAL_3_NAME}}</p>
+                <span class="testimonial-amount">recovered {{TESTIMONIAL_3_AMOUNT}}</span>
+            </div>
         </div>
     </section>
 
     <!-- Main Product Offer -->
     <section class="section">
         <h2 class="section-title">The Complete Money Recovery Kit</h2>
-        <p class="section-subtitle">Everything you need to claim what's rightfully yours — medical bills, airline refunds, bank fees, subscriptions, and more.</p>
-        
+        <p class="section-subtitle">The free checklists show you <strong>what</strong> you're owed. The Kit is the done-for-you machine that actually <strong>claims it</strong> — fill-in letters, word-for-word scripts, and a tracker that runs every claim to the finish.</p>
+
         <div class="product-card">
             <div class="product-header">
                 <h3>Money You're Owed Complete Recovery Kit</h3>
-                <p>5 proven tools to recover money from companies, banks, and government sources</p>
+                <p>6 done-for-you tools to recover money from companies, banks, and government sources</p>
+                <!-- P0: dollar outcome repeated above the offer. TODO(Anthony): {{AVG_RECOVERED}} real figure. -->
+                <p class="offer-outcome">If it helps you claim even one thing, it pays for itself many times over — the average person recovers <span class="amount">{{AVG_RECOVERED}}</span>.</p>
             </div>
-            
+
+            <!-- P1: HARD anchor (operator decision 2026-06-10) — Letter Vault added → $131 value, $79 price = 40% off. Anchor is honest: every item is sold à la carte at the listed price. -->
+            <div class="discount-badge"><span>Save 40% as the Complete Kit</span></div>
             <div class="product-price">
-                <span class="price-original">$92</span>
+                <span class="price-original">$131</span>
                 <span class="price-bundle">$79</span>
             </div>
-            
+
             <ul class="product-items">
                 <li>
                     <span><strong>Medical Bill Dispute Kit</strong> — 8 fill-in letters + decision flowchart</span>
@@ -366,23 +477,29 @@
                     <span class="item-price">$15</span>
                 </li>
                 <li>
-                    <span><strong>Money You're Owed Master Tracker</strong> — Notion dashboard for all claims</span>
+                    <span><strong>Refund & Dispute Letter Vault</strong> — 50+ editable letters, every category</span>
+                    <span class="item-price">$39</span>
+                </li>
+                <li>
+                    <span><strong>Money You're Owed Master Tracker</strong> — Dashboard for every claim</span>
                     <span class="item-price">$29</span>
                 </li>
             </ul>
-            
+
             <div class="guarantee">
                 <strong>💯 30-Day Money-Back Guarantee</strong><br>
                 If you don't find at least something worth more than the Kit, we'll refund you. No questions asked.
             </div>
-            
+
             <div style="text-align: center; margin-top: 2rem;">
-                <a href="https://payhip.com/moneyyoureowed" class="cta-button">Get the Complete Kit — $79</a>
+                <!-- TODO(Anthony): STRIPE checkout (platform locked = Stripe, NOT Payhip). Replace placeholder with the real Stripe Payment Link. -->
+                <a href="{{STRIPE_CHECKOUT_URL}}" class="cta-button">Get the Complete Kit — $79</a>
             </div>
-            
+
             <p style="text-align: center; color: #666; margin-top: 1.5rem; font-size: 0.9rem;">
                 No countdown timers. No "price rises tonight." It's $79 today and $79 next month.<br>
-                The only clock that matters is yours — every month you wait, money sits in someone else's account instead of yours.
+                <!-- P0: quantify the loss. TODO(Anthony): {{AVG_REFUND}} = a real typical refund figure. -->
+                The only clock that matters is yours — the average refund people leave unclaimed is <strong>{{AVG_REFUND}}</strong>. Every month you wait, that's money you don't get back.
             </p>
         </div>
     </section>
@@ -390,31 +507,35 @@
     <!-- Free Resources -->
     <section class="section" id="free-resources">
         <h2 class="section-title">Start Here: Free Resources</h2>
-        <p class="section-subtitle">Download our free checklists and guides — no payment required, unsubscribe anytime.</p>
-        
+        <p class="section-subtitle">These are the <strong>map</strong> — they show you what you're owed and where to look. Free, no catch. When you want the letters and scripts that do the claiming for you, that's the Kit.</p>
+
         <div class="resources-grid">
             <a href="/unclaimed" class="resource-card">
                 <span class="free-badge">FREE</span>
                 <h4>50-State Unclaimed Money Checklist</h4>
                 <p>Every official state database where $70+ billion in unclaimed property is waiting. Search all 50 states in under 30 minutes.</p>
+                <p class="upgrade-line">→ Found money? The Kit's tracker + letters claim it for you.</p>
             </a>
-            
+
             <a href="/airline" class="resource-card">
                 <span class="free-badge">FREE</span>
                 <h4>Airline Refund Cheat-Sheet</h4>
-                <p>The 2026 DOT refund rules airlines hope you don't know. Delays, cancellations, baggage — what you're owed and how to claim it.</p>
+                <p>The 2026 DOT refund rules airlines hope you don't know. Delays, cancellations, baggage — what you're owed.</p>
+                <p class="upgrade-line">→ The Kit's done-for-you DOT letters file the claim for you.</p>
             </a>
-            
+
             <a href="/11ways" class="resource-card">
                 <span class="free-badge">FREE</span>
                 <h4>11-Way Money Checklist</h4>
-                <p>11 times a company legally owes you money — warranties, price drops, class actions, and more. Exact claim steps included.</p>
+                <p>11 times a company legally owes you money — warranties, price drops, class actions, and more.</p>
+                <p class="upgrade-line">→ The Kit turns all 11 into ready-to-send letters + scripts.</p>
             </a>
-            
+
             <a href="/eitc" class="resource-card">
                 <span class="free-badge">FREE</span>
                 <h4>EITC Eligibility Checklist</h4>
                 <p>The $1,500+ tax credit 1 in 5 Americans forget to claim. Check if you qualify and claim it for the past 3 years.</p>
+                <p class="upgrade-line">→ The Kit's catch-up worksheet walks you through claiming it.</p>
             </a>
         </div>
     </section>
@@ -427,10 +548,10 @@
                 Calm, sourced, documentary-style guides to claiming what's rightfully yours.
             </p>
             <div class="youtube-embed">
-                <iframe 
-                    src="https://www.youtube.com/embed?list_type=user_uploads&list=@moneyyoureowed" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                <iframe
+                    src="https://www.youtube.com/embed?list_type=user_uploads&list=@moneyyoureowed"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
@@ -458,4 +579,4 @@
         </div>
     </footer>
 </body>
-</html><!-- Trigger deployment Wed 10 Jun 16:57:27 BST 2026 -->
+</html>

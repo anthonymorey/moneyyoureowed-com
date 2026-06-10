@@ -1,10 +1,5 @@
 # Cloudflare Pages redirects
-# These replace the Redirect Rules and give unlimited redirects
-
-# Landing pages
-/unclaimed  /unclaimed.html  301
-/airline    /airline.html    301
-/11ways     /11ways.html     301
-/eitc       /eitc.html       301
-
-# Homepage (root) is served automatically as index.html
+# Clean URLs (/unclaimed, /airline, /11ways, /eitc) are served automatically
+# by Cloudflare Pages from the matching .html file — no redirect rules needed.
+# (Adding /unclaimed -> /unclaimed.html caused an infinite loop because Pages
+#  auto-strips .html back to the clean URL.)

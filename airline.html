@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free 50-State Unclaimed Money Checklist - Search $70+ billion in unclaimed property across all 50 states in under 30 minutes.">
-    <title>Free 50-State Unclaimed Money Checklist | Money You're Owed</title>
+    <meta name="description" content="Free Airline Refund Cheat-Sheet - The 2026 DOT refund rules airlines hope you don't know. Get cash back for delays, cancellations and more.">
+    <title>Free Airline Refund Cheat-Sheet (2026 DOT Rules) | Money You're Owed</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -192,73 +192,67 @@
                 </ul>
             </div>
             
-            <form id="lead-form" action="https://landing.mailerlite.com/webforms/submit/..." method="POST">
-                <input type="hidden" name="ml-submit" value="1">
-                
+            <p style="text-align:center; margin: 1.75rem 0 0.5rem;">
+                <a href="/downloads/Airline-Refund-Cheat-Sheet.pdf" download style="display:inline-block; background:#1B6B5F; color:#fff; padding:16px 34px; border-radius:8px; text-decoration:none; font-weight:700; font-size:1.15rem;">⬇ Download the Free Cheat-Sheet (PDF)</a>
+            </p>
+            <p style="text-align:center; color:#888; font-size:0.9rem;">No email required — instant download.</p>
+
+            <hr style="border:none; border-top:1px solid #eee; margin:2rem 0 1.5rem;">
+
+            <p class="subtitle" style="font-size:1rem; margin-bottom:1rem;"><strong>Want the rest?</strong> Get the other free money guides as they drop (optional).</p>
+            <form id="lead-form">
                 <div class="form-group">
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="fields[email]" required placeholder="your@email.com">
                 </div>
-                
+
                 <div class="form-group">
                     <label for="name">First Name (optional)</label>
                     <input type="text" id="name" name="fields[name]" placeholder="Your name">
                 </div>
-                
-                <button type="submit">Get Free Checklist →</button>
+
+                <button type="submit">Join the list →</button>
             </form>
-            
+
             <p class="privacy">
-                🔒 Your email is safe. Unsubscribe anytime. No spam, ever.<br>
-                We'll send you the checklist instantly + occasional useful money tips.
+                🔒 Optional. Unsubscribe anytime. No spam, ever.
             </p>
         </div>
         
         <div id="success-message" class="success">
-            <h3>✅ Check Your Email!</h3>
-            <p>Your free Airline Refund Cheat-Sheet is on its way.</p>
-            <p style="margin-top: 1rem; color: #666;">
-                (If you don't see it in 5 minutes, check your spam folder)
-            </p>
-            <p style="margin-top: 2rem;">
+            <h3>✅ You're on the list — thanks!</h3>
+            <p>We'll send the other free money guides as they go live. Your cheat-sheet is just above whenever you need it.</p>
+            <p style="margin-top: 1.5rem;">
                 <a href="/" style="color: #1B6B5F; text-decoration: none; font-weight: 600;">← Back to Money You're Owed</a>
             </p>
         </div>
     </div>
     
-    <script>
+        <script>
         document.getElementById('lead-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+            const btn = this.querySelector('button[type=submit]');
             const formData = new FormData(this);
-            const email = formData.get('fields[email]');
-            
-            // Call MailerLite API
-            fetch('https://connect.mailerlite.com/api/subscribers', {
+            btn.disabled = true; btn.textContent = 'Sending…';
+
+            fetch('/api/subscribe', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI0IiwianRpIjoiYjVkZWZhNzBhZjNiMzJkMTk3Y2EzYjhmNGNmNTg5NGIwY2MxYzgzMzk2MWE4NGMwNTNjMDIyNGE3OGIxMGMyNDQwOGU0YzZiMjdiZTM0OGUiLCJpYXQiOjE3ODEwMzc1NzMuMTg0ODM0LCJuYmYiOjE3ODEwMzc1NzMuMTg0ODM3LCJleHAiOjQ5MzY3MTExNzMuMTc4NDIsInN1YiI6IjI0MjYyODMiLCJzY29wZXMiOltdfQ.BID3EeukZJVLEpYmmmY61PWD7UQvMVpusNm-YqalEuH0Bqg9B6f4cTb_3ZTmsX2mMKJu-PIPu-V4mReLAm0OjdpE-arIEj2m4y44C8RW5rT_6PvK4SOIJeTF2TvOn0-zYq6T0bkYarZEbS5jTeDJcerEinHA-tT2CqeEfx4Q7BeNZ-EclCl2cygBjTynmwcAmX_DMb_mRc6AJ6uh2mvmS9MJ133rr4ZDpQ9bnkbioDxJxofRs_U2U4AVGZ58Te6scrOYztbKmnNbcYxloGB0zSIkcZNL8wqgDuTtYcxBkPAgm9UFDpK2MIWSPT1qllscnRQW5CcGd7_Uagjuui9zd8RZZp0IJpQHmq73-xFmQX5L2_DMjAJl_sOrEl_so-s59GxFTWIFuf9zGnfKGgdIudCpMoTRzbC3pT9jgs8twM4KFe5yP-wrSIFVqePE4rDPpVvaZv4meg1mo4yZUPVdJw7hSqjy6Fh9v4BOV9D5nFCeL6TzE187nH10IO184D33gC97H7GeyXKK8gcFnL-uUQQB3-JKqN9B405pvC8lXO2lFHgXT8ryQohZTq-JeO4fSiV5KkiGI3fUki8pwS5x38yjMex5ve58oMKnM0Is29s-4L4JZSHwHewCwcqyfrpXXpDNFzgKp7bQ4SwilM9xPjuLI__Qhr2CSFOLfNBKNGo'
-                },
+                headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    email: email,
-                    fields: {
-                        name: formData.get('fields[name]')
-                    },
-                    groups: ['189606595562309447'] // Airline group
+                    email: formData.get('fields[email]'),
+                    name: formData.get('fields[name]') || '',
+                    group: '189606595562309447'
                 })
             })
-            .then(response => response.json())
-            .then(data => {
-                // Show success message
+            .then(async (response) => {
+                if (!response.ok) throw new Error('Subscribe failed: ' + response.status);
                 document.getElementById('form-content').style.display = 'none';
                 document.getElementById('success-message').style.display = 'block';
             })
-            .catch(error => {
+            .catch((error) => {
                 console.error('Error:', error);
-                // Still show success to avoid bad UX
-                document.getElementById('form-content').style.display = 'none';
-                document.getElementById('success-message').style.display = 'block';
+                btn.disabled = false; btn.textContent = 'Join the list →';
+                alert('Sorry, something went wrong. Please try again in a moment.');
             });
         });
     </script>
