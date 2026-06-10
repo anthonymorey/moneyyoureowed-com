@@ -1,0 +1,10 @@
+# Cloudflare Pages redirects
+# These replace the Redirect Rules and give unlimited redirects
+
+# Landing pages
+/unclaimed  /unclaimed.html  301
+/airline    /airline.html    301
+/11ways     /11ways.html     301
+/eitc       /eitc.html       301
+
+# Homepage (root) is served automatically as index.html
