@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Money You're Owed - Claim what's rightfully yours. Free checklists and tools to help you recover money from unclaimed property, airline refunds, tax credits, and more.">
+    <title>Money You're Owed - Claim What's Rightfully Yours</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #1a3a3a;
+            background: #f8f9fa;
+        }
+        
+        .header {
+            background: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            background: #1B6B5F;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .brand-text h1 {
+            font-size: 1.5rem;
+            color: #1B6B5F;
+            font-weight: 700;
+        }
+        
+        .brand-text p {
+            font-size: 0.75rem;
+            color: #1B6B5F;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #1B6B5F 0%, #2a8f7e 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1B6B5F;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        
+        .section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: #1B6B5F;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            padding: 3rem;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 0 auto 3rem;
+        }
+        
+        .product-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .product-header h3 {
+            font-size: 1.8rem;
+            color: #1B6B5F;
+            margin-bottom: 0.5rem;
+        }
+        
+        .product-price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .price-original {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            color: #999;
+        }
+        
+        .price-bundle {
+            font-size: 2.5rem;
+            color: #1B6B5F;
+            font-weight: bold;
+        }
+        
+        .product-items {
+            list-style: none;
+            margin: 2rem 0;
+        }
+        
+        .product-items li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .product-items li:last-child {
+            border-bottom: none;
+        }
+        
+        .item-price {
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .guarantee {
+            background: #f0f8f7;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            text-align: center;
+            color: #1B6B5F;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+        
+        .resource-card h4 {
+            color: #1B6B5F;
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .resource-card p {
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .free-badge {
+            display: inline-block;
+            background: #1B6B5F;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .youtube-section {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+            max-width: 900px;
+            margin: 3rem auto;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        
+        .youtube-embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .youtube-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .footer {
+            background: #1a3a3a;
+            color: white;
+            padding: 3rem 2rem 2rem;
+            margin-top: 5rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .footer p {
+            opacity: 0.8;
+            margin: 0.5rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 1.8rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .product-card {
+                padding: 2rem 1.5rem;
+            }
+            
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-circle">$</div>
+            <div class="brand-text">
+                <h1>Money You're Owed</h1>
+                <p>Claim What's Rightfully Yours</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Billions in Unclaimed Money. Thousands in Refunds. It Could Be Yours.</h2>
+            <p>The calm, documentary channel showing Americans the money they're owed — and the exact steps to claim it.</p>
+            <a href="#free-resources" class="cta-button">Get Free Checklists →</a>
+        </div>
+    </section>
+
+    <!-- Main Product Offer -->
+    <section class="section">
+        <h2 class="section-title">The Complete Money Recovery Kit</h2>
+        <p class="section-subtitle">Everything you need to claim what's rightfully yours — medical bills, airline refunds, bank fees, subscriptions, and more.</p>
+        
+        <div class="product-card">
+            <div class="product-header">
+                <h3>Money You're Owed Complete Recovery Kit</h3>
+                <p>5 proven tools to recover money from companies, banks, and government sources</p>
+            </div>
+            
+            <div class="product-price">
+                <span class="price-original">$92</span>
+                <span class="price-bundle">$79</span>
+            </div>
+            
+            <ul class="product-items">
+                <li>
+                    <span><strong>Medical Bill Dispute Kit</strong> — 8 fill-in letters + decision flowchart</span>
+                    <span class="item-price">$19</span>
+                </li>
+                <li>
+                    <span><strong>Airline & Travel Refund Toolkit</strong> — DOT refund letters + claim tracker</span>
+                    <span class="item-price">$17</span>
+                </li>
+                <li>
+                    <span><strong>Bank & Card Fee Reversal Scripts</strong> — Word-for-word phone scripts</span>
+                    <span class="item-price">$12</span>
+                </li>
+                <li>
+                    <span><strong>Subscription Audit & Cancel System</strong> — Tracker + cancellation scripts</span>
+                    <span class="item-price">$15</span>
+                </li>
+                <li>
+                    <span><strong>Money You're Owed Master Tracker</strong> — Notion dashboard for all claims</span>
+                    <span class="item-price">$29</span>
+                </li>
+            </ul>
+            
+            <div class="guarantee">
+                <strong>💯 30-Day Money-Back Guarantee</strong><br>
+                If you don't find at least something worth more than the Kit, we'll refund you. No questions asked.
+            </div>
+            
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://payhip.com/moneyyoureowed" class="cta-button">Get the Complete Kit — $79</a>
+            </div>
+            
+            <p style="text-align: center; color: #666; margin-top: 1.5rem; font-size: 0.9rem;">
+                No countdown timers. No "price rises tonight." It's $79 today and $79 next month.<br>
+                The only clock that matters is yours — every month you wait, money sits in someone else's account instead of yours.
+            </p>
+        </div>
+    </section>
+
+    <!-- Free Resources -->
+    <section class="section" id="free-resources">
+        <h2 class="section-title">Start Here: Free Resources</h2>
+        <p class="section-subtitle">Download our free checklists and guides — no payment required, unsubscribe anytime.</p>
+        
+        <div class="resources-grid">
+            <a href="/unclaimed" class="resource-card">
+                <span class="free-badge">FREE</span>
+                <h4>50-State Unclaimed Money Checklist</h4>
+                <p>Every official state database where $70+ billion in unclaimed property is waiting. Search all 50 states in under 30 minutes.</p>
+            </a>
+            
+            <a href="/airline" class="resource-card">
+                <span class="free-badge">FREE</span>
+                <h4>Airline Refund Cheat-Sheet</h4>
+                <p>The 2026 DOT refund rules airlines hope you don't know. Delays, cancellations, baggage — what you're owed and how to claim it.</p>
+            </a>
+            
+            <a href="/11ways" class="resource-card">
+                <span class="free-badge">FREE</span>
+                <h4>11-Way Money Checklist</h4>
+                <p>11 times a company legally owes you money — warranties, price drops, class actions, and more. Exact claim steps included.</p>
+            </a>
+            
+            <a href="/eitc" class="resource-card">
+                <span class="free-badge">FREE</span>
+                <h4>EITC Eligibility Checklist</h4>
+                <p>The $1,500+ tax credit 1 in 5 Americans forget to claim. Check if you qualify and claim it for the past 3 years.</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- YouTube Section -->
+    <section class="section">
+        <div class="youtube-section">
+            <h2 style="text-align: center; color: #1B6B5F; margin-bottom: 0.5rem;">Watch on YouTube</h2>
+            <p style="text-align: center; color: #666; margin-bottom: 1.5rem;">
+                Calm, sourced, documentary-style guides to claiming what's rightfully yours.
+            </p>
+            <div class="youtube-embed">
+                <iframe 
+                    src="https://www.youtube.com/embed?list_type=user_uploads&list=@moneyyoureowed" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+            <div style="text-align: center; margin-top: 1.5rem;">
+                <a href="https://youtube.com/@moneyyoureowed" class="cta-button">Subscribe on YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <div class="logo-circle">$</div>
+                <div>
+                    <h3 style="margin: 0;">Money You're Owed</h3>
+                    <p style="margin: 0; font-size: 0.85rem;">Claim What's Rightfully Yours</p>
+                </div>
+            </div>
+            <p>&copy; 2026 Money You're Owed. All rights reserved.</p>
+            <p style="font-size: 0.85rem; margin-top: 1rem;">
+                This channel provides educational content only, not financial or legal advice.<br>
+                Always consult official sources and professionals for your specific situation.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
