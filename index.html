@@ -99,8 +99,21 @@
             font-size: 0.95rem;
             opacity: 0.9;
             max-width: 640px;
-            margin: 0.75rem auto 2rem;
+            margin: 0.75rem auto 1.25rem;
         }
+
+        .trust-pills {
+            display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;
+            margin: 0 auto 2rem; max-width: 600px;
+        }
+        .trust-pills span {
+            background: rgba(255,255,255,0.16); color: #fff;
+            padding: 0.3rem 0.85rem; border-radius: 20px; font-size: 0.78rem;
+            font-weight: 600; letter-spacing: 0.5px;
+        }
+        .trust-pills .label { background: none; opacity: 0.75; font-weight: 500; padding-left: 0; }
+
+        .card-icon { font-size: 1.6rem; display: block; margin-bottom: 0.5rem; }
 
         .cta-button {
             display: inline-block;
@@ -396,7 +409,10 @@
             <!-- P0: dollar anchor — honest EXTERNAL stat (NAUPA-cited), reframed off a customer-result claim. -->
             <p class="hero-stat">Unclaimed property alone: U.S. states hold <span class="amount">$70&nbsp;billion+</span>, and the average person who's owed it is missing <span class="amount">$2,000+</span>.</p>
             <!-- P0: credibility line (this is REAL — safe to show) -->
-            <p class="credibility-line">Every method is built on official 2026 sources — the DOT cash-refund rules, IRS guidance, and CFPB/FDIC fee rules — the same ones we cite in every video.</p>
+            <p class="credibility-line">Every method is built on official 2026 sources — the same ones we cite in every video.</p>
+            <div class="trust-pills">
+                <span class="label">Sourced from</span><span>U.S. DOT</span><span>IRS</span><span>CFPB</span><span>FDIC</span><span>NAUPA</span>
+            </div>
 
             <a href="#free-resources" class="cta-button">Get the Free Checklists →</a>
         </div>
@@ -416,12 +432,15 @@
 
         <div class="testimonials-grid">
             <div class="testimonial-card">
+                <span class="card-icon">📜</span>
                 <p class="quote"><strong>Built on official 2026 rules.</strong> Every letter and script cites its real source — the DOT cash-refund rules, IRS guidance, CFPB &amp; FDIC fee rules, and the state NAUPA unclaimed-property programs.</p>
             </div>
             <div class="testimonial-card">
+                <span class="card-icon">🔓</span>
                 <p class="quote"><strong>The official process is always free.</strong> We never charge for information you could find yourself. You're paying for the done-for-you letters, scripts, and tracker that save you the hours.</p>
             </div>
             <div class="testimonial-card">
+                <span class="card-icon">💯</span>
                 <p class="quote"><strong>30-day money-back guarantee.</strong> If you don't find at least something worth more than the Kit, we refund you — no questions asked.</p>
             </div>
         </div>
@@ -480,9 +499,17 @@
                 If you don't find at least something worth more than the Kit, we'll refund you. No questions asked.
             </div>
 
-            <div style="text-align: center; margin-top: 2rem;">
-                <!-- TODO(Anthony): STRIPE checkout (platform locked = Stripe, NOT Payhip). Replace placeholder with the real Stripe Payment Link. -->
-                <a href="{{STRIPE_CHECKOUT_URL}}" class="cta-button">Get the Complete Kit — $79</a>
+            <!-- INTERIM: waitlist email capture until Stripe checkout is built (Stripe deferred 2026-06-11).
+                 Posts to the working /api/subscribe Function → MailerLite "Kit Waitlist" group 189966496569492517. -->
+            <div style="text-align: center; margin-top: 2rem;" id="kit-cta">
+                <p style="color:#1B6B5F; font-weight:600; margin-bottom:0.85rem;">The Kit launches soon. Join the waitlist — you'll be first to get it, at the launch price.</p>
+                <form id="waitlist-form" style="display:flex; gap:0.5rem; max-width:440px; margin:0 auto; flex-wrap:wrap; justify-content:center;">
+                    <input type="email" id="wl-email" required placeholder="your@email.com" style="flex:1; min-width:200px; padding:0.95rem 1rem; border:1px solid #cfe0dc; border-radius:8px; font-size:1rem;">
+                    <button type="submit" class="cta-button" style="background:#1B6B5F; color:#fff;">🔔 Notify me at launch</button>
+                </form>
+            </div>
+            <div id="waitlist-success" style="display:none; text-align:center; margin-top:1.5rem; color:#1B6B5F; font-weight:700; font-size:1.1rem;">
+                ✅ You're on the list — you'll be first to know the moment the Kit drops.
             </div>
 
             <p style="text-align: center; color: #666; margin-top: 1.5rem; font-size: 0.9rem;">
@@ -500,6 +527,7 @@
 
         <div class="resources-grid">
             <a href="/unclaimed" class="resource-card">
+                <span class="card-icon">🏛️</span>
                 <span class="free-badge">FREE</span>
                 <h4>50-State Unclaimed Money Checklist</h4>
                 <p>Every official state database where $70+ billion in unclaimed property is waiting. Search all 50 states in under 30 minutes.</p>
@@ -507,6 +535,7 @@
             </a>
 
             <a href="/airline" class="resource-card">
+                <span class="card-icon">✈️</span>
                 <span class="free-badge">FREE</span>
                 <h4>Airline Refund Cheat-Sheet</h4>
                 <p>The 2026 DOT refund rules airlines hope you don't know. Delays, cancellations, baggage — what you're owed.</p>
@@ -514,6 +543,7 @@
             </a>
 
             <a href="/11ways" class="resource-card">
+                <span class="card-icon">📋</span>
                 <span class="free-badge">FREE</span>
                 <h4>11-Way Money Checklist</h4>
                 <p>11 times a company legally owes you money — warranties, price drops, class actions, and more.</p>
@@ -521,6 +551,7 @@
             </a>
 
             <a href="/eitc" class="resource-card">
+                <span class="card-icon">🧾</span>
                 <span class="free-badge">FREE</span>
                 <h4>EITC Eligibility Checklist</h4>
                 <p>The $1,500+ tax credit 1 in 5 Americans forget to claim. Check if you qualify and claim it for the past 3 years.</p>
@@ -538,7 +569,8 @@
             </p>
             <div class="youtube-embed">
                 <iframe
-                    src="https://www.youtube.com/embed?list_type=user_uploads&list=@moneyyoureowed"
+                    src="https://www.youtube.com/embed/mrsdksvK0uE"
+                    title="Money You're Owed — Unclaimed Money"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
@@ -570,5 +602,25 @@
             </p>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('waitlist-form').addEventListener('submit', function(e){
+            e.preventDefault();
+            var btn = this.querySelector('button');
+            var email = document.getElementById('wl-email').value;
+            btn.disabled = true; btn.textContent = 'Sending…';
+            fetch('/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email, name: '', group: '189966496569492517' })
+            })
+            .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status);
+                document.getElementById('kit-cta').style.display = 'none';
+                document.getElementById('waitlist-success').style.display = 'block';
+            })
+            .catch(function(){ btn.disabled = false; btn.textContent = '🔔 Notify me at launch';
+                alert('Sorry, something went wrong — please try again in a moment.'); });
+        });
+    </script>
 </body>
 </html>
