@@ -393,8 +393,8 @@
             <h2>Billions in Unclaimed Money. Thousands in Refunds. It Could Be Yours.</h2>
             <p>The calm, documentary channel showing Americans the money they're owed — and the exact steps to claim it.</p>
 
-            <!-- P0: dollar-denominated dream outcome. TODO(Anthony): replace {{AVG_RECOVERED}} with a real, defensible figure. DO NOT guess. -->
-            <p class="hero-stat">The average person who works through the Kit recovers <span class="amount">{{AVG_RECOVERED}}</span>.</p>
+            <!-- P0: dollar anchor — honest EXTERNAL stat (NAUPA-cited), reframed off a customer-result claim. -->
+            <p class="hero-stat">Unclaimed property alone: U.S. states hold <span class="amount">$70&nbsp;billion+</span>, and the average person who's owed it is missing <span class="amount">$2,000+</span>.</p>
             <!-- P0: credibility line (this is REAL — safe to show) -->
             <p class="credibility-line">Every method is built on official 2026 sources — the DOT cash-refund rules, IRS guidance, and CFPB/FDIC fee rules — the same ones we cite in every video.</p>
 
@@ -411,32 +411,21 @@
     <!-- Until then this is a PLACEHOLDER scaffold — do NOT deploy as-is.  -->
     <!-- ============================================================ -->
     <section class="proof-section" id="proof">
-        <h2 class="section-title">Real People, Real Money Back</h2>
-
-        <div class="proof-note">⚠️ PLACEHOLDER — needs real testimonials, refund screenshots, and the recovered-total before this page goes live. (Build prompt rule: never fabricate proof.)</div>
-
-        <!-- Aggregate stat -->
-        <p class="aggregate-stat">Members have recovered <span class="amount">{{TOTAL_RECOVERED}}</span> and counting.</p>
-
-        <!-- TODO: ideally a row of real refund screenshots goes here (strongest proof). Placeholder omitted to avoid faking it. -->
+        <h2 class="section-title">Why You Can Trust This</h2>
+        <p class="section-subtitle" style="margin-bottom:2rem;">No hype, no fake reviews — just the official process, done for you, backed by a guarantee.</p>
 
         <div class="testimonials-grid">
             <div class="testimonial-card">
-                <p class="quote">“{{TESTIMONIAL_1_QUOTE}}”</p>
-                <p class="who">{{TESTIMONIAL_1_NAME}}</p>
-                <span class="testimonial-amount">recovered {{TESTIMONIAL_1_AMOUNT}}</span>
+                <p class="quote"><strong>Built on official 2026 rules.</strong> Every letter and script cites its real source — the DOT cash-refund rules, IRS guidance, CFPB &amp; FDIC fee rules, and the state NAUPA unclaimed-property programs.</p>
             </div>
             <div class="testimonial-card">
-                <p class="quote">“{{TESTIMONIAL_2_QUOTE}}”</p>
-                <p class="who">{{TESTIMONIAL_2_NAME}}</p>
-                <span class="testimonial-amount">recovered {{TESTIMONIAL_2_AMOUNT}}</span>
+                <p class="quote"><strong>The official process is always free.</strong> We never charge for information you could find yourself. You're paying for the done-for-you letters, scripts, and tracker that save you the hours.</p>
             </div>
             <div class="testimonial-card">
-                <p class="quote">“{{TESTIMONIAL_3_QUOTE}}”</p>
-                <p class="who">{{TESTIMONIAL_3_NAME}}</p>
-                <span class="testimonial-amount">recovered {{TESTIMONIAL_3_AMOUNT}}</span>
+                <p class="quote"><strong>30-day money-back guarantee.</strong> If you don't find at least something worth more than the Kit, we refund you — no questions asked.</p>
             </div>
         </div>
+        <!-- TODO(Anthony): once the Kit has buyers, add REAL testimonials (name + amount) + refund screenshots above the price — collected via the post-purchase MailerLite ask + early YouTube-comment wins. -->
     </section>
 
     <!-- Main Product Offer -->
@@ -448,8 +437,8 @@
             <div class="product-header">
                 <h3>Money You're Owed Complete Recovery Kit</h3>
                 <p>6 done-for-you tools to recover money from companies, banks, and government sources</p>
-                <!-- P0: dollar outcome repeated above the offer. TODO(Anthony): {{AVG_RECOVERED}} real figure. -->
-                <p class="offer-outcome">If it helps you claim even one thing, it pays for itself many times over — the average person recovers <span class="amount">{{AVG_RECOVERED}}</span>.</p>
+                <!-- P0: dollar outcome above the offer — honest external anchor (NAUPA). -->
+                <p class="offer-outcome">Unclaimed property alone averages <span class="amount">$2,000+</span> per person owed (NAUPA). The Kit is $79.</p>
             </div>
 
             <!-- P1: HARD anchor (operator decision 2026-06-10) — Letter Vault added → $131 value, $79 price = 40% off. Anchor is honest: every item is sold à la carte at the listed price. -->
@@ -498,8 +487,8 @@
 
             <p style="text-align: center; color: #666; margin-top: 1.5rem; font-size: 0.9rem;">
                 No countdown timers. No "price rises tonight." It's $79 today and $79 next month.<br>
-                <!-- P0: quantify the loss. TODO(Anthony): {{AVG_REFUND}} = a real typical refund figure. -->
-                The only clock that matters is yours — the average refund people leave unclaimed is <strong>{{AVG_REFUND}}</strong>. Every month you wait, that's money you don't get back.
+                <!-- P0: quantify the loss — honest external figure (NY State avg claim). -->
+                The only clock that matters is yours — the average unclaimed-property claim returns about <strong>$1,000</strong>. Every month you wait, that's money sitting in a state account instead of yours.
             </p>
         </div>
     </section>
@@ -575,6 +564,9 @@
             <p style="font-size: 0.85rem; margin-top: 1rem;">
                 This channel provides educational content only, not financial or legal advice.<br>
                 Always consult official sources and professionals for your specific situation.
+            </p>
+            <p style="font-size: 0.75rem; margin-top: 0.75rem; opacity: 0.7;">
+                Figures: unclaimed-property totals and per-person averages per NAUPA (National Association of Unclaimed Property Administrators) and state treasury data.
             </p>
         </div>
     </footer>
