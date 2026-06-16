@@ -1,0 +1,12 @@
+# Cloudflare / wrangler local state
+.wrangler/
+node_modules/
+
+# Local dev mockups (not part of the deployed site)
+_preview/
+
+# Never commit secrets (tokens live in the parent dir / Pages env, not here)
+*.cf_token
+.cf_token
+.env
+.env.*

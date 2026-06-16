@@ -218,24 +218,48 @@
             margin: 1.5rem 0 0.5rem;
         }
 
+        /* Value-anchor framing (LOCKED): honest à-la-carte sum vs today's price. No "% off", no fake former-price. */
+        .product-price {
+            flex-direction: column; gap: 0.25rem;
+        }
+        .price-value-label, .price-today-label {
+            font-size: 0.9rem; color: #777; font-weight: 600; letter-spacing: 0.02em;
+        }
         .price-original {
-            font-size: 1.5rem;
-            text-decoration: line-through;
-            color: #999;
+            font-size: 1.4rem; color: #999;
+        }
+        .price-bundle {
+            font-size: 2.8rem; color: #1B6B5F; font-weight: bold; line-height: 1;
         }
 
-        .price-bundle {
-            font-size: 2.5rem;
-            color: #1B6B5F;
-            font-weight: bold;
+        /* 2-step checkout */
+        .checkout-step { max-width: 480px; margin: 1.5rem auto 0; }
+        .checkout-step label { display:block; font-weight:600; color:#1a3a3a; margin:0.6rem 0 0.25rem; font-size:0.95rem; }
+        .checkout-step input[type=text], .checkout-step input[type=email] {
+            width:100%; padding:0.95rem 1rem; border:1px solid #cfe0dc; border-radius:8px; font-size:1rem; box-sizing:border-box;
         }
-        .discount-badge {
-            text-align: center; margin-bottom: 1rem;
-        }
-        .discount-badge span {
-            display: inline-block; background: #1B6B5F; color: white;
-            padding: 0.3rem 0.9rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;
-        }
+        .checkout-step .cta-button { width:100%; margin-top:1rem; background:#1B6B5F; color:#fff; border:none; cursor:pointer; }
+        .checkout-step .cta-button:disabled { opacity:0.6; cursor:default; }
+        #payment-element { margin-top:0.5rem; }
+        .checkout-secure { text-align:center; color:#7a8a87; font-size:0.82rem; margin-top:0.9rem; }
+        .checkout-error { color:#b3261e; text-align:center; margin-top:0.8rem; font-weight:600; min-height:1.2em; }
+        .checkout-back { background:none; border:none; color:#1B6B5F; cursor:pointer; font-size:0.88rem; text-decoration:underline; margin-top:0.8rem; }
+
+        /* à-la-carte buy buttons + bundle CTA */
+        .product-items li { flex-wrap: wrap; }
+        .item-meta { display:flex; align-items:center; gap:0.7rem; }
+        .item-buy { background:#1B6B5F; color:#fff; border:none; border-radius:6px; padding:0.4rem 0.85rem; font-size:0.82rem; font-weight:700; cursor:pointer; white-space:nowrap; }
+        .item-buy:hover { background:#155a50; }
+        .bundle-cta { width:100%; max-width:480px; margin:1.5rem auto 0.4rem; display:block; background:#1B6B5F; color:#fff; border:none; cursor:pointer; }
+        .bundle-save { text-align:center; color:#1B6B5F; font-weight:600; font-size:0.9rem; margin-bottom:0.5rem; }
+
+        /* checkout modal */
+        .co-modal { position:fixed; inset:0; background:rgba(13,31,29,.55); display:none; align-items:flex-start; justify-content:center; z-index:1000; overflow-y:auto; padding:4vh 1rem; }
+        .co-modal.open { display:flex; }
+        .co-box { background:#fff; border-radius:14px; max-width:480px; width:100%; padding:1.8rem 1.6rem; box-shadow:0 10px 40px rgba(0,0,0,.3); position:relative; }
+        .co-close { position:absolute; top:0.6rem; right:1rem; background:none; border:none; font-size:1.5rem; color:#889; cursor:pointer; line-height:1; }
+        .co-title { color:#1B6B5F; font-size:1.2rem; font-weight:800; margin-bottom:0.2rem; padding-right:1.5rem; }
+        .co-sub { color:#566; font-size:0.92rem; margin-bottom:1rem; }
 
         .product-items {
             list-style: none;
@@ -363,10 +387,66 @@
             margin: 0.5rem 0;
         }
 
+        /* ===== Header CTA (repeated CTA #1) ===== */
+        .header-content { justify-content: space-between; }
+        .header-brand { display: flex; align-items: center; gap: 1rem; }
+        .header-cta {
+            background: #1B6B5F; color: #fff; padding: 0.6rem 1.3rem; border-radius: 8px;
+            text-decoration: none; font-weight: 700; font-size: 0.95rem; white-space: nowrap;
+            transition: background 0.2s;
+        }
+        .header-cta:hover { background: #155a50; }
+
+        /* ===== Founding-member ribbon (honest soft urgency — first 50, no fake clock) ===== */
+        .founding-banner {
+            background: #fff7e6; border-bottom: 1px solid #f0d9a8; color: #8a5a00;
+            text-align: center; padding: 0.6rem 1rem; font-size: 0.9rem; font-weight: 600;
+        }
+        .founding-banner strong { color: #b5701a; }
+
+        /* ===== Before / After transformation ===== */
+        .transform-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; max-width: 900px;
+            margin: 0 auto;
+        }
+        .transform-col { border-radius: 12px; padding: 1.75rem 1.75rem 1.25rem; }
+        .transform-col.before { background: #fdf1f0; border: 1px solid #f3d3d0; }
+        .transform-col.after  { background: #f0f8f7; border: 1px solid #cfe6e1; }
+        .transform-col h3 { font-size: 1.2rem; margin-bottom: 1rem; }
+        .transform-col.before h3 { color: #b3261e; }
+        .transform-col.after  h3 { color: #1B6B5F; }
+        .transform-col ul { list-style: none; }
+        .transform-col li { padding: 0.45rem 0 0.45rem 1.7rem; position: relative; color: #333; font-size: 0.97rem; }
+        .transform-col.before li::before { content: "✗"; position: absolute; left: 0; color: #d2655c; font-weight: 700; }
+        .transform-col.after  li::before { content: "✓"; position: absolute; left: 0; color: #1B6B5F; font-weight: 700; }
+
+        /* ===== Value breakdown (honest itemised stack) ===== */
+        .value-breakdown {
+            max-width: 560px; margin: 1.5rem auto 0; background: #fbfdfc;
+            border: 1px solid #e3efec; border-radius: 12px; padding: 1.25rem 1.5rem;
+        }
+        .value-breakdown .vb-row { display: flex; justify-content: space-between; padding: 0.45rem 0; border-bottom: 1px dashed #e3efec; font-size: 0.95rem; color: #3a4a48; }
+        .value-breakdown .vb-row:last-of-type { border-bottom: none; }
+        .value-breakdown .vb-total { display: flex; justify-content: space-between; padding-top: 0.75rem; margin-top: 0.5rem; border-top: 2px solid #1B6B5F; font-weight: 700; color: #1a3a3a; }
+        .value-breakdown .vb-strike { text-decoration: line-through; color: #999; }
+
+        /* ===== FAQ ===== */
+        .faq-list { max-width: 800px; margin: 0 auto; }
+        .faq-item { background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); margin-bottom: 1rem; border-left: 4px solid #1B6B5F; padding: 1.25rem 1.5rem; }
+        .faq-item h4 { color: #1a3a3a; font-size: 1.08rem; margin-bottom: 0.4rem; }
+        .faq-item p { color: #566; font-size: 0.96rem; }
+
+        /* ===== Repeated CTA band ===== */
+        .cta-band { background: linear-gradient(135deg, #1B6B5F 0%, #2a8f7e 100%); color: #fff; text-align: center; padding: 3rem 2rem; border-radius: 14px; max-width: 900px; margin: 4rem auto; }
+        .cta-band h2 { font-size: 1.7rem; margin-bottom: 0.75rem; }
+        .cta-band p { opacity: 0.95; margin-bottom: 1.5rem; }
+
         @media (max-width: 768px) {
             .hero h2 {
                 font-size: 1.8rem;
             }
+            .transform-grid { grid-template-columns: 1fr; }
+            .header-cta { padding: 0.5rem 0.9rem; font-size: 0.85rem; }
 
             .hero p {
                 font-size: 1rem;
@@ -389,14 +469,22 @@
     </style>
 </head>
 <body>
+    <!-- Founding-member ribbon — honest soft urgency. First 50 buyers only; flips off when full. NO countdown. -->
+    <div class="founding-banner">
+        🌱 <strong>Founding-Member launch:</strong> the first 50 members get the Kit for <strong>$59</strong> (then $79) — in exchange for an honest review.
+    </div>
+
     <!-- Header -->
     <header class="header">
         <div class="header-content">
-            <div class="logo-circle">$</div>
-            <div class="brand-text">
-                <h1>Money You're Owed</h1>
-                <p>Claim What's Rightfully Yours</p>
+            <div class="header-brand">
+                <div class="logo-circle">$</div>
+                <div class="brand-text">
+                    <h1>Money You're Owed</h1>
+                    <p>Claim What's Rightfully Yours</p>
+                </div>
             </div>
+            <a href="#offer" class="header-cta">Get the Kit →</a>
         </div>
     </header>
 
@@ -418,6 +506,34 @@
         </div>
     </section>
 
+    <!-- ===== Before / After transformation (honest — no inflated claims) ===== -->
+    <section class="section" id="transform">
+        <h2 class="section-title">Doing It Yourself vs. With the Kit</h2>
+        <p class="section-subtitle">The official process is always free. What you're really buying back is the hours, the dead ends, and the letters you'd have to write from scratch.</p>
+        <div class="transform-grid">
+            <div class="transform-col before">
+                <h3>On your own</h3>
+                <ul>
+                    <li>Hunting across DOT, IRS, CFPB &amp; 50 state sites to find the right rule</li>
+                    <li>Writing dispute letters from a blank page, hoping the wording holds up</li>
+                    <li>Getting stonewalled on the phone with no script to fall back on</li>
+                    <li>Losing track of which claims you've sent and which are owed back</li>
+                    <li>Giving up on money that's genuinely yours because it's just too much hassle</li>
+                </ul>
+            </div>
+            <div class="transform-col after">
+                <h3>With the Recovery Kit</h3>
+                <ul>
+                    <li>Fill-in letters that already cite the official 2026 rule for each case</li>
+                    <li>Word-for-word phone scripts so you never freeze on the call</li>
+                    <li>A tracker that runs every claim from "owed" to "paid"</li>
+                    <li>One organised system instead of 30 browser tabs</li>
+                    <li>Actually claiming what you're owed — in evenings, not weekends</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
     <!-- ============================================================ -->
     <!-- P0 PROOF SECTION — sits ABOVE the price. Trust is the #1 lever. -->
     <!-- TODO(Anthony): this whole block needs REAL data before launch:   -->
@@ -428,9 +544,12 @@
     <!-- ============================================================ -->
     <section class="proof-section" id="proof">
         <h2 class="section-title">Why You Can Trust This</h2>
-        <p class="section-subtitle" style="margin-bottom:2rem;">No hype, no fake reviews — just the official process, done for you, backed by a guarantee.</p>
+        <p class="section-subtitle" style="margin-bottom:2rem;">No hype, no fake reviews — just the official process, done for you, backed by a guarantee. Real member results will be added here as our founding members share them.</p>
 
         <div class="testimonials-grid">
+            <!-- REAL-REVIEWS-INSERT -->
+            <!-- Real member testimonials are inserted ABOVE this line by publish_reviews.py (first name only, real only).
+                 Once there are 4+ real ones, retire the 3 generic trust cards below. Never hand-write fake testimonials. -->
             <div class="testimonial-card">
                 <span class="card-icon">📜</span>
                 <p class="quote"><strong>Built on official 2026 rules.</strong> Every letter and script cites its real source — the DOT cash-refund rules, IRS guidance, CFPB &amp; FDIC fee rules, and the state NAUPA unclaimed-property programs.</p>
@@ -444,7 +563,11 @@
                 <p class="quote"><strong>30-day money-back guarantee.</strong> If you don't find at least something worth more than the Kit, we refund you — no questions asked.</p>
             </div>
         </div>
-        <!-- TODO(Anthony): once the Kit has buyers, add REAL testimonials (name + amount) + refund screenshots above the price — collected via the post-purchase MailerLite ask + early YouTube-comment wins. -->
+        <!-- REVIEW-SEED MECHANISM (live 2026-06-14, per Rishi mentorship): the Founding-Member offer ($59 for first 50)
+             IS the engine for real reviews — founding price is given in exchange for an honest review.
+             As real named results arrive (via post-purchase MailerLite ask + YouTube-comment wins), add a
+             <div class="testimonial-card"> with .who + .testimonial-amount ABOVE this comment, and retire the
+             generic trust cards once there are 4–6 real ones. Do NOT invent names/amounts (locked honesty policy). -->
     </section>
 
     <!-- Main Product Offer -->
@@ -457,40 +580,55 @@
                 <h3>Money You're Owed Complete Recovery Kit</h3>
                 <p>6 done-for-you tools to recover money from companies, banks, and government sources</p>
                 <!-- P0: dollar outcome above the offer — honest external anchor (NAUPA). -->
-                <p class="offer-outcome">Unclaimed property alone averages <span class="amount">$2,000+</span> per person owed (NAUPA). The Kit is $79.</p>
+                <p class="offer-outcome">Unclaimed property alone averages <span class="amount">$2,000+</span> per person owed (NAUPA). The founding price is $59.</p>
             </div>
 
-            <!-- P1: HARD anchor (operator decision 2026-06-10) — Letter Vault added → $131 value, $79 price = 40% off. Anchor is honest: every item is sold à la carte at the listed price. -->
-            <div class="discount-badge"><span>Save 40% as the Complete Kit</span></div>
+            <!-- VALUE-ANCHOR framing (LOCKED 2026-06-11, supersedes "Save 40%"). $131 = honest à-la-carte sum of the items below, never a former price. -->
+            <!-- Founding-Member price $59 (first 50, then $79) — honest soft urgency, added 2026-06-14. -->
             <div class="product-price">
+                <span class="price-value-label">Total value if bought separately</span>
                 <span class="price-original">$131</span>
-                <span class="price-bundle">$79</span>
+                <span class="price-today-label">Founding-Member price (first 50 · then $79)</span>
+                <span class="price-bundle">$59</span>
             </div>
 
+            <!-- Honest itemised value breakdown — every line is the item's real à-la-carte price (matches the list below). -->
+            <div class="value-breakdown">
+                <div class="vb-row"><span>Medical Bill Dispute Kit</span><span>$19</span></div>
+                <div class="vb-row"><span>Airline &amp; Travel Refund Toolkit</span><span>$17</span></div>
+                <div class="vb-row"><span>Bank &amp; Card Fee Reversal Scripts</span><span>$12</span></div>
+                <div class="vb-row"><span>Subscription Audit &amp; Cancel System</span><span>$15</span></div>
+                <div class="vb-row"><span>Refund &amp; Dispute Letter Vault</span><span>$39</span></div>
+                <div class="vb-row"><span>Money You're Owed Master Tracker</span><span>$29</span></div>
+                <div class="vb-total"><span>All six, bought separately</span><span class="vb-strike">$131</span></div>
+                <div class="vb-total" style="border-top:none;padding-top:0.25rem;"><span>Your founding price today</span><span style="color:#1B6B5F;">$59</span></div>
+            </div>
+
+            <p style="text-align:center;color:#566;font-size:0.92rem;margin:1rem 0 0.5rem;">Buy any one on its own, or get all six as the Kit — <strong>$59</strong> for founding members, under half the separate total.</p>
             <ul class="product-items">
                 <li>
                     <span><strong>Medical Bill Dispute Kit</strong> — 8 fill-in letters + decision flowchart</span>
-                    <span class="item-price">$19</span>
+                    <span class="item-meta"><span class="item-price">$19</span><button type="button" class="item-buy" data-product="medical">Get it →</button></span>
                 </li>
                 <li>
                     <span><strong>Airline & Travel Refund Toolkit</strong> — DOT refund letters + claim tracker</span>
-                    <span class="item-price">$17</span>
+                    <span class="item-meta"><span class="item-price">$17</span><button type="button" class="item-buy" data-product="airline">Get it →</button></span>
                 </li>
                 <li>
                     <span><strong>Bank & Card Fee Reversal Scripts</strong> — Word-for-word phone scripts</span>
-                    <span class="item-price">$12</span>
+                    <span class="item-meta"><span class="item-price">$12</span><button type="button" class="item-buy" data-product="bank">Get it →</button></span>
                 </li>
                 <li>
                     <span><strong>Subscription Audit & Cancel System</strong> — Tracker + cancellation scripts</span>
-                    <span class="item-price">$15</span>
+                    <span class="item-meta"><span class="item-price">$15</span><button type="button" class="item-buy" data-product="subscription">Get it →</button></span>
                 </li>
                 <li>
                     <span><strong>Refund & Dispute Letter Vault</strong> — 30 editable letters & scripts, every category</span>
-                    <span class="item-price">$39</span>
+                    <span class="item-meta"><span class="item-price">$39</span><button type="button" class="item-buy" data-product="lettervault">Get it →</button></span>
                 </li>
                 <li>
                     <span><strong>Money You're Owed Master Tracker</strong> — Dashboard for every claim</span>
-                    <span class="item-price">$29</span>
+                    <span class="item-meta"><span class="item-price">$29</span><button type="button" class="item-buy" data-product="mastertracker">Get it →</button></span>
                 </li>
             </ul>
 
@@ -499,21 +637,13 @@
                 If you don't find at least something worth more than the Kit, we'll refund you. No questions asked.
             </div>
 
-            <!-- INTERIM: waitlist email capture until Stripe checkout is built (Stripe deferred 2026-06-11).
-                 Posts to the working /api/subscribe Function → MailerLite "Kit Waitlist" group 189966496569492517. -->
-            <div style="text-align: center; margin-top: 2rem;" id="kit-cta">
-                <p style="color:#1B6B5F; font-weight:600; margin-bottom:0.85rem;">The Kit launches soon. Join the waitlist — you'll be first to get it, at the launch price.</p>
-                <form id="waitlist-form" style="display:flex; gap:0.5rem; max-width:440px; margin:0 auto; flex-wrap:wrap; justify-content:center;">
-                    <input type="email" id="wl-email" required placeholder="your@email.com" style="flex:1; min-width:200px; padding:0.95rem 1rem; border:1px solid #cfe0dc; border-radius:8px; font-size:1rem;">
-                    <button type="submit" class="cta-button" style="background:#1B6B5F; color:#fff;">🔔 Notify me at launch</button>
-                </form>
-            </div>
-            <div id="waitlist-success" style="display:none; text-align:center; margin-top:1.5rem; color:#1B6B5F; font-weight:700; font-size:1.1rem;">
-                ✅ You're on the list — you'll be first to know the moment the Kit drops.
-            </div>
+            <!-- Bundle CTA — opens the product-aware checkout modal (built 2026-06-11, Option A).
+                 Single-product "Get it" buttons above open the same modal for that product. -->
+            <div class="bundle-save">✅ Best value — all 6 tools for <strong>$59</strong> (founding), not $131 separately</div>
+            <button type="button" class="cta-button bundle-cta" data-product="bundle">Get the Complete Recovery Kit — $59</button>
 
             <p style="text-align: center; color: #666; margin-top: 1.5rem; font-size: 0.9rem;">
-                No countdown timers. No "price rises tonight." It's $79 today and $79 next month.<br>
+                No fake countdowns and no "price rises tonight." The $59 founding price is real and simple: it's for the first 50 members in exchange for an honest review, then it settles at $79.<br>
                 <!-- P0: quantify the loss — honest external figure (NY State avg claim). -->
                 The only clock that matters is yours — the average unclaimed-property claim returns about <strong>$1,000</strong>. Every month you wait, that's money sitting in a state account instead of yours.
             </p>
@@ -524,6 +654,47 @@
          (each promoted by its own video); this warm-traffic page leads with the offer, not a buffet. -->
     <section class="section" id="free-resources" style="text-align:center;">
         <p style="color:#566; font-size:1rem;">Just here for a free checklist? <a href="/unclaimed" style="color:#1B6B5F; font-weight:700; text-decoration:none;">Start with the free 50-State Unclaimed Money Checklist →</a></p>
+    </section>
+
+    <!-- ===== FAQ — objection handling (honest answers) ===== -->
+    <section class="section" id="faq">
+        <h2 class="section-title">Questions People Ask</h2>
+        <p class="section-subtitle">Straight answers — the same ones we'd give you on the phone.</p>
+        <div class="faq-list">
+            <div class="faq-item">
+                <h4>Isn't this information free if I look it up myself?</h4>
+                <p>Yes — and we say so. The official process is always free. You're paying for the done-for-you letters, the word-for-word scripts, and the tracker that turn "I should look into that" into money actually back in your account. You're buying back the hours.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What exactly do I get, and how fast?</h4>
+                <p>All six tools — the letters, scripts and trackers listed above — delivered instantly to your email after checkout. They're editable files you keep forever, including any updates we make.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What's the Founding-Member price about?</h4>
+                <p>The first 50 members get the Kit for $59 instead of $79, in exchange for an honest review once they've used it. It's a real, limited launch offer — no ticking clock, no pressure. When the 50 spots are gone, it's $79.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Will this actually work for my situation?</h4>
+                <p>The Kit covers the most common ways Americans are owed money — medical bills, airline &amp; travel refunds, bank &amp; card fees, subscriptions, and general refund disputes — each built on the official 2026 rules. If it doesn't help you, the guarantee below has you covered.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What if it's not for me?</h4>
+                <p>30-day money-back guarantee. If you don't find at least something worth more than the Kit, email us and we'll refund you — no questions asked.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Is this financial or legal advice?</h4>
+                <p>No. It's educational — the official process, organised and done-for-you. For your specific situation, always check the official sources and, where it matters, a professional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Repeated CTA band ===== -->
+    <section>
+        <div class="cta-band">
+            <h2>Ready to claim what you're owed?</h2>
+            <p>Six done-for-you tools. $59 for founding members. 30-day money-back guarantee.</p>
+            <a href="#offer" class="cta-button">Get the Complete Recovery Kit →</a>
+        </div>
     </section>
 
     <!-- YouTube Section -->
@@ -566,24 +737,135 @@
         </div>
     </footer>
 
+    <!-- Product-aware checkout modal — opened by any [data-product] button (bundle CTA + à-la-carte "Get it"). -->
+    <div class="co-modal" id="co-modal" role="dialog" aria-modal="true">
+        <div class="co-box">
+            <button type="button" class="co-close" id="co-close" aria-label="Close">&times;</button>
+            <div class="co-title" id="co-title">Checkout</div>
+            <div class="co-sub" id="co-sub"></div>
+            <div class="checkout-step" id="checkout-step1">
+                <label for="co-name">Name</label>
+                <input type="text" id="co-name" autocomplete="name" placeholder="Your name">
+                <label for="co-email">Email (where we send your files)</label>
+                <input type="email" id="co-email" autocomplete="email" required placeholder="your@email.com">
+                <button type="button" id="co-continue" class="cta-button">Continue to secure checkout →</button>
+                <div class="checkout-error" id="co-error1"></div>
+                <p class="checkout-secure">🔒 Secure checkout by Stripe · instant delivery by email</p>
+            </div>
+            <div class="checkout-step" id="checkout-step2" style="display:none;">
+                <div id="payment-element"></div>
+                <button type="button" id="co-pay" class="cta-button">Pay</button>
+                <div class="checkout-error" id="co-error2"></div>
+                <p class="checkout-secure">🔒 Payments secured by Stripe. We never see your card details.</p>
+                <div style="text-align:center;"><button type="button" class="checkout-back" id="co-back">← Back</button></div>
+            </div>
+            <div id="checkout-success" style="display:none; text-align:center; color:#1B6B5F; font-weight:700; font-size:1.05rem; padding:1rem 0;">
+                ✅ Payment received! Your download links are on the way to your inbox — check your email (and spam, just in case).
+            </div>
+        </div>
+    </div>
+
+    <script src="https://js.stripe.com/v3/"></script>
     <script>
-        document.getElementById('waitlist-form').addEventListener('submit', function(e){
-            e.preventDefault();
-            var btn = this.querySelector('button');
-            var email = document.getElementById('wl-email').value;
-            btn.disabled = true; btn.textContent = 'Sending…';
-            fetch('/api/subscribe', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email: email, name: '', group: '189966496569492517' })
-            })
-            .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status);
-                document.getElementById('kit-cta').style.display = 'none';
-                document.getElementById('waitlist-success').style.display = 'block';
-            })
-            .catch(function(){ btn.disabled = false; btn.textContent = '🔔 Notify me at launch';
-                alert('Sorry, something went wrong — please try again in a moment.'); });
-        });
+        (function () {
+            var EMAIL_RE = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+            // Display only — server price is authoritative. Keys must match functions/api/_products.js.
+            var PRICES = {
+                bundle:       { name: "Complete Recovery Kit",          price: 59, sub: "Founding-Member price — all 6 tools, instant download by email." },
+                medical:      { name: "Medical Bill Dispute Kit",       price: 19, sub: "8 fill-in letters + decision flowchart + tracker." },
+                airline:      { name: "Airline & Travel Refund Toolkit",price: 17, sub: "DOT refund letters + claim tracker." },
+                bank:         { name: "Bank & Card Fee Reversal Scripts",price: 12, sub: "Word-for-word phone scripts + reversal log." },
+                subscription: { name: "Subscription Audit & Cancel System", price: 15, sub: "Trackers + cancellation scripts." },
+                lettervault:  { name: "Refund & Dispute Letter Vault",  price: 39, sub: "30 editable letters & scripts, every category." },
+                mastertracker:{ name: "Money You're Owed Master Tracker",price: 29, sub: "The claim dashboard + quick-start guide." }
+            };
+            var modal = document.getElementById('co-modal');
+            var step1 = document.getElementById('checkout-step1');
+            var step2 = document.getElementById('checkout-step2');
+            var success = document.getElementById('checkout-success');
+            var titleEl = document.getElementById('co-title');
+            var subEl = document.getElementById('co-sub');
+            var continueBtn = document.getElementById('co-continue');
+            var payBtn = document.getElementById('co-pay');
+            var backBtn = document.getElementById('co-back');
+            var closeBtn = document.getElementById('co-close');
+            var err1 = document.getElementById('co-error1');
+            var err2 = document.getElementById('co-error2');
+            var payEl = document.getElementById('payment-element');
+            var stripe = null, elements = null, selected = 'bundle';
+
+            function openCheckout(key) {
+                selected = PRICES[key] ? key : 'bundle';
+                var p = PRICES[selected];
+                titleEl.textContent = p.name + ' — $' + p.price;
+                subEl.textContent = p.sub;
+                step2.style.display = 'none'; success.style.display = 'none'; step1.style.display = 'block';
+                err1.textContent = ''; err2.textContent = '';
+                payEl.innerHTML = ''; elements = null; stripe = null;
+                continueBtn.disabled = false; continueBtn.textContent = 'Continue to secure checkout →';
+                payBtn.disabled = false; payBtn.textContent = 'Pay $' + p.price + ' & get instant access';
+                modal.classList.add('open');
+            }
+            function closeCheckout() { modal.classList.remove('open'); }
+
+            Array.prototype.forEach.call(document.querySelectorAll('[data-product]'), function (btn) {
+                btn.addEventListener('click', function () { openCheckout(btn.getAttribute('data-product')); });
+            });
+            closeBtn.addEventListener('click', closeCheckout);
+            modal.addEventListener('click', function (e) { if (e.target === modal) closeCheckout(); });
+
+            continueBtn.addEventListener('click', function () {
+                err1.textContent = '';
+                var email = document.getElementById('co-email').value.trim();
+                var name = document.getElementById('co-name').value.trim();
+                if (!EMAIL_RE.test(email)) { err1.textContent = 'Please enter a valid email.'; return; }
+                continueBtn.disabled = true; continueBtn.textContent = 'Setting up secure checkout…';
+                fetch('/api/checkout-start', {
+                    method: 'POST', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email: email, name: name, product: selected })
+                })
+                .then(function (r) { return r.json().then(function (d) { if (!r.ok) throw new Error(d.detail || d.error || 'HTTP ' + r.status); return d; }); })
+                .then(function (d) {
+                    stripe = Stripe(d.publishableKey);
+                    elements = stripe.elements({ clientSecret: d.clientSecret, appearance: { theme: 'stripe', variables: { colorPrimary: '#1B6B5F' } } });
+                    payEl.innerHTML = '';
+                    elements.create('payment', { defaultValues: { billingDetails: { email: email, name: name } } }).mount('#payment-element');
+                    payBtn.textContent = 'Pay $' + (d.amount / 100) + ' & get instant access';
+                    step1.style.display = 'none'; step2.style.display = 'block';
+                    continueBtn.disabled = false; continueBtn.textContent = 'Continue to secure checkout →';
+                })
+                .catch(function (e) {
+                    err1.textContent = 'Could not start checkout — please try again. (' + e.message + ')';
+                    continueBtn.disabled = false; continueBtn.textContent = 'Continue to secure checkout →';
+                });
+            });
+
+            backBtn.addEventListener('click', function () { step2.style.display = 'none'; step1.style.display = 'block'; err2.textContent = ''; });
+
+            payBtn.addEventListener('click', function () {
+                err2.textContent = ''; var label = payBtn.textContent;
+                payBtn.disabled = true; payBtn.textContent = 'Processing…';
+                stripe.confirmPayment({
+                    elements: elements,
+                    confirmParams: { return_url: window.location.origin + '/kit-thanks' },
+                    redirect: 'if_required'
+                })
+                .then(function (result) {
+                    if (result.error) {
+                        err2.textContent = result.error.message || 'Payment failed — please check your card details.';
+                        payBtn.disabled = false; payBtn.textContent = label;
+                    } else if (result.paymentIntent && result.paymentIntent.status === 'succeeded') {
+                        window.location.href = window.location.origin + '/kit-thanks';
+                    } else {
+                        payBtn.textContent = 'Confirming…';
+                    }
+                })
+                .catch(function () {
+                    err2.textContent = 'Something went wrong — please try again.';
+                    payBtn.disabled = false; payBtn.textContent = label;
+                });
+            });
+        })();
     </script>
 </body>
 </html>

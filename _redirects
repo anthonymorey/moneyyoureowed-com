@@ -3,3 +3,14 @@
 # by Cloudflare Pages from the matching .html file — no redirect rules needed.
 # (Adding /unclaimed -> /unclaimed.html caused an infinite loop because Pages
 #  auto-strips .html back to the clean URL.)
+
+# Per-video vanity CTA slugs -> their freebie opt-in page. Videos burn/print short URLs
+# (/owed, /02, /taxcredits, numeric per-video) that have no .html of their own; without
+# these, Pages falls back to the homepage/sales page and the promised freebie is lost.
+# 302 (temporary) so slugs can be re-pointed later. Fixes V02 (/02) and protects V04 (/taxcredits).
+/owed         /11ways     302
+/01           /unclaimed  302
+/02           /airline    302
+/03           /11ways     302
+/04           /eitc       302
+/taxcredits   /eitc       302
