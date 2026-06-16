@@ -1,0 +1,29 @@
+name: Deploy to Cloudflare Pages
+
+# Push to main -> deploy the site to the myo-landing-pages Pages project.
+# This replaces the manual deploy.sh for automated (cloud-routine) publishing.
+# deploy.sh still works locally as a manual fallback.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy . --project-name=myo-landing-pages --branch=main --commit-dirty=true
