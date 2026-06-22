@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-06-16 (run 2) — ran; 0 genuine sales (only excluded test purchase #1623-1349 in mailbox); 0 new review emails found; nothing published
+- 2026-06-22 (run 3) — ran; 0 genuine sales (only excluded test purchase #1623-1349 in mailbox); 0 new review emails found; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -14,6 +14,7 @@ processed, and a **heartbeat** proving the routine can push each week.
 19eb7e67c3654ffa
 19eb82b09102e4c9
 19eb6d37d424c189
+19edc4bdd423b8f2
 
 ## Published reviews (audit trail)
 <!-- firstname | amount | date | gmail-msgid -->
@@ -24,3 +25,4 @@ notifications@stripe.com | TEST purchase pi_3ThD8uFY3wO0S3cG0Q5Qyk03 — exclude
 receipts+acct_1Th93MFY3wO0S3cG@stripe.com | TEST receipt #1623-1349 — excluded per instructions | 19eb7e67c3654ffa
 amorey74@gmail.com | Owner's own test email to hello@moneyyoureowed.com (subject: "boohoohoo hoo") | 19eb82b09102e4c9
 amorey74@gmail.com | Owner's own test email to hello@moneyyoureowed.com (subject: "boo hoo!") | 19eb6d37d424c189
+hello@moneyyoureowed.com | Outbound marketing/delivery email from MYO system to owner — not a customer review | 19edc4bdd423b8f2
