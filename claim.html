@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free 50-State Unclaimed Money Checklist — search $70+ billion in unclaimed property across every official government database in under 30 minutes. No fees, no finders.">
+    <title>Is the Government Holding Money With Your Name on It? | Free Checklist</title>
+
+    <!-- ============================================================
+         META PIXEL  — paste your real Pixel ID over __META_PIXEL_ID__
+         (comes from the new ad account you're setting up). Until then
+         it's inert. The 'Lead' event fires on a successful opt-in below.
+         ============================================================ -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      try { fbq('init', '__META_PIXEL_ID__'); fbq('track', 'PageView'); } catch (e) {}
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=__META_PIXEL_ID__&ev=PageView&noscript=1"/></noscript>
+    <!-- ============================================================ -->
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6; color: #1a3a3a;
+            background: linear-gradient(135deg, #1B6B5F 0%, #2a8f7e 100%);
+            min-height: 100vh; display: flex; align-items: center; justify-content: center;
+            padding: 1.5rem 1rem;
+        }
+        .container {
+            background: white; border-radius: 16px; max-width: 560px; width: 100%;
+            padding: 2.5rem 2.25rem; box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .logo { display: flex; align-items: center; justify-content: center; gap: 0.75rem; margin-bottom: 1.5rem; }
+        .logo-circle {
+            width: 46px; height: 46px; background: #1B6B5F; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            color: white; font-size: 22px; font-weight: bold;
+        }
+        .logo-text h1 { font-size: 1.15rem; color: #1B6B5F; font-weight: 700; }
+        .logo-text p { font-size: 0.65rem; color: #1B6B5F; letter-spacing: 1px; text-transform: uppercase; opacity: 0.75; }
+        h2 { font-size: 1.9rem; color: #1B6B5F; text-align: center; margin-bottom: 0.75rem; line-height: 1.15; }
+        .subtitle { text-align: center; color: #555; font-size: 1.05rem; margin-bottom: 1.5rem; }
+        .stat { text-align:center; font-size:0.95rem; color:#1B6B5F; font-weight:600; margin-bottom:1.25rem; }
+        .stat .amt { background:#fff3c4; padding:0 4px; border-radius:3px; }
+        .benefits { background: #f0f8f7; padding: 1.25rem 1.5rem; border-radius: 8px; margin: 1.25rem 0; }
+        .benefits ul { list-style: none; margin: 0; }
+        .benefits li { padding: 0.4rem 0 0.4rem 1.6rem; position: relative; font-size: 0.97rem; }
+        .benefits li:before { content: "✓"; position: absolute; left: 0; color: #1B6B5F; font-weight: bold; }
+        .form-group { margin: 1rem 0; }
+        input[type="email"], input[type="text"] {
+            width: 100%; padding: 0.85rem 1rem; border: 2px solid #ddd;
+            border-radius: 8px; font-size: 1rem; transition: border-color 0.3s;
+        }
+        input:focus { outline: none; border-color: #1B6B5F; }
+        button {
+            width: 100%; background: #1B6B5F; color: white; padding: 1rem; border: none;
+            border-radius: 8px; font-size: 1.15rem; font-weight: 700; cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        button:hover { background: #155449; transform: translateY(-2px); }
+        button:disabled { opacity: 0.7; cursor: default; transform: none; }
+        .privacy { text-align: center; color: #999; font-size: 0.82rem; margin-top: 1rem; }
+        .trust-pills { display:flex; flex-wrap:wrap; justify-content:center; gap:0.4rem; margin:1.25rem 0 0.25rem; }
+        .trust-pills span { background:#eef5f4; color:#1B6B5F; padding:0.25rem 0.7rem; border-radius:14px; font-size:0.68rem; font-weight:700; letter-spacing:0.4px; }
+        .trust-pills .label { background:none; opacity:0.7; font-weight:500; }
+        .reassure { text-align:center; font-size:0.85rem; color:#777; margin-top:0.75rem; }
+        .success { display: none; text-align: center; padding: 1rem 0.5rem; }
+        .success h3 { color: #1B6B5F; margin-bottom: 0.75rem; font-size: 1.4rem; }
+        .dl-btn { display:inline-block; background:#1B6B5F; color:#fff; padding:14px 30px; border-radius:8px; text-decoration:none; font-weight:700; font-size:1.05rem; margin-top:0.5rem; }
+        .tripwire { margin-top:2rem; padding-top:1.5rem; border-top:1px solid #eee; text-align:center; }
+        .tripwire .badge { display:inline-block; background:#fff3c4; color:#7a5b00; padding:0.25rem 0.8rem; border-radius:14px; font-size:0.72rem; font-weight:700; margin-bottom:0.6rem; }
+        .tripwire h4 { color:#1B6B5F; font-size:1.15rem; margin-bottom:0.5rem; }
+        .tripwire p { font-size:0.92rem; color:#666; margin-bottom:0.9rem; }
+        .tripwire .price { font-weight:800; color:#1B6B5F; }
+        .tw-btn { display:inline-block; background:#1B6B5F; color:#fff; padding:12px 26px; border-radius:8px; text-decoration:none; font-weight:700; font-size:1rem; }
+        @media (max-width: 640px) {
+            .container { padding: 2rem 1.4rem; }
+            h2 { font-size: 1.55rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-circle">$</div>
+            <div class="logo-text">
+                <h1>Money You're Owed</h1>
+                <p>Claim What's Rightfully Yours</p>
+            </div>
+        </div>
+
+        <div id="form-content">
+            <h2>Is the Government Holding Money With Your Name On It?</h2>
+            <p class="subtitle">Get the free 50-State Unclaimed Money Checklist — every official government search site, in one place.</p>
+            <p class="stat">U.S. states are holding <span class="amt">$70&nbsp;billion+</span>, and the average person owed it is missing <span class="amt">$2,000+</span>.</p>
+
+            <div class="benefits">
+                <ul>
+                    <li>Direct links to all 50 states' <strong>official</strong> unclaimed-property databases</li>
+                    <li>The national MissingMoney search (endorsed by state treasurers)</li>
+                    <li>The 4 federal sources almost everyone forgets — IRS, FDIC, PBGC, FHA</li>
+                    <li>A simple step-by-step so you can search your name in minutes</li>
+                </ul>
+            </div>
+
+            <form id="lead-form">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Enter your email — I'll send it now">
+                </div>
+                <button type="submit">Send Me the Free Checklist →</button>
+            </form>
+
+            <div class="trust-pills">
+                <span class="label">Sourced from</span>
+                <span>DOT</span><span>IRS</span><span>CFPB</span><span>FDIC</span><span>NAUPA</span>
+            </div>
+            <p class="reassure">100% free, built only from official government sources. You never need a paid "finder" to claim what's already yours.</p>
+            <p class="privacy">🔒 Instant delivery to your inbox. Unsubscribe anytime. We'll never charge you a penny — claiming your own money is always free.</p>
+        </div>
+
+        <div id="success-message" class="success">
+            <h3>✅ Check your inbox — it's on the way!</h3>
+            <p>I've emailed your 50-State Unclaimed Money Checklist. Can't wait? Grab it right here:</p>
+            <p><a class="dl-btn" href="/downloads/50-State-Unclaimed-Money-Checklist.pdf" target="_blank" rel="noopener">⬇ Download the Checklist (PDF)</a></p>
+            <p style="margin-top:1.25rem; font-size:0.9rem; color:#777;">Start with the national search, then check every state you've ever lived or worked in. The search is free and takes about two minutes.</p>
+
+            <div class="tripwire">
+                <span class="badge">One small upgrade — optional</span>
+                <h4>Hit a wall on the phone? Don't go in unarmed.</h4>
+                <p>The checklist finds the money. The <strong>Bank &amp; Card Fee Reversal Scripts</strong> are the word-for-word lines that actually get it back — so you never freeze when the rep says no. <span class="price">Just $12.</span></p>
+                <a class="tw-btn" href="/#offer">Add the Scripts — $12 →</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('lead-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type=submit]');
+            const email = document.getElementById('email').value.trim();
+            btn.disabled = true; btn.textContent = 'Sending…';
+
+            fetch('/api/subscribe', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    email: email,
+                    name: '',
+                    group: '189379076374398313' // 50-State Unclaimed Money Checklist
+                })
+            })
+            .then(async (response) => {
+                if (!response.ok) throw new Error('Subscribe failed: ' + response.status);
+                // Fire the Meta 'Lead' conversion (inert until a real Pixel ID is set above)
+                try { fbq('track', 'Lead', { content_name: '50-State Unclaimed Checklist' }); } catch (e) {}
+                document.getElementById('form-content').style.display = 'none';
+                document.getElementById('success-message').style.display = 'block';
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                btn.disabled = false; btn.textContent = 'Send Me the Free Checklist →';
+                alert('Sorry, something went wrong. Please try again in a moment.');
+            });
+        });
+    </script>
+</body>
+</html>
