@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-06-22 (run 3) — ran; 0 genuine sales (only excluded test purchase #1623-1349 in mailbox); 0 new review emails found; nothing published
+- 2026-06-29 (run 4) — ran; 1 genuine new sale found (receipt #1669-6542, $29.00, "Deposit Defender", Jun 28 2026 — different product from Recovery Kit, same Stripe acct); 0 new review emails found; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -15,6 +15,7 @@ processed, and a **heartbeat** proving the routine can push each week.
 19eb82b09102e4c9
 19eb6d37d424c189
 19edc4bdd423b8f2
+19f0f79b3e2bfb05
 
 ## Published reviews (audit trail)
 <!-- firstname | amount | date | gmail-msgid -->
@@ -26,3 +27,4 @@ receipts+acct_1Th93MFY3wO0S3cG@stripe.com | TEST receipt #1623-1349 — excluded
 amorey74@gmail.com | Owner's own test email to hello@moneyyoureowed.com (subject: "boohoohoo hoo") | 19eb82b09102e4c9
 amorey74@gmail.com | Owner's own test email to hello@moneyyoureowed.com (subject: "boo hoo!") | 19eb6d37d424c189
 hello@moneyyoureowed.com | Outbound marketing/delivery email from MYO system to owner — not a customer review | 19edc4bdd423b8f2
+receipts+acct_1Th93MFY3wO0S3cG@stripe.com | Genuine sale receipt #1669-6542 $29.00 "Deposit Defender" Jun 28 2026 — logged as sale (not a review, not the Recovery Kit product; no review email from buyer) | 19f0f79b3e2bfb05
