@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-06-29 (run 4) — ran; 1 genuine new sale found (receipt #1669-6542, $29.00, "Deposit Defender", Jun 28 2026 — different product from Recovery Kit, same Stripe acct); 0 new review emails found; nothing published
+- 2026-07-06 (run 5) — ran; 0 new sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
