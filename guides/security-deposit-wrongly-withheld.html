@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Landlord Kept Your Security Deposit? The FTC Just Sent Renters $47.2 Million Back — 2026 Guide</title>
+  <meta name="description" content="The FTC sent 444,131 checks totaling $47.2 million to renters after Invitation Homes withheld deposits for normal wear and tear. What your state's law says about wrongly withheld security deposits, itemization deadlines, and 2x-3x penalties.">
+  <style>
+    :root {
+      --ink: #1d2026;
+      --muted: #5f6470;
+      --paper: #fdfdfb;
+      --soft: #f1f2ee;
+      --line: #d6d8d2;
+      --brand: #18263e;
+      --brand-dark: #0c1626;
+      --accent: #9b7a22;
+      --link: #14536f;
+      --warning: #fff7e6;
+      --success: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #14161b;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #14161b;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3a3e46;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f6f7f4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f4f6fa;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sources-list {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Landlord Kept Your Security Deposit? The FTC Just Sent Renters $47.2 Million Back — 2026 Guide", "datePublished": "2026-07-20", "dateModified": "2026-07-20", "author": {"@type": "Organization", "name": "Money You're Owed", "url": "https://moneyyoureowed.com"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can my landlord keep my security deposit for normal wear and tear?", "acceptedAnswer": {"@type": "Answer", "text": "In most states, no. Colorado’s statute states that no security deposit shall be retained to cover normal wear and tear, and California limits repair deductions to damage beyond ordinary wear and tear. Check your own state’s statute for its exact wording."}}, {"@type": "Question", "name": "What counts as normal wear and tear?", "acceptedAnswer": {"@type": "Answer", "text": "The gradual decline that comes from ordinary living: worn carpet paths, faded paint, small nail holes, aging fixtures. Damage, by contrast, comes from misuse or neglect: burns, large holes, broken fixtures, serious stains. States phrase the line differently, but that’s the shape of it everywhere."}}, {"@type": "Question", "name": "What if my landlord never sent an itemized list of deductions?", "acceptedAnswer": {"@type": "Answer", "text": "That’s often the strongest fact in your favor. In Colorado, failing to provide the written statement on time forfeits the landlord’s right to withhold anything. In California, bad-faith failure to follow the itemization rules means the landlord may not claim any of the deposit. Other states have their own versions; check yours."}}, {"@type": "Question", "name": "How long does a landlord have to return a security deposit?", "acceptedAnswer": {"@type": "Answer", "text": "It varies by state. Verified examples: California, 21 calendar days after you vacate; Colorado, one month (extendable by lease to at most 60 days); Massachusetts, 30 days after the tenancy ends. Your state’s number will be in its security-deposit statute."}}, {"@type": "Question", "name": "Can I really get two or three times my deposit back?", "acceptedAnswer": {"@type": "Answer", "text": "In states with multiplier provisions, and when the withholding meets the statute’s standard (usually bad faith or willfulness), yes, that’s what the law provides: 3x in Massachusetts and Colorado, up to 2x plus actual damages in California. No outcome is guaranteed in any individual case; a court decides whether the standard is met."}}, {"@type": "Question", "name": "Do I need a lawyer to get my deposit back?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. The normal path is a demand letter followed, if needed, by small claims court, which is designed for people without lawyers. Some statutes, like Massachusetts’s and Colorado’s, let you recover attorney’s fees if you do hire one and win. For complex situations, a local tenant-rights organization or attorney is worth a consultation."}}, {"@type": "Question", "name": "I rented from Invitation Homes. Do I need to apply for the FTC refund?", "acceptedAnswer": {"@type": "Answer", "text": "The FTC mailed checks directly to eligible consumers in March 2026. If you think you qualify and haven’t received one, contact the refund administrator, Rust Consulting, at 800-804-6915. The FTC never asks for payment or account details to issue a refund."}}, {"@type": "Question", "name": "Is the FTC action the same as my own deposit claim?", "acceptedAnswer": {"@type": "Answer", "text": "No. The FTC settlement compensates eligible Invitation Homes renters for that company’s conduct. Your own claim against your own landlord runs through your state’s security-deposit statute: demand letter first, small claims court if needed. The FTC case is useful context, not a substitute."}}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO — part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 renter&rsquo;s guide</p>
+        <h1>Landlord Kept Your Security Deposit? The FTC Just Sent Renters $47.2 Million Back</h1>
+        <p class="dek">In March 2026 the FTC mailed 444,131 refund checks to renters of one corporate landlord that, regulators alleged, kept deposits for normal wear and tear, pre-existing damage, and even renovations. If that pattern sounds familiar, your state&rsquo;s law probably has more to say about your deposit than your landlord told you.</p>
+        <p class="verified">Last fact-checked: July 20, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p>A landlord generally cannot keep your deposit for <strong>normal wear and tear</strong>, and in most states must send you an <strong>itemized statement of deductions by a set deadline</strong> (California: 21 days; Colorado: one month; Massachusetts: 30 days). Miss the rules and the price goes up for them: many states impose penalties of two to three times the amount wrongfully withheld. Massachusetts and Colorado allow <strong>3x damages</strong>; California allows <strong>up to 2x</strong> on top of actual damages. <span class="source">Sources: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">Cal. Civ. Code §&nbsp;1950.5</a>; <a href="https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B">Mass. G.L. c.&nbsp;186 §&nbsp;15B</a>; <a href="https://codes.findlaw.com/co/title-38-property-real-and-personal/co-rev-st-sect-38-12-103.html">Colo. Rev. Stat. §&nbsp;38-12-103</a></span></p>
+      </aside>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#ftc-crackdown">What the FTC crackdown actually was</a></li>
+          <li><a href="#your-check">Rented from Invitation Homes? Check for your refund</a></li>
+          <li><a href="#wear-and-tear">Normal wear and tear vs. damage</a></li>
+          <li><a href="#deadlines">Deadlines and itemized statements</a></li>
+          <li><a href="#penalties">The 2x&ndash;3x penalties</a></li>
+          <li><a href="#checklist">Was your deposit wrongly kept? A checklist</a></li>
+          <li><a href="#get-it-back">How to get it back, step by step</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <section id="ftc-crackdown">
+        <h2>What the FTC crackdown actually was</h2>
+        <p>In September 2024, the FTC sued <strong>Invitation Homes</strong>, one of the largest landlords of single-family homes in the country. Among the allegations: the company unfairly withheld tenants&rsquo; security deposits when they moved out, charging renters for <strong>normal wear-and-tear, damage that existed before they moved in, and even renovations</strong>. The company settled, agreeing to turn over <strong>$48 million</strong> and to set up policies for handling deposit refunds fairly. <span class="source">Source: <a href="https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-takes-action-against-invitation-homes-deceiving-renters-charging-junk-fees-withholding-security">FTC, Sept. 2024</a></span></p>
+        <p>The money landed in March 2026. On March 11, the FTC announced it was mailing <strong>444,131 checks totaling more than $47.2 million</strong> to affected renters. That is not a class-action rounding error. That is nearly half a million households whose deposits and fees a federal regulator decided were taken wrongly. <span class="source">Source: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-sends-checks-totaling-more-472-million-consumers-deceived-invitation-homes-undisclosed-fees">FTC, Mar. 11, 2026</a></span></p>
+        <p>And it wasn&rsquo;t a one-off. In December 2025, <strong>Greystar</strong>, the nation&rsquo;s largest multi-family property manager, agreed to pay <strong>$24 million</strong> to settle an FTC and Colorado lawsuit. That case was about a different practice: advertising deceptively low rents while hiding mandatory monthly fees. Different conduct, same theme. Federal and state regulators are now looking hard at how big landlords handle renters&rsquo; money. <span class="source">Source: <a href="https://www.ftc.gov/news-events/news/press-releases/2025/12/greystar-agrees-pay-24-million-stop-deceptive-advertising-practices-result-ftc-colorado-lawsuit">FTC, Dec. 2, 2025</a></span></p>
+
+        <div class="note">
+          <h3>Why this matters for your deposit</h3>
+          <p>The FTC checks only went to eligible Invitation Homes renters. But the conduct the FTC called out (wear-and-tear charges, pre-existing damage, renovation costs pushed onto the outgoing tenant) is the same playbook renters describe at small landlords everywhere. The difference is that for your own deposit, the enforcement mechanism isn&rsquo;t the FTC. It&rsquo;s your state&rsquo;s security-deposit statute, and you can use it yourself.</p>
+        </div>
+      </section>
+
+      <section id="your-check">
+        <h2>Rented from Invitation Homes? Check for your refund</h2>
+        <p>If you paid Invitation Homes <strong>$45 or more</strong> in covered fees or charges between <strong>January 2021 and September 2024</strong>, you may be among the 444,131 people the FTC is paying. Checks should be cashed within 90 days of the date printed on them. Renters who already received a credit or refund from Invitation Homes directly are not eligible. <span class="source">Source: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-sends-checks-totaling-more-472-million-consumers-deceived-invitation-homes-undisclosed-fees">FTC, Mar. 11, 2026</a></span></p>
+        <p>Questions go to the refund administrator, Rust Consulting, at <strong>800-804-6915</strong>. One thing worth repeating in bold, because scammers love enforcement news: <strong>the FTC never asks you to pay money or hand over account details to receive a refund.</strong> Anyone who does is not the FTC.</p>
+      </section>
+
+      <section id="wear-and-tear">
+        <h2>Normal wear and tear vs. damage: the line landlords blur</h2>
+        <p>This is where most wrongly kept deposits hide. Colorado&rsquo;s statute says it flat out: <em>&ldquo;No security deposit shall be retained to cover normal wear and tear.&rdquo;</em> California&rsquo;s statute allows deductions for repairing damage <em>&ldquo;exclusive of ordinary wear and tear.&rdquo;</em> Most states draw the same line, in similar words. <span class="source">Sources: <a href="https://codes.findlaw.com/co/title-38-property-real-and-personal/co-rev-st-sect-38-12-103.html">Colo. Rev. Stat. §&nbsp;38-12-103(1)</a>; <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">Cal. Civ. Code §&nbsp;1950.5(b)</a></span></p>
+        <p>What does the line mean in practice? Wear and tear is what happens to a home when someone lives in it normally. Damage is what happens when someone breaks it.</p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Commonly disputed deductions: which side of the line?</caption>
+            <thead>
+              <tr>
+                <th scope="col">Typically normal wear and tear<br>(not deductible in most states)</th>
+                <th scope="col">Typically damage<br>(may be deductible)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Faded or scuffed paint after years of tenancy</td>
+                <td>Large holes in walls, unapproved paint colors</td>
+              </tr>
+              <tr>
+                <td>Carpet worn along walking paths</td>
+                <td>Burns, pet stains, or tears in carpet</td>
+              </tr>
+              <tr>
+                <td>Small nail holes from hanging pictures</td>
+                <td>Broken doors, windows, or fixtures</td>
+              </tr>
+              <tr>
+                <td>Loose grout, worn finishes, aging appliances</td>
+                <td>Appliances broken through misuse</td>
+              </tr>
+              <tr>
+                <td>General cleaning to the same standard as move-in</td>
+                <td>Excessive filth requiring professional remediation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>These are the classic examples courts and tenant handbooks use; your state&rsquo;s exact standard controls. But notice what never belongs on the deductible side: <strong>renovations and upgrades</strong>. New carpet because the old one aged out, a repaint on a normal cycle, replacing a 15-year-old appliance. That&rsquo;s the cost of owning a rental. Charging the outgoing tenant for it was one of the specific practices the FTC called out at Invitation Homes.</p>
+      </section>
+
+      <section id="deadlines">
+        <h2>Deadlines and itemized statements: the rules landlords skip</h2>
+        <p>Nearly every state gives landlords a hard deadline to return your deposit or explain, in writing and item by item, why they&rsquo;re keeping part of it. Skipping the itemized statement isn&rsquo;t a paperwork foot-fault. In some states it costs the landlord the entire right to withhold anything.</p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>Three verified examples (rules vary by state)</caption>
+            <thead>
+              <tr>
+                <th scope="col">State</th>
+                <th scope="col">Deadline</th>
+                <th scope="col">What the statute requires</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>California</td>
+                <td>21 calendar days after you vacate</td>
+                <td>Itemized statement of the basis and amount of each deduction. A landlord who fails to comply with the itemization rules in bad faith loses the right to claim any of the deposit. <span class="source"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">§&nbsp;1950.5(h)</a></span></td>
+              </tr>
+              <tr>
+                <td>Colorado</td>
+                <td>One month (a lease can extend this, but never past 60 days)</td>
+                <td>Written statement listing the exact reasons for any retention. Failing to provide it on time forfeits the landlord&rsquo;s right to withhold any portion. <span class="source"><a href="https://codes.findlaw.com/co/title-38-property-real-and-personal/co-rev-st-sect-38-12-103.html">§&nbsp;38-12-103(1)&ndash;(2)</a></span></td>
+              </tr>
+              <tr>
+                <td>Massachusetts</td>
+                <td>30 days after the tenancy ends</td>
+                <td>Return the deposit (or the balance after lawful deductions) with interest. Failure triggers the state&rsquo;s treble-damages provision. <span class="source"><a href="https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B">c.&nbsp;186 §&nbsp;15B(6)&ndash;(7)</a></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Your state will have its own numbers. The pattern to check is always the same: was there a deadline, did the landlord meet it, and did you get a real itemized statement rather than a round number and a shrug?</p>
+      </section>
+
+      <section id="penalties">
+        <h2>The 2x&ndash;3x penalties: why wrongful withholding is expensive</h2>
+        <p>Here&rsquo;s the part most renters never hear. Many states don&rsquo;t just make the landlord give the money back. They make wrongful withholding cost a multiple of what was taken.</p>
+        <ul>
+          <li><strong>Massachusetts:</strong> a landlord who fails to return the deposit owed within 30 days is liable for <strong>three times the deposit</strong> (or the wrongly kept balance), plus 5% interest, court costs, and reasonable attorney&rsquo;s fees. <span class="source"><a href="https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B">Mass. G.L. c.&nbsp;186 §&nbsp;15B(7)</a></span></li>
+          <li><strong>Colorado:</strong> willful retention in violation of the statute makes the landlord liable for <strong>treble the amount wrongfully withheld</strong>, plus attorney fees and costs. You must give the landlord seven days&rsquo; notice before filing. And in court, <strong>the landlord carries the burden of proving the withholding was lawful</strong>, not you. <span class="source"><a href="https://codes.findlaw.com/co/title-38-property-real-and-personal/co-rev-st-sect-38-12-103.html">Colo. Rev. Stat. §&nbsp;38-12-103(3)</a></span></li>
+          <li><strong>California:</strong> bad-faith retention can subject the landlord to statutory damages of <strong>up to twice the deposit, on top of actual damages</strong>. The landlord also bears the burden of proving the deductions were reasonable. <span class="source"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">Cal. Civ. Code §&nbsp;1950.5(l),&nbsp;(m)</a></span></li>
+        </ul>
+        <p>Many other states have their own multiplier or forfeiture provisions; the three above are simply ones we verified against the statute text for this guide. The practical effect is the same everywhere it applies: a landlord holding $1,800 of yours in bad faith may be risking several times that by refusing to give it back. Most of them are betting you don&rsquo;t know that. A demand letter that cites the exact statute tells them the bet is off.</p>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">Want the letter done for you?</h2>
+        <p><strong>Deposit Defender — $29:</strong> answer a few questions about your move-out and your landlord&rsquo;s deductions, and it builds a demand letter citing your state&rsquo;s security-deposit statute, checking each deduction against the wear-and-tear standard. You could write this letter yourself for free, and this guide shows you what goes in it. Deposit Defender does the statute lookup, the deduction-by-deduction analysis, and the wording, in about 15 minutes. 30-day money-back guarantee.</p>
+        <a class="button" href="https://moneyyoureowed.com/deposit-defender/">Check my deductions with Deposit Defender</a>
+      </aside>
+
+      <section id="checklist">
+        <h2>Was your deposit wrongly kept? A checklist</h2>
+        <p>Run your move-out through this list. Each item is a sign your landlord&rsquo;s withholding may not hold up:</p>
+        <ul class="checklist">
+          <li>You never received an <strong>itemized, written statement</strong> of deductions, just a smaller check (or nothing).</li>
+          <li>The statement arrived <strong>after your state&rsquo;s deadline</strong>.</li>
+          <li>You were charged for <strong>painting, carpet, or cleaning</strong> with no evidence you caused damage beyond normal use.</li>
+          <li>Deductions cover conditions that <strong>existed before you moved in</strong>.</li>
+          <li>You were billed for <strong>upgrades or renovations</strong> (new flooring, remodeled fixtures) rather than repairs of damage you caused.</li>
+          <li>Charges are <strong>round numbers with no receipts or invoices</strong> behind them.</li>
+          <li>The &ldquo;cleaning fee&rdquo; would restore the unit to a standard <strong>better than when you moved in</strong>.</li>
+        </ul>
+        <p>Ticking even one box doesn&rsquo;t guarantee you&rsquo;ll recover anything. It means the deduction deserves a challenge instead of a sigh.</p>
+      </section>
+
+      <section id="get-it-back">
+        <h2>How to get it back, step by step</h2>
+        <p>Every step of this process is free to use. Nobody needs to pay anyone to demand their own deposit back.</p>
+        <ol>
+          <li><strong>Gather your evidence.</strong> Lease, move-in and move-out photos or video, the deduction statement (if any), and every email or text about the move-out. Dates matter: pin down exactly when you handed back the keys.</li>
+          <li><strong>Look up your state&rsquo;s deadline and penalty.</strong> Search your state&rsquo;s statutes for &ldquo;security deposit&rdquo; (they&rsquo;re free to read online), or start from the verified examples above if you&rsquo;re in California, Colorado, or Massachusetts.</li>
+          <li><strong>Send a written demand letter</strong>, by certified mail, stating what was withheld, why the deductions are improper, the statute that applies, and a deadline to pay (14 days is common). Certified mail matters: it proves the landlord received it, and some states (Colorado, for one) require notice before you can sue.</li>
+          <li><strong>If they don&rsquo;t pay, file in small claims court.</strong> Filing fees are usually modest, lawyers generally aren&rsquo;t required, and deposit cases are the bread and butter of small claims dockets. In several states, the burden in court sits on the landlord to justify the deductions.</li>
+          <li><strong>Report the conduct.</strong> A complaint to your state attorney general&rsquo;s consumer-protection office, or to the FTC at <a href="https://reportfraud.ftc.gov/">ReportFraud.ftc.gov</a>, won&rsquo;t recover your individual deposit, but it&rsquo;s exactly how patterns like Invitation Homes&rsquo; ended up costing $47.2 million.</li>
+        </ol>
+
+        <div class="warning">
+          <h3>Watch the clock</h3>
+          <p>Deposit claims are subject to statutes of limitations like any other claim, and some steps (like Colorado&rsquo;s seven-day pre-suit notice) have their own timing rules. If your move-out was recent, the strongest moment to act is now, while the evidence is fresh and the deadlines are provable.</p>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Can my landlord keep my security deposit for normal wear and tear?</h3>
+          <p>In most states, no. Colorado&rsquo;s statute states that no security deposit shall be retained to cover normal wear and tear, and California limits repair deductions to damage beyond ordinary wear and tear. Check your own state&rsquo;s statute for its exact wording.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What counts as normal wear and tear?</h3>
+          <p>The gradual decline that comes from ordinary living: worn carpet paths, faded paint, small nail holes, aging fixtures. Damage, by contrast, comes from misuse or neglect: burns, large holes, broken fixtures, serious stains. States phrase the line differently, but that&rsquo;s the shape of it everywhere.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if my landlord never sent an itemized list of deductions?</h3>
+          <p>That&rsquo;s often the strongest fact in your favor. In Colorado, failing to provide the written statement on time forfeits the landlord&rsquo;s right to withhold anything. In California, bad-faith failure to follow the itemization rules means the landlord may not claim any of the deposit. Other states have their own versions; check yours.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does a landlord have to return a security deposit?</h3>
+          <p>It varies by state. Verified examples: California, 21 calendar days after you vacate; Colorado, one month (extendable by lease to at most 60 days); Massachusetts, 30 days after the tenancy ends. Your state&rsquo;s number will be in its security-deposit statute.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I really get two or three times my deposit back?</h3>
+          <p>In states with multiplier provisions, and when the withholding meets the statute&rsquo;s standard (usually bad faith or willfulness), yes, that&rsquo;s what the law provides: 3x in Massachusetts and Colorado, up to 2x plus actual damages in California. No outcome is guaranteed in any individual case; a court decides whether the standard is met.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do I need a lawyer to get my deposit back?</h3>
+          <p>Usually not. The normal path is a demand letter followed, if needed, by small claims court, which is designed for people without lawyers. Some statutes, like Massachusetts&rsquo;s and Colorado&rsquo;s, let you recover attorney&rsquo;s fees if you do hire one and win. For complex situations, a local tenant-rights organization or attorney is worth a consultation.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>I rented from Invitation Homes. Do I need to apply for the FTC refund?</h3>
+          <p>The FTC mailed checks directly to eligible consumers in March 2026. If you think you qualify and haven&rsquo;t received one, contact the refund administrator, Rust Consulting, at 800-804-6915. The FTC never asks for payment or account details to issue a refund.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is the FTC action the same as my own deposit claim?</h3>
+          <p>No. The FTC settlement compensates eligible Invitation Homes renters for that company&rsquo;s conduct. Your own claim against your own landlord runs through your state&rsquo;s security-deposit statute: demand letter first, small claims court if needed. The FTC case is useful context, not a substitute.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">Turn this guide into a finished demand letter</h2>
+        <p><strong>Deposit Defender — $29:</strong> enter your state, your move-out date, and your landlord&rsquo;s deductions. It checks each one against your state&rsquo;s wear-and-tear standard and generates a certified-mail-ready demand letter citing the statute and its penalty. One-time payment, 30-day money-back guarantee.</p>
+        <a class="button" href="https://moneyyoureowed.com/deposit-defender/">Get my deposit back with Deposit Defender</a>
+      </aside>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul class="sources-list">
+          <li>FTC press release, March 11, 2026: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-sends-checks-totaling-more-472-million-consumers-deceived-invitation-homes-undisclosed-fees">FTC Sends Checks Totaling More Than $47.2 Million to Consumers Deceived by Invitation Homes&rsquo; Undisclosed Fees and Other Unlawful Charges</a> (444,131 checks; eligibility window January 2021&ndash;September 2024; refund administrator details).</li>
+          <li>FTC press release, September 2024: <a href="https://www.ftc.gov/news-events/news/press-releases/2024/09/ftc-takes-action-against-invitation-homes-deceiving-renters-charging-junk-fees-withholding-security">FTC Takes Action Against Invitation Homes</a> ($48 million settlement; allegations of withholding deposits for normal wear-and-tear, pre-existing damage, and renovations).</li>
+          <li>FTC press release, December 2, 2025: <a href="https://www.ftc.gov/news-events/news/press-releases/2025/12/greystar-agrees-pay-24-million-stop-deceptive-advertising-practices-result-ftc-colorado-lawsuit">Greystar Agrees to Pay $24 Million</a> (FTC and Colorado action over deceptive rent advertising and hidden mandatory fees).</li>
+          <li>California Civil Code <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">§&nbsp;1950.5</a> (21-day itemization deadline; ordinary wear and tear; bad-faith statutory damages up to twice the security).</li>
+          <li>Massachusetts General Laws <a href="https://malegislature.gov/Laws/GeneralLaws/PartII/TitleI/Chapter186/Section15B">c.&nbsp;186 §&nbsp;15B</a> (30-day return requirement; treble damages, interest, costs, and attorney&rsquo;s fees).</li>
+          <li>Colorado Revised Statutes <a href="https://codes.findlaw.com/co/title-38-property-real-and-personal/co-rev-st-sect-38-12-103.html">§&nbsp;38-12-103</a> (one-month return deadline; normal wear and tear; forfeiture; treble damages for willful retention; landlord&rsquo;s burden of proof). Statute text via FindLaw&rsquo;s codes mirror, current as of January 1, 2025.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not legal advice. Security-deposit rules vary by state and change over time; the statutes cited were verified against their published text on July 20, 2026, but your situation depends on your state&rsquo;s current law and your specific facts. No outcome is guaranteed. Demanding the return of your own deposit, filing in small claims court, and reporting to the FTC or your state attorney general are all free official processes; Deposit Defender is paid software that organizes the analysis and drafts the letter for you.</p>
+    <p><strong>Last verified:</strong> July 20, 2026. Primary references: FTC press releases (March 2026, December 2025, September 2024), California Civil Code §&nbsp;1950.5, Massachusetts G.L. c.&nbsp;186 §&nbsp;15B, and Colorado Revised Statutes §&nbsp;38-12-103.</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>
