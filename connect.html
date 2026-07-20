@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Connect Your AI Assistant | Money You're Owed</title>
+<meta name="description" content="Connect ChatGPT, Claude, or Gemini to Money You're Owed's free, read-only MCP endpoint for verified consumer money-recovery facts.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,'Segoe UI',Roboto,sans-serif;line-height:1.65;color:#1a3a3a;background:#f8f9fa}
+.wrap{max-width:760px;margin:0 auto;padding:2.5rem 1.5rem 4rem}
+.brand{display:flex;align-items:center;gap:.8rem;margin-bottom:2rem}
+.logo{width:46px;height:46px;border-radius:50%;background:#1B6B5F;color:#fff;font-size:22px;font-weight:bold;display:flex;align-items:center;justify-content:center}
+.brand h2{margin:0;font-size:1.1rem;color:#1B6B5F}
+h1{color:#1B6B5F;font-size:1.9rem;margin-bottom:.3rem}
+.updated{color:#889;font-size:.9rem;margin-bottom:2rem}
+h3{color:#1B6B5F;font-size:1.05rem;margin:1.6rem 0 .4rem}
+p{margin-bottom:.6rem}
+a{color:#1B6B5F}
+ul{margin:.3rem 0 .8rem 1.3rem}
+li{margin-bottom:.3rem}
+code{background:#e3efec;border-radius:4px;padding:.15rem .4rem;font-size:.92em}
+.url-box{background:#fff;border:1px solid #d7e4e1;border-radius:8px;padding:.9rem 1.1rem;margin:.6rem 0 1rem;font-family:'SF Mono',Consolas,monospace;font-size:.92rem;word-break:break-all;color:#1B6B5F}
+.badge{display:inline-block;background:#e3efec;color:#1B6B5F;border-radius:5px;padding:.15rem .55rem;font-size:.8rem;font-weight:600;margin-bottom:.3rem}
+.back{display:inline-block;margin-top:2.5rem;color:#1B6B5F;text-decoration:none;font-weight:600}
+.foot{margin-top:2.5rem;padding-top:1.5rem;border-top:1px solid #e3efec;color:#889;font-size:.85rem}
+</style></head>
+<body>
+<div class="wrap">
+  <div class="brand"><div class="logo">$</div><h2>Money You're Owed</h2></div>
+  <span class="badge">Read-only &middot; no sign-in required</span>
+  <h1>Connect your AI assistant</h1>
+  <p class="updated">Last updated: July 20, 2026</p>
+
+  <p>Money You're Owed publishes a free, public <strong>MCP (Model Context Protocol)</strong> endpoint so AI assistants like ChatGPT, Claude, and Gemini can look up verified, source-cited consumer money-recovery facts &mdash; security deposits, denied refunds, denied insurance or warranty claims, and unclaimed property &mdash; and point people to our free guides and self-help kits.</p>
+
+  <h3>What it does</h3>
+  <p>One tool, <code>answer_money_question</code>. You ask a plain-language question; it returns published facts with their original government/legal source links, plus a link to the relevant free guide or kit on this site. That's it.</p>
+  <ul>
+    <li><strong>Read-only.</strong> There is no tool that creates, changes, deletes, or pays for anything &mdash; the code contains no transaction or checkout path at all.</li>
+    <li><strong>No account, no sign-in, no personal data collected.</strong> Questions are matched in memory and are not stored. Any purchase always happens on our own checkout page at moneyyoureowed.com, never inside the assistant.</li>
+    <li><strong>Rate-limited</strong> to keep the service available to everyone.</li>
+  </ul>
+
+  <h3>Connect URL</h3>
+  <div class="url-box">https://mcp.moneyyoureowed.com/mcp</div>
+  <p>This is a standard streamable-HTTP MCP server (protocol version <code>2025-06-18</code>). No API key or OAuth is required.</p>
+
+  <h3>Claude &mdash; custom connector</h3>
+  <p>In Claude, go to <strong>Settings &rarr; Connectors &rarr; Add custom connector</strong> and paste the URL above.</p>
+
+  <h3>Gemini &mdash; custom app for Spark</h3>
+  <p>In Gemini, go to <strong>Connected Apps &rarr; Custom apps for Spark</strong> and paste the URL above.</p>
+
+  <h3>ChatGPT</h3>
+  <p>Money You're Owed is a verified OpenAI developer. Our ChatGPT app is informational only &mdash; it answers money-recovery questions and links to our free resources. It does not offer debt relief, debt settlement, credit repair, or any money-transfer service; it helps consumers recover money already legally owed <em>to them</em>. Once published, it will be reachable by name from within ChatGPT.</p>
+
+  <h3>Privacy</h3>
+  <p>See our <a href="/privacy">Privacy Policy</a> for what the connector does and does not collect. In short: nothing you'd recognize as personal data.</p>
+
+  <h3>Questions</h3>
+  <p>Contact <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a>.</p>
+
+  <a class="back" href="/">&larr; Back to Money You're Owed</a>
+  <div class="foot">Money You're Owed &middot; Educational content only &mdash; not financial or legal advice.</div>
+</div>
+</body></html>
