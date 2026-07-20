@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How Much Does GLP-1 Coverage Cost on Medicare? The $50/Month Bridge Explained — 2026</title>
+  <meta name="description" content="What you actually pay for Wegovy or Zepbound on Medicare in 2026: the $50/month GLP-1 Bridge, normal Part D cost-sharing, and cash-pay pricing — compared honestly, with sources.">
+  <style>
+    :root {
+      --ink: #20201d;
+      --muted: #65645f;
+      --paper: #fffefb;
+      --soft: #f4f1e9;
+      --line: #d9d4c8;
+      --brand: #174f46;
+      --brand-dark: #103c35;
+      --accent: #9b5b22;
+      --link: #145f73;
+      --warning: #fff7e6;
+      --success: #edf7f2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #171714;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #161613;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3d3c38;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      min-width: 600px;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f8f7f3;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .yes {
+      color: var(--brand-dark);
+      font-weight: 700;
+    }
+
+    .no {
+      color: #862c25;
+      font-weight: 700;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f3faf7;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How Much Does GLP-1 Coverage Cost on Medicare? The $50/Month Bridge Explained","datePublished":"2026-07-20","dateModified":"2026-07-20","author":{"@type":"Organization","name":"Money You're Owed","url":"https://moneyyoureowed.com"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the Medicare GLP-1 Bridge $50 a month forever?","acceptedAnswer":{"@type":"Answer","text":"No. The Bridge is a temporary CMS demonstration running from July 1, 2026 through December 31, 2027. It is not a permanent Medicare benefit, and the underlying Part D exclusion for weight-loss drugs still applies outside the pilot."}},{"@type":"Question","name":"Does the $50 Bridge copay count toward my Part D deductible?","acceptedAnswer":{"@type":"Answer","text":"No. The $50 copay does not count toward your Part D deductible or out-of-pocket maximum, and it isn't eligible for the low-income subsidy or the Medicare Prescription Payment Plan."}},{"@type":"Question","name":"Why don't I qualify for the $50 Bridge price?","acceptedAnswer":{"@type":"Answer","text":"The most common reasons are having type 2 diabetes, moderate-to-severe sleep apnea, or fatty liver disease (those route through normal Part D instead), already getting a GLP-1 through Part D, or not meeting the age, BMI, or condition combination the Bridge requires."}},{"@type":"Question","name":"Does the Bridge cover Ozempic?","acceptedAnswer":{"@type":"Answer","text":"No. The Bridge's covered list is Foundayo tablet, Wegovy injection or tablet, and the Zepbound KwikPen only. Ozempic, Zepbound single-dose pens or vials, and compounded GLP-1 products are excluded."}},{"@type":"Question","name":"How much does normal Part D cost-sharing come to for a GLP-1?","acceptedAnswer":{"@type":"Answer","text":"It depends entirely on your specific plan's formulary tier, your deductible, and where you are in the plan year. There is no single figure that applies across plans; check your plan's formulary or call it directly."}},{"@type":"Question","name":"How much is Wegovy or Zepbound in cash without insurance?","acceptedAnswer":{"@type":"Answer","text":"The manufacturers set and change this price directly through NovoCare Pharmacy (Wegovy) and LillyDirect (Zepbound). Check their current pricing pages rather than relying on a number printed elsewhere, since these change."}},{"@type":"Question","name":"Can I use a manufacturer savings card with Medicare?","acceptedAnswer":{"@type":"Answer","text":"Manufacturer copay-savings cards are generally built for people with commercial insurance, not Medicare. The cash-pay programs built specifically for Medicare beneficiaries are NovoCare Pharmacy and LillyDirect."}},{"@type":"Question","name":"What if I think I qualify for the Bridge but my plan denies it?","acceptedAnswer":{"@type":"Answer","text":"That's a coverage decision you can appeal. See our companion guide on the GLP-1 denial appeal ladder for the exact steps and deadlines."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Money You're Owed","item":"https://moneyyoureowed.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://moneyyoureowed.com/guides/"},{"@type":"ListItem","position":3,"name":"How Much Does GLP-1 Coverage Cost on Medicare? The $50/Month Bridge Explained","item":"https://moneyyoureowed.com/guides/glp1-medicare-cost"}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO — part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 Medicare pricing guide</p>
+        <h1>How Much Does GLP-1 Coverage Cost on Medicare?</h1>
+        <p class="dek">If you qualify for the temporary Medicare GLP-1 Bridge, your copay is a flat $50 a month. If you don't, you're either routed through your regular Part D drug plan's normal cost-sharing or paying a manufacturer's cash price directly — and neither of those has one clean number, no matter what a headline promises you.</p>
+        <p class="verified">Last fact-checked: July 20, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p>There are three price tags floating around GLP-1 coverage on Medicare, and only one of them is fixed. The <strong>Medicare GLP-1 Bridge</strong> charges a flat <strong>$50 a month</strong>, regardless of income, for one of three exact products, from July 1, 2026 through December 31, 2027 only. If the Bridge doesn't apply to you — because of your health history or because your GLP-1 already runs through your regular drug plan — your cost depends on <strong>your specific Part D plan's</strong> tier and deductible, and there's no single figure that's honest for everyone. If neither applies, the manufacturer's own cash-pay programs exist, but the price is theirs to set and change. <span class="source">Sources: <a href="https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge">CMS Medicare GLP-1 Bridge</a>; <a href="https://www.medicare.gov/coverage/weight-loss-drugs">Medicare.gov: weight-loss drugs</a></span></p>
+      </aside>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#compare">Compare the three price tags</a></li>
+          <li><a href="#bridge">What you pay under the Bridge</a></li>
+          <li><a href="#part-d">What you pay under normal Part D</a></li>
+          <li><a href="#cash">What you pay in cash, without either</a></li>
+          <li><a href="#which-one">Which bucket are you actually in?</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <section id="compare">
+        <h2>Compare the three ways GLP-1s get priced on Medicare</h2>
+        <p>Read this table before you read anything else on the page. It's the whole guide, condensed.</p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>What you pay: Bridge vs. normal Part D vs. cash</caption>
+            <thead>
+              <tr>
+                <th scope="col">Question</th>
+                <th scope="col">Medicare GLP-1 Bridge</th>
+                <th scope="col">Normal Part D</th>
+                <th scope="col">Cash / self-pay</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly cost</td>
+                <td class="yes">Flat $50, any income</td>
+                <td>Set by your plan's tier and deductible — no single number is honest</td>
+                <td>Set directly by the manufacturer, and it changes</td>
+              </tr>
+              <tr>
+                <td>Who qualifies</td>
+                <td>Everyone who meets every Bridge rule (Part D type, BMI/condition route, no excluded diagnosis)</td>
+                <td>Anyone whose GLP-1 is covered under their own plan's formulary — including the people the Bridge excludes</td>
+                <td>Anyone, regardless of coverage</td>
+              </tr>
+              <tr>
+                <td>Covered products</td>
+                <td>Foundayo tablet, Wegovy injection or tablet, Zepbound KwikPen only</td>
+                <td>Whatever your specific plan's formulary lists</td>
+                <td>Whatever the manufacturer's direct program sells</td>
+              </tr>
+              <tr>
+                <td>Counts toward deductible or OOP max?</td>
+                <td class="no">No</td>
+                <td class="yes">Yes, under standard Part D rules</td>
+                <td>N/A — no insurance is involved</td>
+              </tr>
+              <tr>
+                <td>How long is this available</td>
+                <td>Temporary pilot, July 1, 2026 &ndash; December 31, 2027 only</td>
+                <td>Ongoing, year to year, under your plan</td>
+                <td>Ongoing, on whatever terms the manufacturer sets</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p><span class="source">Sources: <a href="https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge">CMS</a>; <a href="https://www.medicare.gov/publications/12234-medicare-glp-1-bridge-glp-1-drugs-for-50-a-month.pdf">Medicare Fact Sheet, Product No. 12234</a>; <a href="https://www.medicare.gov/coverage/weight-loss-drugs">Medicare.gov: weight-loss drugs</a></span></p>
+      </section>
+
+      <section id="bridge">
+        <h2>What you pay under the Medicare GLP-1 Bridge</h2>
+        <p>The Bridge is a <strong>short-term CMS demonstration</strong>, not a permanent change to Medicare drug law. It began July 1, 2026 and is scheduled to end December 31, 2027. Inside that window, if you clear every eligibility rule, your copay is a flat <strong>$50 a month</strong> — the same $50 whether you're on a fixed income or not. <span class="source">Source: <a href="https://www.cms.gov/medicare/coverage/prescription-drug-coverage/medicare-glp-1-bridge">CMS</a></span></p>
+
+        <div class="warning">
+          <h3>The $50 doesn't behave like a normal copay</h3>
+          <p>It doesn't count toward your Part D deductible or out-of-pocket maximum, there's no low-income subsidy version of it, and it can't be spread across months through the Medicare Prescription Payment Plan. It's a flat $50, full stop, or it doesn't apply to you at all. <span class="source">Source: <a href="https://www.medicare.gov/publications/12234-medicare-glp-1-bridge-glp-1-drugs-for-50-a-month.pdf">Medicare Fact Sheet, Product No. 12234</a></span></p>
+        </div>
+
+        <p>The $50 only buys you one of three specific products: Foundayo tablets, Wegovy (injection or tablet), or the Zepbound KwikPen. Zepbound's single-dose pens and vials aren't included, and neither is Ozempic or any compounded semaglutide or tirzepatide. Ask for the wrong formulation and the $50 price never comes up at all. <span class="source">Source: <a href="https://www.medicare.gov/coverage/weight-loss-drugs">Medicare.gov: weight-loss drugs</a></span></p>
+
+        <p>Eligibility is a full checklist, not a single test. You need Part D coverage that isn't a private fee-for-service plan, cost plan, or PACE program; you can't already be getting a GLP-1 through Part D; you need to be 18 or older with a BMI of at least 35, or a BMI of 30&ndash;34.99 plus a condition like heart failure or chronic kidney disease, or a BMI of 27&ndash;29.99 plus prediabetes or a prior heart attack, stroke, or peripheral artery disease. <span class="source">Source: <a href="https://www.medicare.gov/coverage/weight-loss-drugs">Medicare.gov: weight-loss drugs</a></span></p>
+      </section>
+
+      <section id="part-d">
+        <h2>What you pay under normal Part D (no Bridge)</h2>
+        <p>Here's the detail that pricing headlines skip: a meaningful share of people asking about GLP-1 cost on Medicare were never going to see the $50 Bridge price at all, because their situation routes through ordinary Part D instead.</p>
+
+        <p>That includes anyone who has <strong>type 2 diabetes, moderate-to-severe sleep apnea, or fatty liver disease</strong> — the Bridge explicitly excludes those conditions, and says the GLP-1 may instead be covered through the person's regular Part D drug plan. It also includes anyone who's already getting a GLP-1 through Part D before the Bridge existed. <span class="source">Source: <a href="https://www.medicare.gov/coverage/weight-loss-drugs">Medicare.gov: weight-loss drugs</a></span></p>
+
+        <div class="note">
+          <h3>Why we won't quote you a number here</h3>
+          <p>Normal Part D cost-sharing depends on your plan's specific formulary tier, your deductible, and where you are in the coverage year — three variables that are different for every plan and every person. Any single dollar figure printed on a page like this one would be true for approximately nobody. Call your plan or check its formulary directly for your real number.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">Denied instead of priced?</h2>
+        <p><strong>The GLP-1 Appeal Kit — $39:</strong> five fill-in appeal letters, six insurer playbooks, prior-auth worksheet, escalation ladder. Useful whether the denial came from the Bridge, your Part D plan, or a commercial insurer.</p>
+        <a class="button" href="https://moneyyoureowed.com/glp1-appeal/">See the GLP-1 Appeal Kit</a>
+      </aside>
+
+      <section id="cash">
+        <h2>What you pay in cash, without either</h2>
+        <p>If you're not Bridge-eligible and your plan doesn't cover your GLP-1, the manufacturers run their own direct-to-patient cash programs: NovoCare Pharmacy for Wegovy, and LillyDirect for Zepbound. Both exist specifically for people paying without insurance.</p>
+
+        <p>We're not going to hand you a number here either. Manufacturer cash pricing is set unilaterally, changes without much notice, and varies by dose and by which specific program tier you land in — the same trap as the "average lawyer fee" figures you see on other pricing pages that turn out to be nobody's actual bill. Go to the source directly: <a href="https://www.novocare.com/patient/medicines/wegovy.html">novocare.com</a> for Wegovy, or <a href="https://pricinginfo.lilly.com/zepbound">pricinginfo.lilly.com/zepbound</a> for Zepbound. Whatever number is posted there today is the only one worth trusting.</p>
+
+        <div class="warning">
+          <h3>One thing that doesn't change: manufacturer savings cards need commercial insurance</h3>
+          <p>If a program advertises a coupon-style price, read the fine print before you assume it applies to you on Medicare. Manufacturer copay-savings cards are generally built for people with commercial insurance, and the Medicare cash-pay programs above are the ones actually built for beneficiaries paying out of pocket.</p>
+        </div>
+      </section>
+
+      <section id="which-one">
+        <h2>Which bucket are you actually in?</h2>
+        <p>Work through this in order. Stop at the first line that's true for you.</p>
+
+        <ul class="checklist">
+          <li>Do you have type 2 diabetes, moderate-to-severe sleep apnea, or fatty liver disease? <strong>You're in normal Part D</strong>, not the Bridge — check your plan's formulary.</li>
+          <li>Are you already getting a GLP-1 through your Part D plan? <strong>Same answer:</strong> normal Part D, not the Bridge.</li>
+          <li>Do you have Part D coverage (not PFFS, cost plan, or PACE), age 18+, and one of the BMI-plus-condition combinations above? <strong>You're likely Bridge-eligible</strong> — ask your prescriber to check.</li>
+          <li>None of the above fit, or your plan won't cover the drug? <strong>You're looking at the manufacturer's cash-pay route</strong> — go check the current price directly.</li>
+        </ul>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Is the Medicare GLP-1 Bridge $50 a month forever?</h3>
+          <p>No. The Bridge is a temporary CMS demonstration running from July 1, 2026 through December 31, 2027. It is not a permanent Medicare benefit, and the underlying Part D exclusion for weight-loss drugs still applies outside the pilot.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does the $50 Bridge copay count toward my Part D deductible?</h3>
+          <p>No. The $50 copay does not count toward your Part D deductible or out-of-pocket maximum, and it isn't eligible for the low-income subsidy or the Medicare Prescription Payment Plan.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why don't I qualify for the $50 Bridge price?</h3>
+          <p>The most common reasons are having type 2 diabetes, moderate-to-severe sleep apnea, or fatty liver disease (those route through normal Part D instead), already getting a GLP-1 through Part D, or not meeting the age, BMI, or condition combination the Bridge requires.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does the Bridge cover Ozempic?</h3>
+          <p>No. The Bridge's covered list is Foundayo tablet, Wegovy injection or tablet, and the Zepbound KwikPen only. Ozempic, Zepbound single-dose pens or vials, and compounded GLP-1 products are excluded.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How much does normal Part D cost-sharing come to for a GLP-1?</h3>
+          <p>It depends entirely on your specific plan's formulary tier, your deductible, and where you are in the plan year. There is no single figure that applies across plans; check your plan's formulary or call it directly.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How much is Wegovy or Zepbound in cash without insurance?</h3>
+          <p>The manufacturers set and change this price directly through NovoCare Pharmacy (Wegovy) and LillyDirect (Zepbound). Check their current pricing pages rather than relying on a number printed elsewhere, since these change.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use a manufacturer savings card with Medicare?</h3>
+          <p>Manufacturer copay-savings cards are generally built for people with commercial insurance, not Medicare. The cash-pay programs built specifically for Medicare beneficiaries are NovoCare Pharmacy and LillyDirect.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if I think I qualify for the Bridge but my plan denies it?</h3>
+          <p>That's a coverage decision you can appeal. See our companion guide on the GLP-1 denial appeal ladder for the exact steps and deadlines.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">If price got you a denial instead</h2>
+        <p><strong>The GLP-1 Appeal Kit — $39:</strong> five fill-in appeal letters, six insurer playbooks, prior-auth worksheet, escalation ladder. If this guide is the price map, the kit is the done-for-you appeal machine.</p>
+        <a class="button" href="https://moneyyoureowed.com/glp1-appeal/">Get the GLP-1 Appeal Kit</a>
+      </aside>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not medical, legal, or insurance advice. Actual cost depends on your specific plan, formulary, and eligibility. Confirm current pricing and coverage directly with your plan, your prescriber, or the manufacturer before making a decision.</p>
+    <p><strong>Last verified:</strong> July 20, 2026. Primary references include the CMS Medicare GLP-1 Bridge page, Medicare Fact Sheet Product No. 12234, Medicare.gov's weight-loss drug coverage page, NovoCare, and Lilly's pricing information page.</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>
