@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deposit Deducted for &ldquo;Cleaning&rdquo;? When That&rsquo;s Illegal — 2026 Guide</title>
+  <meta name="description" content="A landlord can only charge you for cleaning enough to match your move-in condition, not a blanket fee and not routine turnover cleaning. California's statute spells out the exact limit — here's how to tell if your cleaning deduction is legitimate.">
+  <style>
+    :root {
+      --ink: #1d2026;
+      --muted: #5f6470;
+      --paper: #fdfdfb;
+      --soft: #f1f2ee;
+      --line: #d6d8d2;
+      --brand: #18263e;
+      --brand-dark: #0c1626;
+      --accent: #9b7a22;
+      --link: #14536f;
+      --warning: #fff7e6;
+      --success: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #14161b;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #14161b;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3a3e46;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f6f7f4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f4f6fa;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sources-list {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Deposit Deducted for “Cleaning”? When That’s Illegal — 2026 Guide","datePublished":"2026-07-20","dateModified":"2026-07-20","author":{"@type":"Organization","name":"Money You're Owed","url":"https://moneyyoureowed.com"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can a landlord charge a flat cleaning fee no matter how clean I left the apartment?","acceptedAnswer":{"@type":"Answer","text":"Not legitimately, at least not under statutes like California’s, which limit the deduction to what’s necessary to match your move-in condition. A fee applied automatically, regardless of actual condition, doesn’t meet that standard."}},{"@type":"Question","name":"What’s the actual legal standard for a cleaning deduction?","acceptedAnswer":{"@type":"Answer","text":"In California: the cost necessary to return the unit to the same level of cleanliness it was in at the start of the tenancy, no more. Other states generally fold the same idea into their broader wear-and-tear standard."}},{"@type":"Question","name":"Can I be charged for professional carpet cleaning automatically?","acceptedAnswer":{"@type":"Answer","text":"In California, no, not automatically. It’s only allowed when reasonably necessary to bring the carpet back to its move-in condition, excluding ordinary wear and tear. A blanket policy of professional cleaning every unit and billing it to every tenant doesn’t satisfy that."}},{"@type":"Question","name":"What if I don’t have move-in photos?","acceptedAnswer":{"@type":"Answer","text":"It weakens your evidence but doesn’t end your case. A lease that describes the unit’s condition, any emails or texts about pre-existing issues, or even the absence of any move-in inspection report from the landlord can all support your side. Photos are simply the strongest version of this evidence."}},{"@type":"Question","name":"Does this apply to every state, not just California?","acceptedAnswer":{"@type":"Answer","text":"The exact statutory wording varies, but the underlying principle — normal wear and tear isn’t a valid deduction — is close to universal. Colorado’s statute states it outright. Check your own state’s security-deposit law for how it phrases cleaning and wear-and-tear specifically."}},{"@type":"Question","name":"What if the itemized statement never mentioned cleaning specifically, just a lump sum?","acceptedAnswer":{"@type":"Answer","text":"That’s worth challenging on its own. States that require an itemized statement generally mean itemized: the basis and amount of each deduction, not a single number covering several categories. A vague lump-sum deduction is often as disputable as an unjustified cleaning charge itself."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Money You're Owed","item":"https://moneyyoureowed.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://moneyyoureowed.com/guides/"},{"@type":"ListItem","position":3,"name":"Deposit Deducted for “Cleaning”? When That’s Illegal — 2026 Guide","item":"https://moneyyoureowed.com/guides/deposit-cleaning-deductions"}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO — part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 renter&rsquo;s guide</p>
+        <h1>Deposit Deducted for &ldquo;Cleaning&rdquo;? When That&rsquo;s Illegal</h1>
+        <p class="dek">A flat &ldquo;cleaning fee&rdquo; deducted from your deposit regardless of how you left the place is one of the most common security-deposit disputes there is &mdash; and one of the easiest to challenge, because the legal line is unusually specific.</p>
+        <p class="verified">Last fact-checked: July 20, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p>A landlord can charge for cleaning only enough to return the unit to the <strong>same level of cleanliness it was in when you moved in</strong>, not a deeper clean, not routine turnover cleaning, and not a flat fee applied regardless of actual condition. California&rsquo;s statute says this in plain terms and separately bars charging for professional carpet or other professional cleaning unless it&rsquo;s reasonably necessary to reach that same move-in condition. <span class="source">Source: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">Cal. Civ. Code &sect;&nbsp;1950.5</a></span></p>
+      </aside>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Cleaning deduction: legitimate or not?</caption>
+          <thead>
+            <tr>
+              <th scope="col">Usually legitimate</th>
+              <th scope="col">Usually not legitimate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cleaning needed to bring the unit back to the same cleanliness it had when you moved in, backed by move-in condition records</td>
+              <td>A flat &ldquo;cleaning fee&rdquo; charged to every departing tenant regardless of how they left the unit</td>
+            </tr>
+            <tr>
+              <td>Removing genuine excess grime, grease build-up, or pet mess beyond ordinary living</td>
+              <td>A deeper or more thorough clean than what was there at move-in, billed as if it were damage</td>
+            </tr>
+            <tr>
+              <td>Professional carpet cleaning where it&rsquo;s actually needed to match move-in condition, exclusive of wear and tear</td>
+              <td>Professional carpet cleaning charged automatically, with no comparison to how the carpet looked at move-in</td>
+            </tr>
+            <tr>
+              <td>An itemized charge tied to a specific, documented condition</td>
+              <td>A round-number charge with no receipt, invoice, or explanation behind it</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#the-rule">The rule: cleanliness at move-in is the ceiling</a></li>
+          <li><a href="#beyond-california">Does this apply outside California?</a></li>
+          <li><a href="#red-flags">Red flags: is your cleaning charge disputable?</a></li>
+          <li><a href="#challenge">How to challenge it</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <section id="the-rule">
+        <h2>The rule: cleanliness at move-in is the ceiling</h2>
+        <p>Most renters assume a &ldquo;cleaning fee&rdquo; is just something landlords are allowed to charge. It isn&rsquo;t, at least not without a limit, and California&rsquo;s statute spells the limit out more specifically than most people expect. Civil Code section 1950.5 permits a deduction for cleaning the premises upon termination, but only <strong>as necessary to return the unit to the same level of cleanliness it was in at the inception of the tenancy.</strong> <span class="source">Source: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">Cal. Civ. Code &sect;&nbsp;1950.5(b)(3)</a></span></p>
+        <p>Read that again, because it&rsquo;s the whole ballgame: the standard isn&rsquo;t a spotless apartment. It&rsquo;s <em>whatever condition you found it in.</em> If the carpet was already showing traffic wear on move-in day, you don&rsquo;t owe for restoring it to showroom condition on the way out.</p>
+        <p>The statute goes further on one specific, frequently disputed line item &mdash; professional carpet cleaning. A landlord can&rsquo;t require you to pay for professional carpet or other professional cleaning services <strong>unless reasonably necessary</strong> to return the unit to its move-in condition, excluding ordinary wear and tear. A blanket policy of sending every departing tenant&rsquo;s carpet out for professional cleaning and billing it back doesn&rsquo;t meet that bar on its own. <span class="source">Source: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">Cal. Civ. Code &sect;&nbsp;1950.5(e)(2)(C)</a></span></p>
+      </section>
+
+      <section id="beyond-california">
+        <h2>Does this apply outside California?</h2>
+        <p>California just happens to write the rule down with unusual precision. The underlying principle is close to universal: cleaning that restores the unit to <em>ordinary, lived-in condition</em> is wear and tear, and wear and tear isn&rsquo;t a valid deduction almost anywhere. Colorado&rsquo;s statute states it as bluntly as a law can: <strong>no security deposit shall be retained to cover normal wear and tear.</strong> A cleaning charge that&rsquo;s really billing you for the ordinary business of living in a home falls on the wrong side of that same line, whichever state you&rsquo;re in. <span class="source">Source: <a href="https://codes.findlaw.com/co/title-38-property-real-and-personal/co-rev-st-sect-38-12-103.html">Colo. Rev. Stat. &sect;&nbsp;38-12-103</a></span></p>
+        <p>What varies state to state is how explicitly the statute names cleaning as its own category (California does; many states fold it into the general wear-and-tear standard). What doesn&rsquo;t vary much is the underlying test: was the charge tied to something beyond normal use, or was it applied as a matter of routine, whether you needed it or not?</p>
+
+        <div class="note">
+          <h3>The itemization angle matters here too</h3>
+          <p>A cleaning charge with no paper trail is weaker than one might think, independent of whether it&rsquo;s legally justified. California requires an itemized statement of deductions within 21 days of move-out, and a landlord who fails to comply with the itemization rules in bad faith loses the right to claim any of the deposit at all. If your &ldquo;cleaning fee&rdquo; showed up as a round number with no invoice, no comparison to move-in photos, and no explanation, that&rsquo;s a second angle to challenge it on, separate from whether the cleaning itself was even necessary. <span class="source">Source: <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">Cal. Civ. Code &sect;&nbsp;1950.5(g)</a></span></p>
+        </div>
+      </section>
+
+      <section id="red-flags">
+        <h2>Red flags: is your cleaning charge disputable?</h2>
+        <p>Check your deduction against this list. Any one of these is a reason to push back:</p>
+        <ul class="checklist">
+          <li>The charge is a <strong>flat fee</strong> that appears to be applied to every departing tenant, not something tied to your unit&rsquo;s actual condition.</li>
+          <li>You have <strong>move-in photos or a condition report</strong> showing the unit wasn&rsquo;t spotless when you arrived, yet you&rsquo;re being billed to leave it spotless.</li>
+          <li>The charge includes <strong>professional carpet cleaning</strong> with no explanation of why it was necessary beyond ordinary wear.</li>
+          <li>There&rsquo;s <strong>no receipt or invoice</strong> behind the number, just a line item on a move-out statement.</li>
+          <li>The deduction statement <strong>arrived late</strong>, or never arrived at all, under your state&rsquo;s deadline.</li>
+          <li>You already <strong>left the unit reasonably clean</strong> and have your own photos or a walkthrough checklist to prove it.</li>
+        </ul>
+        <p>None of these guarantee a refund on their own. Together, they&rsquo;re the makings of a demand letter with real teeth.</p>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">Turn this into a letter your landlord has to answer</h2>
+        <p><strong>Deposit Defender &mdash; $29:</strong> tell it your state, your move-out details, and what was deducted for cleaning. It checks the charge against your state&rsquo;s wear-and-tear and itemization rules and drafts a demand letter citing the statute. 30-day money-back guarantee.</p>
+        <a class="button" href="https://moneyyoureowed.com/deposit-defender/">Check my cleaning deduction with Deposit Defender</a>
+      </aside>
+
+      <section id="challenge">
+        <h2>How to challenge it</h2>
+        <ol>
+          <li><strong>Pull your move-in evidence.</strong> Photos, a signed condition checklist, even date-stamped phone photos from the day you got the keys. This is the whole case: what did the unit look like <em>then</em>?</li>
+          <li><strong>Compare it to the deduction.</strong> Is the landlord charging you to fix something that was already there, or to reach a standard higher than move-in day?</li>
+          <li><strong>Check for an itemized statement and its deadline.</strong> A missing or late statement can forfeit the landlord&rsquo;s right to withhold anything in some states, independent of whether the cleaning charge itself was fair.</li>
+          <li><strong>Write the demand letter.</strong> State what was withheld, why it fails the wear-and-tear or move-in-condition standard, cite the statute, and set a deadline (14 days is common). Send it certified mail.</li>
+          <li><strong>If they don&rsquo;t pay, small claims court is built for exactly this.</strong> Filing fees are modest, and in several states the burden sits on the landlord to prove the deduction was justified, not on you to disprove it.</li>
+        </ol>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Can a landlord charge a flat cleaning fee no matter how clean I left the apartment?</h3>
+          <p>Not legitimately, at least not under statutes like California&rsquo;s, which limit the deduction to what&rsquo;s necessary to match your move-in condition. A fee applied automatically, regardless of actual condition, doesn&rsquo;t meet that standard.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What&rsquo;s the actual legal standard for a cleaning deduction?</h3>
+          <p>In California: the cost necessary to return the unit to the same level of cleanliness it was in at the start of the tenancy, no more. Other states generally fold the same idea into their broader wear-and-tear standard.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I be charged for professional carpet cleaning automatically?</h3>
+          <p>In California, no, not automatically. It&rsquo;s only allowed when reasonably necessary to bring the carpet back to its move-in condition, excluding ordinary wear and tear. A blanket policy of professional cleaning every unit and billing it to every tenant doesn&rsquo;t satisfy that.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if I don&rsquo;t have move-in photos?</h3>
+          <p>It weakens your evidence but doesn&rsquo;t end your case. A lease that describes the unit&rsquo;s condition, any emails or texts about pre-existing issues, or even the absence of any move-in inspection report from the landlord can all support your side. Photos are simply the strongest version of this evidence.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does this apply to every state, not just California?</h3>
+          <p>The exact statutory wording varies, but the underlying principle &mdash; normal wear and tear isn&rsquo;t a valid deduction &mdash; is close to universal. Colorado&rsquo;s statute states it outright. Check your own state&rsquo;s security-deposit law for how it phrases cleaning and wear-and-tear specifically.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if the itemized statement never mentioned cleaning specifically, just a lump sum?</h3>
+          <p>That&rsquo;s worth challenging on its own. States that require an itemized statement generally mean itemized: the basis and amount of each deduction, not a single number covering several categories. A vague lump-sum deduction is often as disputable as an unjustified cleaning charge itself.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">Don&rsquo;t let a vague cleaning charge stand</h2>
+        <p><strong>Deposit Defender &mdash; $29:</strong> enter your state, your move-out date, and your landlord&rsquo;s deductions. It checks each one, including cleaning charges, against your state&rsquo;s wear-and-tear standard and drafts a certified-mail-ready demand letter citing the statute and its penalty. One-time payment, 30-day money-back guarantee.</p>
+        <a class="button" href="https://moneyyoureowed.com/deposit-defender/">Get my deposit back with Deposit Defender</a>
+      </aside>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul class="sources-list">
+          <li>California Civil Code <a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&amp;sectionNum=1950.5.">&sect;&nbsp;1950.5</a> (cleaning deduction limited to move-in cleanliness level; professional carpet/cleaning charges limited to reasonable necessity excluding ordinary wear and tear; 21-day itemization deadline and bad-faith forfeiture).</li>
+          <li>Colorado Revised Statutes <a href="https://codes.findlaw.com/co/title-38-property-real-and-personal/co-rev-st-sect-38-12-103.html">&sect;&nbsp;38-12-103</a> (no security deposit retained for normal wear and tear; written statement required within one month; treble damages for willful violation). Statute text via FindLaw&rsquo;s codes mirror, current as of January 1, 2025.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not legal advice. Security-deposit and cleaning-deduction rules vary by state and change over time; the statutes cited were verified against their published text on July 20, 2026, but your situation depends on your state&rsquo;s current law and your specific facts. No outcome is guaranteed. Demanding the return of your own deposit, filing in small claims court, and reporting to your state attorney general are all free official processes; Deposit Defender is paid software that organizes the analysis and drafts the letter for you.</p>
+    <p><strong>Last verified:</strong> July 20, 2026. Primary references: California Civil Code &sect;&nbsp;1950.5 and Colorado Revised Statutes &sect;&nbsp;38-12-103.</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>
