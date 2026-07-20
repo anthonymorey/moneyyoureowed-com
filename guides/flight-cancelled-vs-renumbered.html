@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cancelled vs. Renumbered Flight: When You&rsquo;re Owed Cash, Not a Voucher — 2026 Guide</title>
+  <meta name="description" content="A cancelled flight or a 3+ hour schedule change entitles you to a full cash refund under federal rule, not a voucher. A flight that's merely renumbered, with nothing else changed, sits in a narrow DOT enforcement pause through July 2027. Here's how to tell the difference.">
+  <style>
+    :root {
+      --ink: #1d2026;
+      --muted: #5f6470;
+      --paper: #fdfdfb;
+      --soft: #f1f2ee;
+      --line: #d6d8d2;
+      --brand: #18263e;
+      --brand-dark: #0c1626;
+      --accent: #9b7a22;
+      --link: #14536f;
+      --warning: #fff7e6;
+      --success: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #14161b;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #14161b;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3a3e46;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f6f7f4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f4f6fa;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sources-list {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <script type="application/ld+json">{"@context": "https://schema.org","@graph": [{"@type": "Article","headline": "Cancelled vs. Renumbered Flight: When You’re Owed Cash, Not a Voucher — 2026 Guide","datePublished": "2026-07-20","dateModified": "2026-07-20","author": {"@type": "Organization","name": "Money You're Owed","url": "https://moneyyoureowed.com"}},{"@type": "FAQPage","mainEntity": [{"@type": "Question","name": "Can the airline give me a travel voucher instead of a cash refund?","acceptedAnswer": {"@type": "Answer","text": "Only if you agree to it. A carrier may offer a voucher, credit, or other compensation as an alternative to a refund, but it must clearly disclose your right to a full refund, and it cannot treat your silence as acceptance. If you decline or simply don’t respond by the date the flight was scheduled to depart, you’re owed a refund in your original form of payment, not a voucher."}},{"@type": "Question","name": "What if my flight was just “renumbered” but nothing else changed?","acceptedAnswer": {"@type": "Answer","text": "That narrow scenario, exact same plane, same schedule, arriving on time, just under a different flight number, currently sits inside a DOT enforcement pause extended through July 7, 2027. DOT isn’t actively enforcing a refund requirement for that specific case. But the moment anything else changes (a 3+ hour shift, a different airport, an added connection, a downgrade), you’re back in refund-eligible territory regardless of the pause."}},{"@type": "Question","name": "What exactly counts as a “significant change” that triggers a refund?","acceptedAnswer": {"@type": "Answer","text": "Departing 3 or more hours early (domestic) or 6 or more hours early (international) than scheduled; arriving 3 or more hours late (domestic) or 6 or more hours late (international); a different origination or destination airport; more connection points than your original itinerary; or a downgrade to a lower class of service. Any one of these qualifies on its own."}},{"@type": "Question","name": "How fast am I supposed to get my refund?","acceptedAnswer": {"@type": "Answer","text": "Within 7 business days if you paid by credit card, or within 20 calendar days for cash, check, debit card, or other payment methods, counted from the date the refund was owed. Carriers aren’t allowed to keep a processing fee out of a refund that's due."}},{"@type": "Question","name": "Do I have to request the refund myself, or is it automatic?","acceptedAnswer": {"@type": "Answer","text": "It depends on what happens next. If your flight is cancelled and the airline doesn’t offer you any alternative flight or compensation at all, the refund must be issued automatically. The same is true if you reject an offered alternative or compensation, or if you simply don’t respond and the flight departs without you. In every one of those cases, you shouldn't have to ask twice."}},{"@type": "Question","name": "Does the 3-hour rule apply to international flights too?","acceptedAnswer": {"@type": "Answer","text": "International itineraries get a longer window: 6 or more hours of schedule change, rather than 3, before it counts as a significant change. Everything else, the different-airport rule, the added-connection rule, and the downgrade rule, applies the same way to both domestic and international itineraries."}},{"@type": "Question","name": "What if I already accepted a voucher and want cash instead?","acceptedAnswer": {"@type": "Answer","text": "The rule protects you going forward: a carrier cannot treat your silence as acceptance of a voucher, and it must get your affirmative agreement before substituting one for a refund. If you already signed something accepting a voucher, that's a different situation, review what you agreed to and contact the airline directly; this guide covers the refund right itself, not how to unwind an accepted offer."}},{"@type": "Question","name": "Is any of this covered in your free cheat-sheet?","acceptedAnswer": {"@type": "Answer","text": "Yes. The free Airline Refund Cheat-Sheet walks through what airlines owe you for delays, cancellations, and baggage issues, the exact DOT-mandated amounts, and how to file a claim (forms, phone scripts, email templates), built from the same official sources cited in this guide."}}]},{"@type": "BreadcrumbList","itemListElement": [{"@type": "ListItem","position": 1,"name": "Money You're Owed","item": "https://moneyyoureowed.com/"},{"@type": "ListItem","position": 2,"name": "Guides","item": "https://moneyyoureowed.com/guides/"},{"@type": "ListItem","position": 3,"name": "Cancelled vs. Renumbered Flight: When You’re Owed Cash, Not a Voucher — 2026 Guide","item": "https://moneyyoureowed.com/guides/flight-cancelled-vs-renumbered"}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO — part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 traveler&rsquo;s guide</p>
+        <h1>Cancelled vs. Renumbered Flight: When You&rsquo;re Owed Cash, Not a Voucher</h1>
+        <p class="dek">A cancelled flight, or one changed by 3+ hours, a different airport, an added layover, or a downgrade, entitles you to your money back in cash under a federal rule the airline can&rsquo;t opt you out of by staying quiet. A flight that&rsquo;s merely renumbered, same plane, same schedule, on time, is a narrower case the Department of Transportation currently isn&rsquo;t enforcing a refund requirement against. Airlines know the difference. Here&rsquo;s how to tell it apart yourself.</p>
+        <p class="verified">Last fact-checked: July 20, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p>If your flight is <strong>cancelled outright</strong>, or <strong>significantly changed</strong> (3+ hours domestic, 6+ hours international, a different airport, an added connection, or a downgrade), and you decline the alternative, the airline owes you a <strong>full cash refund</strong>, not a voucher, of your airfare plus taxes and fees. A flight that&rsquo;s <strong>merely renumbered</strong>, same aircraft, same schedule, arriving on time, with nothing else changed, sits inside a narrow DOT enforcement pause running through <strong>July 7, 2027</strong>. That pause does not touch real cancellations or the 3+ hour rule above. <span class="source">Sources: <a href="https://www.ecfr.gov/current/title-14/section-260.6">14 CFR &sect;&nbsp;260.6</a>; <a href="https://www.federalregister.gov/documents/2026/07/07/2026-13675/airline-refunds-and-other-consumer-protections">Federal Register, July 7, 2026</a></span></p>
+      </aside>
+
+      <div class="table-wrap">
+        <table>
+          <caption>What you&rsquo;re owed, by scenario</caption>
+          <thead>
+            <tr>
+              <th scope="col">Scenario</th>
+              <th scope="col">What the rule requires</th>
+              <th scope="col">Cash or voucher?</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Flight cancelled outright</strong>, any reason</td>
+              <td>Full refund of airfare, taxes, and ancillary fees if you decline any rebooking or compensation offered. Automatic if no alternative is offered at all.</td>
+              <td><strong>Cash</strong> (original form of payment, unless you agree otherwise)</td>
+            </tr>
+            <tr>
+              <td><strong>Significantly changed</strong>: 3+ hrs domestic (6+ hrs intl), different airport, added connection, or downgrade</td>
+              <td>Same full-refund right as a cancellation, if you decline the changed flight and any compensation offered.</td>
+              <td><strong>Cash</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Merely renumbered</strong>: same plane, same schedule, on time, nothing else changed</td>
+              <td>Falls inside a DOT enforcement pause through July 7, 2027. DOT isn&rsquo;t currently enforcing a refund requirement for this exact narrow case.</td>
+              <td><strong>Neither guaranteed</strong> under current enforcement, unless another row above also applies</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#what-is-cancelled">What actually counts as &ldquo;cancelled&rdquo;</a></li>
+          <li><a href="#significant-change">What counts as a &ldquo;significant change&rdquo;</a></li>
+          <li><a href="#renumbering">The renumbering trick, and DOT&rsquo;s one-year pause</a></li>
+          <li><a href="#cash-not-vouchers">Cash, not vouchers: how the rule actually works</a></li>
+          <li><a href="#how-fast">How fast you&rsquo;re supposed to get paid</a></li>
+          <li><a href="#checklist">Checklist: is your flight refund-eligible?</a></li>
+          <li><a href="#claim-it">How to actually claim it, step by step</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <section id="what-is-cancelled">
+        <h2>What actually counts as &ldquo;cancelled&rdquo;</h2>
+        <p>Under the Department of Transportation&rsquo;s own definition, a cancelled flight is simple to pin down: it&rsquo;s a specific flight number, between a specific origin and destination, that was published in the airline&rsquo;s reservation system when you bought your ticket, and then just didn&rsquo;t operate. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.2">14 CFR &sect;&nbsp;260.2</a></span></p>
+        <p>Notice what the definition doesn&rsquo;t require: it doesn&rsquo;t matter why the flight didn&rsquo;t operate. Weather, a mechanical issue, a crew shortage, a commercial decision to consolidate routes, it&rsquo;s all the same flight-didn&rsquo;t-happen fact. The reason affects things like meal vouchers or hotel accommodation under some carriers&rsquo; own policies. It does not change your right to a refund if you don&rsquo;t want the alternative the airline offers instead.</p>
+      </section>
+
+      <section id="significant-change">
+        <h2>What counts as a &ldquo;significant change&rdquo;</h2>
+        <p>A flight doesn&rsquo;t have to be cancelled for you to have the same refund right. If the airline significantly changes your itinerary and you don&rsquo;t want the new version, you&rsquo;re in exactly the same position as someone whose flight was outright cancelled. DOT&rsquo;s rule spells out five ways a change counts as &ldquo;significant&rdquo;: <span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.2">14 CFR &sect;&nbsp;260.2</a></span></p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>The five triggers for a &ldquo;significant change&rdquo;</caption>
+            <thead>
+              <tr>
+                <th scope="col">Trigger</th>
+                <th scope="col">The threshold</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Early departure</td>
+                <td>3+ hours earlier (domestic) or 6+ hours earlier (international) than originally scheduled</td>
+              </tr>
+              <tr>
+                <td>Late arrival</td>
+                <td>3+ hours later (domestic) or 6+ hours later (international) than originally scheduled</td>
+              </tr>
+              <tr>
+                <td>Different airport</td>
+                <td>A new origination or destination airport, at either end of the trip</td>
+              </tr>
+              <tr>
+                <td>Added connection</td>
+                <td>More connection points than your original itinerary had</td>
+              </tr>
+              <tr>
+                <td>Downgrade</td>
+                <td>Moved to a lower class of service than you booked</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>Any single one of these is enough on its own. A flight that departs 3 hours and 5 minutes earlier than booked, with everything else identical, still clears the bar. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.2">14 CFR &sect;&nbsp;260.2</a></span></p>
+      </section>
+
+      <section id="renumbering">
+        <h2>The renumbering trick, and DOT&rsquo;s one-year pause</h2>
+        <p>Here&rsquo;s the wrinkle that gives this guide its title. Airlines occasionally reissue a disrupted flight under a <strong>new flight number</strong>, same route, same rough timing, while arguing it isn&rsquo;t technically a &ldquo;cancellation&rdquo; at all, just a renumbering. If regulators treated every renumbering as automatically refund-exempt, it would hand carriers an easy way to dodge the rules above on paper while doing the exact same thing to passengers in practice.</p>
+        <p>DOT has recognized the risk of that loophole, but its most recent action, published in the Federal Register on <strong>July 7, 2026</strong>, extended a one-year pause on enforcing a refund requirement specifically for the narrowest version of renumbering: <strong>the exact same aircraft, on the exact same schedule, arriving on time</strong>, just relabeled with a different flight number. <span class="source">Source: <a href="https://www.federalregister.gov/documents/2026/07/07/2026-13675/airline-refunds-and-other-consumer-protections">Federal Register, July 7, 2026</a></span></p>
+        <p>That pause runs for one year from its publication date, expiring <strong>July 7, 2027</strong>. <span class="source">Source: <a href="https://www.federalregister.gov/documents/2026/07/07/2026-13675/airline-refunds-and-other-consumer-protections">Federal Register, July 7, 2026</a></span></p>
+
+        <div class="note">
+          <h3>What the pause does <em>not</em> cover</h3>
+          <p>This is the part worth reading twice. The pause covers only the case where the passenger flies the same plane, on the same schedule, and arrives on time, nothing else has changed. The instant the renumbered flight also departs 3+ hours later, lands at a different airport, adds a connection, or downgrades your seat, you&rsquo;re back in the &ldquo;significant change&rdquo; column above, and the refund requirement applies in full, renumbering or not. <span class="source">Source: <a href="https://www.federalregister.gov/documents/2026/07/07/2026-13675/airline-refunds-and-other-consumer-protections">Federal Register, July 7, 2026</a></span></p>
+        </div>
+
+        <p>In plain terms: a genuine cancellation stays a genuine cancellation no matter what flight number appears on your new boarding pass. The only thing the pause actually shields is the paperwork-only relabeling where your trip, in every practical sense, didn&rsquo;t change at all.</p>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">Not sure which column your flight falls in?</h2>
+        <p><strong>Free Airline Refund Cheat-Sheet:</strong> a free download that walks through what airlines owe you for delays, cancellations, and baggage issues, the exact DOT-mandated amounts, and how to file the claim yourself (online forms, phone scripts, email templates). No card, no catch, built from the same official sources cited in this guide.</p>
+        <a class="button" href="https://moneyyoureowed.com/airline">Get the free cheat-sheet</a>
+      </aside>
+
+      <section id="cash-not-vouchers">
+        <h2>Cash, not vouchers: how the rule actually works</h2>
+        <p>When you decline a significantly changed flight, decline rebooking on an alternative flight, and decline any voucher, credit, or other compensation the airline offers instead, the carrier that&rsquo;s the merchant of record must give you a <strong>full and prompt refund of the airfare, including taxes and ancillary fees</strong>. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.6">14 CFR &sect;&nbsp;260.6(a)</a></span></p>
+        <p>The rule also closes the door on the trick of assuming your silence means yes. A carrier can offer a voucher or credit only as an <strong>explicit alternative</strong> to a refund, and it must clearly disclose your right to the full refund at the same time it makes that offer. Critically, it <strong>cannot treat your silence, or a lack of response, as acceptance</strong> of the voucher. You have to affirmatively agree before a voucher can replace cash. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.7">14 CFR &sect;&nbsp;260.7</a></span></p>
+        <p>And when a refund is due, it has to arrive in your <strong>original form of payment</strong>, cash, credit card, debit card, or check, whichever you used to pay, unless you separately agree to a cash-equivalent alternative. Carriers aren&rsquo;t allowed to keep a processing fee out of a refund you&rsquo;re owed. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.7">14 CFR &sect;&nbsp;260.7</a></span></p>
+
+        <div class="table-wrap">
+          <table>
+            <caption>When the refund has to be automatic, no request required</caption>
+            <thead>
+              <tr>
+                <th scope="col">Situation</th>
+                <th scope="col">Refund trigger</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Flight cancelled, no alternative offered</td>
+                <td>Airline offers you no alternative flight, voucher, credit, or compensation at all &rarr; automatic refund</td>
+              </tr>
+              <tr>
+                <td>You reject what&rsquo;s offered</td>
+                <td>You reject the alternative flight or the voucher/credit/compensation &rarr; automatic refund</td>
+              </tr>
+              <tr>
+                <td>You don&rsquo;t respond</td>
+                <td>You don&rsquo;t respond to the offer, and the flight departs without you &rarr; automatic refund</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.6">14 CFR &sect;&nbsp;260.6(a)(2)</a></span></p>
+      </section>
+
+      <section id="how-fast">
+        <h2>How fast you&rsquo;re supposed to get paid</h2>
+        <p>DOT&rsquo;s definition of a &ldquo;prompt refund&rdquo; sets a clock: <strong>7 business days</strong> if you paid by credit card, or <strong>20 calendar days</strong> for cash, check, debit card, or other payment methods. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-14/section-260.2">14 CFR &sect;&nbsp;260.2</a></span></p>
+        <p>If those windows pass and nothing has landed back in your account, that&rsquo;s your cue to escalate, not to keep waiting politely. The step-by-step section below covers exactly where to take it next.</p>
+      </section>
+
+      <section id="checklist">
+        <h2>Checklist: is your flight refund-eligible?</h2>
+        <p>Run your situation through this list. Any single &ldquo;yes&rdquo; puts you in refund territory:</p>
+        <ul class="checklist">
+          <li>Your flight was <strong>cancelled outright</strong>, whatever the stated reason.</li>
+          <li>Your new departure or arrival time shifted by <strong>3+ hours (domestic) or 6+ hours (international)</strong>.</li>
+          <li>You were rebooked through a <strong>different origination or destination airport</strong>.</li>
+          <li>Your new itinerary has <strong>more connections</strong> than your original one.</li>
+          <li>You were <strong>downgraded</strong> to a lower class of service than you paid for.</li>
+          <li>You <strong>declined</strong> the alternative flight or the voucher/credit the airline offered, or the airline never offered anything at all.</li>
+        </ul>
+        <p>If none of those apply, and your flight really did fly the same plane, on the same schedule, and land on time under a different flight number, you&rsquo;re in the narrow renumbering case DOT currently isn&rsquo;t enforcing a refund requirement against.</p>
+      </section>
+
+      <section id="claim-it">
+        <h2>How to actually claim it, step by step</h2>
+        <ol>
+          <li><strong>Compare your original confirmation to what actually happened.</strong> Pull up your original booking email and your final itinerary or boarding pass. Note the flight numbers, scheduled times, and airports on both.</li>
+          <li><strong>Check it against the checklist above.</strong> A 3+ hour shift, a different airport, an extra connection, or a downgrade all qualify on their own.</li>
+          <li><strong>If you&rsquo;re offered a voucher, decline it in writing if you want cash.</strong> Say explicitly that you do not accept the voucher/credit and are requesting a refund under 14 CFR 260.6. Keep a copy or screenshot of your response.</li>
+          <li><strong>Watch the clock.</strong> 7 business days for a credit card refund, 20 calendar days for other payment methods, counted from when the refund became due.</li>
+          <li><strong>If the window passes with nothing, escalate.</strong> Contact the airline directly first, in writing, citing the specific rule and dates. If that doesn&rsquo;t resolve it, file a complaint with DOT&rsquo;s Aviation Consumer Protection division.</li>
+        </ol>
+
+        <div class="warning">
+          <h3>Don&rsquo;t assume &ldquo;processing&rdquo; means it&rsquo;s coming</h3>
+          <p>A vague &ldquo;your refund is processing&rdquo; message from an airline chatbot isn&rsquo;t the same as money back in your original payment method within the 7-day/20-day windows above. If you paid by credit card, your statement (not a promise) is the proof that matters.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">Get the exact claim language, free</h2>
+        <p><strong>Free Airline Refund Cheat-Sheet:</strong> the DOT-mandated refund amounts for delays, cancellations, and baggage issues, plus ready-to-use phone scripts and email templates for filing the claim yourself. No email required for instant download; no card, no catch.</p>
+        <a class="button" href="https://moneyyoureowed.com/airline">Get the free cheat-sheet</a>
+      </aside>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Can the airline give me a travel voucher instead of a cash refund?</h3>
+          <p>Only if you agree to it. A carrier may offer a voucher, credit, or other compensation as an alternative to a refund, but it must clearly disclose your right to a full refund, and it cannot treat your silence as acceptance. If you decline or simply don&rsquo;t respond by the date the flight was scheduled to depart, you&rsquo;re owed a refund in your original form of payment, not a voucher.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if my flight was just &ldquo;renumbered&rdquo; but nothing else changed?</h3>
+          <p>That narrow scenario, exact same plane, same schedule, arriving on time, just under a different flight number, currently sits inside a DOT enforcement pause extended through July 7, 2027. DOT isn&rsquo;t actively enforcing a refund requirement for that specific case. But the moment anything else changes (a 3+ hour shift, a different airport, an added connection, a downgrade), you&rsquo;re back in refund-eligible territory regardless of the pause.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What exactly counts as a &ldquo;significant change&rdquo; that triggers a refund?</h3>
+          <p>Departing 3 or more hours early (domestic) or 6 or more hours early (international) than scheduled; arriving 3 or more hours late (domestic) or 6 or more hours late (international); a different origination or destination airport; more connection points than your original itinerary; or a downgrade to a lower class of service. Any one of these qualifies on its own.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How fast am I supposed to get my refund?</h3>
+          <p>Within 7 business days if you paid by credit card, or within 20 calendar days for cash, check, debit card, or other payment methods, counted from the date the refund was owed. Carriers aren&rsquo;t allowed to keep a processing fee out of a refund that's due.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do I have to request the refund myself, or is it automatic?</h3>
+          <p>It depends on what happens next. If your flight is cancelled and the airline doesn&rsquo;t offer you any alternative flight or compensation at all, the refund must be issued automatically. The same is true if you reject an offered alternative or compensation, or if you simply don&rsquo;t respond and the flight departs without you. In every one of those cases, you shouldn't have to ask twice.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does the 3-hour rule apply to international flights too?</h3>
+          <p>International itineraries get a longer window: 6 or more hours of schedule change, rather than 3, before it counts as a significant change. Everything else, the different-airport rule, the added-connection rule, and the downgrade rule, applies the same way to both domestic and international itineraries.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What if I already accepted a voucher and want cash instead?</h3>
+          <p>The rule protects you going forward: a carrier cannot treat your silence as acceptance of a voucher, and it must get your affirmative agreement before substituting one for a refund. If you already signed something accepting a voucher, that's a different situation, review what you agreed to and contact the airline directly; this guide covers the refund right itself, not how to unwind an accepted offer.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is any of this covered in your free cheat-sheet?</h3>
+          <p>Yes. The free Airline Refund Cheat-Sheet walks through what airlines owe you for delays, cancellations, and baggage issues, the exact DOT-mandated amounts, and how to file a claim (forms, phone scripts, email templates), built from the same official sources cited in this guide.</p>
+        </div>
+      </section>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul class="sources-list">
+          <li>14 CFR &sect;&nbsp;260.2, <a href="https://www.ecfr.gov/current/title-14/section-260.2">Definitions</a> (cancelled flight; significantly delayed or changed flight; prompt refund timing).</li>
+          <li>14 CFR &sect;&nbsp;260.6, <a href="https://www.ecfr.gov/current/title-14/section-260.6">Refunding fare for flights cancelled or significantly delayed or changed by carriers</a> (full refund obligation; automatic refund triggers).</li>
+          <li>14 CFR &sect;&nbsp;260.7, <a href="https://www.ecfr.gov/current/title-14/section-260.7">Affirmative acceptance of an offer of alternative compensation</a> (no silent opt-in to vouchers; original form of payment).</li>
+          <li>Federal Register, July 7, 2026: <a href="https://www.federalregister.gov/documents/2026/07/07/2026-13675/airline-refunds-and-other-consumer-protections">Airline Refunds and Other Consumer Protections</a> (one-year extension of the renumbering enforcement pause, expiring July 7, 2027; scope limited to same-aircraft/same-schedule/on-time renumbering).</li>
+          <li>U.S. DOT, <a href="https://www.transportation.gov/airconsumer/file-consumer-complaint">Aviation Consumer Protection &mdash; File a Consumer Complaint</a>.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not legal advice. Federal airline refund rules can change; the regulations and Federal Register notice cited here were verified against their published text on July 20, 2026. No outcome is guaranteed. Requesting your own refund and filing a DOT consumer complaint are free official processes.</p>
+    <p><strong>Last verified:</strong> July 20, 2026. Primary references: 14 CFR Part 260 (&sect;&sect;&nbsp;260.2, 260.6, 260.7) and the Federal Register notice of July 7, 2026 (Airline Refunds and Other Consumer Protections).</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>
