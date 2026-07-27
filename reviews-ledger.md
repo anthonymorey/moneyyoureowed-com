@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-07-20 (run 7) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
+- 2026-07-27 (run 8) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -22,6 +22,8 @@ processed, and a **heartbeat** proving the routine can push each week.
 19f098e49fd58b4f
 19f12e5054fe16dc
 19f7bcfe123871cd
+19f804177afe5f4c
+19f81ca4dd46a860
 
 ## Published reviews (audit trail)
 <!-- firstname | amount | date | gmail-msgid -->
@@ -40,3 +42,5 @@ amorey74@gmail.com | Owner's internal email to self about Facebook ads fix — n
 amorey74@gmail.com | Owner's internal email to self about MYO Phase 0 ad page — not a customer review | 19f098e49fd58b4f
 amorey74@gmail.com | Owner's internal email to self about Google Ads API setup — not a customer review | 19f12e5054fe16dc
 hello@moneyyoureowed.com | Owner test — MYO system delivery of new GLP-1 Coverage Checklist product to owner's own alias (amorey74+glp1test@gmail.com); not a customer review | 19f7bcfe123871cd
+hello@agentry.com | Agentry.com agent listing confirmation for "Money You're Owed Agent" — not a customer review | 19f804177afe5f4c
+notifications@github.com | GitHub PR merge notification for A2A directory listing (sing1ee/a2a-directory #39) — not a customer review | 19f81ca4dd46a860
