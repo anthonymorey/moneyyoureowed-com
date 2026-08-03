@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-07-27 (run 8) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
+- 2026-08-03 (run 9) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
