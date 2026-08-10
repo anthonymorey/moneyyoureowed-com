@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-08-03 (run 9) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
+- 2026-08-10 (run 10) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -24,6 +24,12 @@ processed, and a **heartbeat** proving the routine can push each week.
 19f7bcfe123871cd
 19f804177afe5f4c
 19f81ca4dd46a860
+19fc20c1246be0dc
+19f9a3e519cb9e55
+19f82b23b2dba7a4
+19fb379fe8a1ba51
+19fb2fba791df509
+19fb2f10c06b012c
 
 ## Published reviews (audit trail)
 <!-- firstname | amount | date | gmail-msgid -->
@@ -44,3 +50,9 @@ amorey74@gmail.com | Owner's internal email to self about Google Ads API setup �
 hello@moneyyoureowed.com | Owner test — MYO system delivery of new GLP-1 Coverage Checklist product to owner's own alias (amorey74+glp1test@gmail.com); not a customer review | 19f7bcfe123871cd
 hello@agentry.com | Agentry.com agent listing confirmation for "Money You're Owed Agent" — not a customer review | 19f804177afe5f4c
 notifications@github.com | GitHub PR merge notification for A2A directory listing (sing1ee/a2a-directory #39) — not a customer review | 19f81ca4dd46a860
+invoice+statements+acct_1REyrSBNUnCSzfs9@stripe.com | Owner's Anthropic Ireland subscription receipt #2905-3963 — not an MYO sale | 19fc20c1246be0dc
+invoice+statements+acct_1M07hSLmdOdiMXBs@stripe.com | Owner's Eleven Labs subscription receipt #2759-4824-8504 — not an MYO sale | 19f9a3e519cb9e55
+invoice+statements+acct_1PksddHJohyvID2c@stripe.com | Owner's Grok xAI subscription receipt #2309-6203 — not an MYO sale | 19f82b23b2dba7a4
+noreply@moneyyoureowed.com | MYO internal system email re: Senlac Garage visibility sheet — not a customer review | 19fb2f10c06b012c
+noreply@moneyyoureowed.com | MYO internal system email re: Senlac pitch + Companies House — not a customer review | 19fb2fba791df509
+noreply@moneyyoureowed.com | MYO internal system email re: Senlac sheet rebuilt with real review counts — not a customer review | 19fb379fe8a1ba51
