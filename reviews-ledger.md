@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-08-17 (run 11) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
+- 2026-08-24 (run 12) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -31,6 +31,8 @@ processed, and a **heartbeat** proving the routine can push each week.
 19fb2fba791df509
 19fb2f10c06b012c
 1a005ca4ee963c67
+1a0159184482c901
+1a032962ff914d4a
 
 ## Published reviews (audit trail)
 <!-- firstname | amount | date | gmail-msgid -->
@@ -58,3 +60,5 @@ noreply@moneyyoureowed.com | MYO internal system email re: Senlac Garage visibil
 noreply@moneyyoureowed.com | MYO internal system email re: Senlac pitch + Companies House — not a customer review | 19fb2fba791df509
 noreply@moneyyoureowed.com | MYO internal system email re: Senlac sheet rebuilt with real review counts — not a customer review | 19fb379fe8a1ba51
 amorey74@gmail.com | Owner's channel performance digest to self (2026-08-15) — not a customer review | 1a005ca4ee963c67
+invoice+statements+acct_1PksddHJohyvID2c@stripe.com | Owner's Grok xAI subscription receipt #2052-0920 — not an MYO sale | 1a0159184482c901
+amorey74@gmail.com | Owner's Growth & Tools Brief digest to self (2026-08-24) — not a customer review | 1a032962ff914d4a
