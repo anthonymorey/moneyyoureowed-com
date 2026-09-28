@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-08-31 (run 13) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
+- 2026-09-28 (run 14) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -33,6 +33,14 @@ processed, and a **heartbeat** proving the routine can push each week.
 1a005ca4ee963c67
 1a0159184482c901
 1a032962ff914d4a
+1a0617a0f4ef93d4
+1a0b536799dcb4c3
+1a0d2b1faa059eb8
+1a0e085499f8c87d
+1a0e1c55b767a809
+1a0e33844d88d4ef
+1a0a3f38b635738c
+1a091f33b5e758ef
 
 ## Published reviews (audit trail)
 <!-- firstname | amount | date | gmail-msgid -->
@@ -62,3 +70,11 @@ noreply@moneyyoureowed.com | MYO internal system email re: Senlac sheet rebuilt 
 amorey74@gmail.com | Owner's channel performance digest to self (2026-08-15) — not a customer review | 1a005ca4ee963c67
 invoice+statements+acct_1PksddHJohyvID2c@stripe.com | Owner's Grok xAI subscription receipt #2052-0920 — not an MYO sale | 1a0159184482c901
 amorey74@gmail.com | Owner's Growth & Tools Brief digest to self (2026-08-24) — not a customer review | 1a032962ff914d4a
+invoice+statements+acct_1REyrSBNUnCSzfs9@stripe.com | Owner's Anthropic Ireland subscription receipt #2857-1144 — not an MYO sale | 1a0617a0f4ef93d4
+invoice+statements+acct_1PksddHJohyvID2c@stripe.com | Owner's Grok xAI subscription receipt #2660-0854 — not an MYO sale | 1a0b536799dcb4c3
+invoice+statements+acct_1REyrSBNUnCSzfs9@stripe.com | Owner's Anthropic Ireland subscription receipt #2857-8175 — not an MYO sale | 1a0d2b1faa059eb8
+welcome@openrouter.ai | OpenRouter product email — not an MYO sale or review | 1a0e085499f8c87d
+amorey74@gmail.com | Owner's daily scoreboard to self (2026-09-27) — not a customer review | 1a0e1c55b767a809
+amorey74@gmail.com | Owner's channel performance digest to self (2026-09-27) — not a customer review | 1a0e33844d88d4ef
+hi@eonnext.com | EOn Next energy tariff notification — not an MYO sale or review | 1a0a3f38b635738c
+p.rivard@fi.com | Fisher Investments portfolio review — not an MYO sale or review | 1a091f33b5e758ef
