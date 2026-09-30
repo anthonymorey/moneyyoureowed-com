@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wrong or Duplicated Records on a Tenant-Screening Report? Your FCRA Dispute Rights — 2026 Guide</title>
+  <link rel="canonical" href="https://moneyyoureowed.com/guides/tenant-screening-background-report-error-dispute-kit">
+  <meta name="description" content="Tenant-screening reports sometimes list the same eviction or criminal case twice, or records that are not yours. The FCRA lets you dispute them free, forces a 30-day reinvestigation, and the FTC just fined RentGrow $2.25M over exactly this. Here is how to fix it.">
+  <style>
+    :root {
+      --ink: #1d2026;
+      --muted: #5f6470;
+      --paper: #fdfdfb;
+      --soft: #f1f2ee;
+      --line: #d6d8d2;
+      --brand: #18263e;
+      --brand-dark: #0c1626;
+      --accent: #9b7a22;
+      --link: #14536f;
+      --warning: #fff7e6;
+      --success: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #14161b;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #14161b;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3a3e46;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f6f7f4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f4f6fa;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sources-list {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/guide-family.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Wrong or Duplicated Records on a Tenant-Screening Report? Your FCRA Dispute Rights — 2026 Guide","datePublished":"2026-07-26","dateModified":"2026-07-26","author":{"@type":"Organization","name":"Money You're Owed","url":"https://moneyyoureowed.com"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it free to dispute an error on a tenant-screening report?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Fair Credit Reporting Act requires the screening company to reinvestigate an item you dispute free of charge and to finish before the end of the 30-day period that starts when it receives your dispute. That window can stretch by up to 15 days if you send more relevant information while it is working. You never pay the company to look into its own mistake."}},{"@type":"Question","name":"How do duplicate eviction or criminal records end up on a report?","acceptedAnswer":{"@type":"Answer","text":"Often through sloppy matching. The FTC alleged that RentGrow used historical addresses and middle names from a data source called LexisNexis Accurint to attach records to people, and displayed some proceedings more than once even when its vendor had supplied the data correctly. The result was reports that made one eviction look like two or three."}},{"@type":"Question","name":"Can I see my tenant-screening file and where the data came from?","acceptedAnswer":{"@type":"Answer","text":"Yes. On request, and after you prove who you are, the company must show you everything in your file at the time of the request and, with a narrow exception, the sources of that information. Seeing the sources matters, because a wrong record is usually a matching error, and the source trail is how you prove it is not yours."}},{"@type":"Question","name":"How often can I get my tenant-screening report for free?","acceptedAnswer":{"@type":"Answer","text":"Once every 12 months. Federal law treats tenant-screening firms as nationwide specialty reporting agencies, and each of them has to give you a free copy of your file once per year when you ask. Pulling it before you start apartment hunting is the cheapest way to catch a duplicate or a stranger record before a landlord does."}},{"@type":"Question","name":"A bad report already cost me the apartment. What can I do now?","acceptedAnswer":{"@type":"Answer","text":"Ask the landlord which screening company they used. When a landlord turns you down based on a report, the FCRA requires them to tell you and to give you the name, address, and telephone number of the company that supplied it. Then get your file from that company, dispute the wrong items in writing, and make them reinvestigate. If they change a record, they are not allowed to tell the landlord that nothing changed."}},{"@type":"Question","name":"Did the FTC actually punish a company for this?","acceptedAnswer":{"@type":"Answer","text":"Yes. In July 2026 the FTC announced that RentGrow agreed to pay a $2.25 million penalty to settle allegations, brought in federal court by the Department of Justice, that it broke the Fair Credit Reporting Act and the FTC Act, including by letting duplicate records inflate the histories of applicants and by mishandling disputes."}},{"@type":"Question","name":"Do I need to buy a kit to dispute a screening error?","acceptedAnswer":{"@type":"Answer","text":"No, and we will say so plainly. The dispute process is free and the law does the heavy lifting. A paid kit only saves you time by organizing the dispute letter, the request for your file and sources, and a record of what you sent and when. If you would rather write it all yourself, everything you need is in this guide."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Money You're Owed","item":"https://moneyyoureowed.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://moneyyoureowed.com/guides/"},{"@type":"ListItem","position":3,"name":"Wrong or Duplicated Records on a Tenant-Screening Report? Your FCRA Dispute Rights — 2026 Guide","item":"https://moneyyoureowed.com/guides/tenant-screening-background-report-error-dispute-kit"}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO — part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 renter&rsquo;s guide</p>
+        <h1>Wrong or Duplicated Records on a Tenant-Screening Report?</h1>
+        <p class="dek">Tenant-screening companies sometimes list the same eviction or criminal case two or three times, or attach records that are not yours. Here is what the law entitles you to, how to force a fix, and what to do if a bad report already cost you the apartment.</p>
+        <p class="verified">Last fact-checked: July 26, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p>Disputing an error on a tenant-screening report is free, and the law leans your way. Under the Fair Credit Reporting Act, the screening company has to reinvestigate anything you dispute at no charge and finish within 30 days, and it has to hand over your file and its data sources when you ask. The enforcement behind that is real. In July 2026 the FTC and the Department of Justice hit tenant-screening firm RentGrow with a <strong>$2.25 million</strong> penalty, partly for letting the same eviction or criminal case appear more than once on a report. You do not have to buy anything to dispute an error; a paid kit only organizes the letters and the paper trail. <span class="source">Source: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act">FTC, July 2026</a></span></p>
+      </aside>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Your FCRA rights on a tenant-screening report</caption>
+          <thead>
+            <tr>
+              <th scope="col">Your right</th>
+              <th scope="col">What it means</th>
+              <th scope="col">Where it comes from</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Accurate reporting</strong></td>
+              <td>The company must follow reasonable procedures to assure maximum possible accuracy of the information about you.</td>
+              <td>15 U.S.C. &sect;&nbsp;1681e(b)</td>
+            </tr>
+            <tr>
+              <td><strong>Your file and its sources</strong></td>
+              <td>On request, it must show you everything in your file and, with a narrow exception, where each item came from.</td>
+              <td>15 U.S.C. &sect;&nbsp;1681g(a)</td>
+            </tr>
+            <tr>
+              <td><strong>Free reinvestigation</strong></td>
+              <td>When you dispute an item, it must reinvestigate free and finish within 30 days (up to 45 if you add information).</td>
+              <td>15 U.S.C. &sect;&nbsp;1681i(a)</td>
+            </tr>
+            <tr>
+              <td><strong>One free report a year</strong></td>
+              <td>Once every 12 months you can get your tenant-screening file at no charge.</td>
+              <td>15 U.S.C. &sect;&nbsp;1681j(a)</td>
+            </tr>
+            <tr>
+              <td><strong>Notice if you are denied</strong></td>
+              <td>A landlord who rejects you over a report must name the company that supplied it, with its address and phone.</td>
+              <td>15 U.S.C. &sect;&nbsp;1681m(a)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#ftc-case">What the RentGrow case tells you</a></li>
+          <li><a href="#rights">What the FCRA actually entitles you to</a></li>
+          <li><a href="#dispute">How to dispute an error, step by step</a></li>
+          <li><a href="#denied">Already denied? Your next moves</a></li>
+          <li><a href="#free-or-kit">Do it free, or pay to have it organized</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+        </ol>
+      </nav>
+
+      <section id="ftc-case">
+        <h2>What the RentGrow case tells you</h2>
+        <p>In July 2026 the FTC announced a settlement that should change how every renter treats a screening report. RentGrow, a Massachusetts company that sells tenant-screening reports to landlords and property managers, agreed to pay a $2.25 million penalty under a proposed order the Department of Justice filed in federal court in Washington, D.C. The allegation was that RentGrow broke the Fair Credit Reporting Act and the FTC Act. <span class="source">Source: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act">FTC press release</a></span></p>
+        <p>The core problem was double-counting. The FTC alleged that RentGrow failed to keep reasonable procedures to stop duplicate case records and multiple entries for the same criminal or eviction action, which made applicants look like they had more convictions or eviction suits than they really did. This happened even when RentGrow&rsquo;s vendor had supplied the information accurately: the company displayed the data so that some proceedings showed up more than once.</p>
+        <p>Two other failures made it worse. RentGrow allegedly would not tell people all the sources behind their reports, including that a data product called LexisNexis Accurint fed it historical addresses and middle names it then used to match criminal and eviction records to consumers. And it allegedly mishandled disputes, labeling some &lsquo;invalid&rsquo; with no further action, and in some cases telling a consumer their dispute had succeeded while telling the landlord that nothing had changed.</p>
+        <p>The honest read: if a national screening company under FTC investigation was inflating eviction histories, assume the smaller, cheaper screening outfits are no more careful. Check your own report before a landlord runs one on you.</p>
+      </section>
+
+      <section id="rights">
+        <h2>What the FCRA actually entitles you to</h2>
+        <p>The rights below are not favors a screening company grants. They are federal law, and they apply to tenant-screening reports the same as to credit reports.</p>
+        <ul class="checklist">
+          <li><strong>Accurate reports.</strong> Whenever it prepares a report, the company must follow reasonable procedures to assure maximum possible accuracy of the information about you. That is the exact duty RentGrow was accused of ignoring. <span class="source">Source: <a href="https://www.law.cornell.edu/uscode/text/15/1681e">15 U.S.C. &sect;&nbsp;1681e(b)</a></span></li>
+          <li><strong>Your whole file, on request.</strong> After you verify your identity, the company must disclose everything in your file at the time of the request and, apart from a narrow investigative-report exception, where the information came from. <span class="source">Source: <a href="https://www.law.cornell.edu/uscode/text/15/1681g">15 U.S.C. &sect;&nbsp;1681g(a)</a></span></li>
+          <li><strong>A free reinvestigation within 30 days.</strong> When you dispute an item, the company must reinvestigate it free and finish before the end of the 30-day period that begins when it receives your dispute. Add relevant information partway through and the window can extend by up to 15 days. <span class="source">Source: <a href="https://www.law.cornell.edu/uscode/text/15/1681i">15 U.S.C. &sect;&nbsp;1681i(a)</a></span></li>
+          <li><strong>One free report a year.</strong> Tenant-screening firms count as nationwide specialty reporting agencies, so each must give you a free copy of your file once every 12 months when you ask. <span class="source">Source: <a href="https://www.law.cornell.edu/uscode/text/15/1681j">15 U.S.C. &sect;&nbsp;1681j(a)</a></span></li>
+        </ul>
+      </section>
+
+      <section id="dispute">
+        <h2>How to dispute an error, step by step</h2>
+        <p>Run these in order. None of it costs money; it costs letters and follow-up.</p>
+        <ol>
+          <li><strong>Pull your file.</strong> Ask the screening company for your free annual report and read every line. Look for the same eviction or criminal case listed twice, and for any record that belongs to someone with a similar name.</li>
+          <li><strong>Ask for the sources.</strong> Request the sources behind any record you doubt. The Accurint address-and-middle-name matching in the RentGrow case is exactly how a stranger&rsquo;s record gets stapled to your file, and the source trail is your proof.</li>
+          <li><strong>Dispute in writing.</strong> Tell the company which specific item is wrong and why, in writing, and keep a copy. Certified mail gives you proof of the date, which starts the clock.</li>
+          <li><strong>Hold them to 30 days.</strong> The company must reinvestigate free and respond before the 30-day window closes. If it ignores you or rubber-stamps the item &lsquo;invalid,&rsquo; that is the behavior the FTC just penalized, and it is worth documenting.</li>
+        </ol>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">Want the letters written for you?</h2>
+        <p><strong>Money You&rsquo;re Owed Kit &mdash; $59:</strong> a dispute-letter template, a request for your file and data sources, a follow-up tracker, and the rest of the tools for putting a money or records claim in writing. It organizes the free FCRA process; it does not replace it or promise a result. One-time payment, no subscription.</p>
+        <a class="button" href="https://moneyyoureowed.com/">See what is in the $59 kit</a>
+      </aside>
+
+      <section id="denied">
+        <h2>Already denied? Your next moves</h2>
+        <p>If a screening report already cost you a unit, you have more room to push back than it feels like. Start by asking the landlord which company they used. When a landlord rejects you based on a report, the FCRA requires them to tell you and to give you the name, address, and telephone number of the screening company that supplied it. <span class="source">Source: <a href="https://www.law.cornell.edu/uscode/text/15/1681m">15 U.S.C. &sect;&nbsp;1681m(a)</a></span></p>
+        <p>Then run the dispute process above against that company. If it corrects a record, it is not allowed to quietly tell the landlord that nothing changed, which is one of the deceptions the FTC charged RentGrow with. A corrected report plus a short note to the landlord asking them to re-pull it is sometimes enough to reopen an application.</p>
+      </section>
+
+      <section id="free-or-kit">
+        <h2>Do it free, or pay to have it organized</h2>
+        <p>Here is the part a sales page would skip: you do not need to buy anything. Every step above is a free right under federal law, and the screening company, not you, pays for the reinvestigation.</p>
+        <p>What a paid kit buys is time and structure, nothing more. It gives you the dispute letter, the request for your file and sources, and a tracker for what you sent and when, so you are not drafting from a blank page or losing the thread while the 30-day clock is running. It cannot grant you a right the FCRA does not already give you for free.</p>
+        <p>The honest advice: if you are comfortable writing your own letters, do this yourself and keep your $59. If you would rather not build the paperwork from scratch while you are also apartment hunting, that is the honest reason to use a kit, and the only one.</p>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Is it free to dispute an error on a tenant-screening report?</h3>
+          <p>Yes. The Fair Credit Reporting Act requires the screening company to reinvestigate an item you dispute free of charge and to finish before the end of the 30-day period that starts when it receives your dispute. That window can stretch by up to 15 days if you send more relevant information while it is working. You never pay the company to look into its own mistake.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How do duplicate eviction or criminal records end up on a report?</h3>
+          <p>Often through sloppy matching. The FTC alleged that RentGrow used historical addresses and middle names from a data source called LexisNexis Accurint to attach records to people, and displayed some proceedings more than once even when its vendor had supplied the data correctly. The result was reports that made one eviction look like two or three.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I see my tenant-screening file and where the data came from?</h3>
+          <p>Yes. On request, and after you prove who you are, the company must show you everything in your file at the time of the request and, with a narrow exception, the sources of that information. Seeing the sources matters, because a wrong record is usually a matching error, and the source trail is how you prove it is not yours.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How often can I get my tenant-screening report for free?</h3>
+          <p>Once every 12 months. Federal law treats tenant-screening firms as nationwide specialty reporting agencies, and each of them has to give you a free copy of your file once per year when you ask. Pulling it before you start apartment hunting is the cheapest way to catch a duplicate or a stranger record before a landlord does.</p>
+        </div>
+        <div class="faq-item">
+          <h3>A bad report already cost me the apartment. What can I do now?</h3>
+          <p>Ask the landlord which screening company they used. When a landlord turns you down based on a report, the FCRA requires them to tell you and to give you the name, address, and telephone number of the company that supplied it. Then get your file from that company, dispute the wrong items in writing, and make them reinvestigate. If they change a record, they are not allowed to tell the landlord that nothing changed.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Did the FTC actually punish a company for this?</h3>
+          <p>Yes. In July 2026 the FTC announced that RentGrow agreed to pay a $2.25 million penalty to settle allegations, brought in federal court by the Department of Justice, that it broke the Fair Credit Reporting Act and the FTC Act, including by letting duplicate records inflate the histories of applicants and by mishandling disputes.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Do I need to buy a kit to dispute a screening error?</h3>
+          <p>No, and we will say so plainly. The dispute process is free and the law does the heavy lifting. A paid kit only saves you time by organizing the dispute letter, the request for your file and sources, and a record of what you sent and when. If you would rather write it all yourself, everything you need is in this guide.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">Keep the paper trail in one place</h2>
+        <p><strong>Money You&rsquo;re Owed Kit &mdash; $59:</strong> editable letters, a request for your screening file and its sources, and a tracker so every dispute and deadline is logged. Built for asserting a claim in writing against a company or a landlord. The dispute itself is always free; the kit just saves you the drafting. One-time payment, no subscription.</p>
+        <a class="button" href="https://moneyyoureowed.com/">Get the $59 kit</a>
+      </aside>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul class="sources-list">
+          <li>Federal Trade Commission, <a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/rentgrow-pay-225-million-settle-ftc-allegations-company-violated-fair-credit-reporting-act-ftc-act">RentGrow to Pay $2.25 Million to Settle FTC Allegations the Company Violated the Fair Credit Reporting Act and FTC Act</a> (July 2026).</li>
+          <li>Fair Credit Reporting Act, <a href="https://www.law.cornell.edu/uscode/text/15/1681e">15 U.S.C. &sect;&nbsp;1681e(b)</a> (reasonable procedures to assure maximum possible accuracy).</li>
+          <li>Fair Credit Reporting Act, <a href="https://www.law.cornell.edu/uscode/text/15/1681g">15 U.S.C. &sect;&nbsp;1681g(a)</a> (disclosure of file contents and sources on request).</li>
+          <li>Fair Credit Reporting Act, <a href="https://www.law.cornell.edu/uscode/text/15/1681i">15 U.S.C. &sect;&nbsp;1681i(a)</a> (free reinvestigation of disputes within 30 days).</li>
+          <li>Fair Credit Reporting Act, <a href="https://www.law.cornell.edu/uscode/text/15/1681j">15 U.S.C. &sect;&nbsp;1681j(a)</a> (free annual file disclosure from nationwide specialty agencies).</li>
+          <li>Fair Credit Reporting Act, <a href="https://www.law.cornell.edu/uscode/text/15/1681m">15 U.S.C. &sect;&nbsp;1681m(a)</a> (adverse-action notice must identify the reporting agency).</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not legal advice. Consumer-reporting rules and screening-company procedures change over time; the sources cited were verified against their published text on July 26, 2026, but your situation depends on the current law and your specific facts. No outcome is guaranteed. Disputing an error on a tenant-screening report is a free right under federal law; the Money You&rsquo;re Owed Kit is optional paid software that organizes the letters and tracking for you and does not grant any right the law does not already provide.</p>
+    <p><strong>Questions?</strong> Reach us at hello@moneyyoureowed.com. <strong>Last verified:</strong> July 26, 2026.</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>

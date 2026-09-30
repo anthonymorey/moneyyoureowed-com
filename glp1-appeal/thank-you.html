@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#173f3a">
+  <title>Your GLP-1 Appeal Kit Is Ready | Money You're Owed</title>
+  <meta name="description" content="Access your GLP-1 Appeal Kit and choose the next step for your insurance denial.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --ink: #152522;
+      --muted: #52635f;
+      --brand: #173f3a;
+      --brand-dark: #0f2d29;
+      --accent: #d6f06b;
+      --paper: #fffdf8;
+      --soft: #f0f5ef;
+      --line: #d8e1dc;
+      --white: #ffffff;
+      --shadow: 0 18px 48px rgba(18, 48, 43, 0.12);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(214, 240, 107, 0.25), transparent 28rem),
+        var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 16px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      padding: 22px 20px 0;
+    }
+
+    .brand {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      color: var(--brand);
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    main {
+      width: min(100%, 760px);
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+      flex: 1;
+    }
+
+    .hero {
+      padding: 32px 24px;
+      color: var(--white);
+      background: var(--brand);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 0 0 18px;
+      padding: 7px 11px;
+      color: var(--brand-dark);
+      background: var(--accent);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+    }
+
+    .status-mark {
+      display: grid;
+      width: 20px;
+      height: 20px;
+      place-items: center;
+      background: var(--brand-dark);
+      color: var(--white);
+      border-radius: 50%;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 620px;
+      margin-bottom: 14px;
+      font-size: clamp(34px, 8vw, 54px);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-copy {
+      max-width: 590px;
+      margin-bottom: 26px;
+      color: #e6efec;
+      font-size: 18px;
+    }
+
+    .download-button {
+      display: inline-flex;
+      width: 100%;
+      min-height: 56px;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 22px;
+      color: var(--brand-dark);
+      background: var(--accent);
+      border: 2px solid var(--accent);
+      border-radius: 12px;
+      box-shadow: 0 8px 0 rgba(7, 28, 25, 0.55);
+      font-size: 17px;
+      font-weight: 850;
+      line-height: 1.2;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+    }
+
+    .download-button:hover {
+      background: #e2f78c;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 0 rgba(7, 28, 25, 0.55);
+    }
+
+    .download-button:active {
+      transform: translateY(5px);
+      box-shadow: 0 3px 0 rgba(7, 28, 25, 0.55);
+    }
+
+    .delivery-note {
+      margin: 17px 0 0;
+      color: #d8e7e3;
+      font-size: 14px;
+    }
+
+    .delivery-note strong {
+      color: var(--white);
+    }
+
+    .section {
+      margin-top: 28px;
+      padding: 25px 22px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .section h2 {
+      margin-bottom: 9px;
+      color: var(--brand-dark);
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    .section-intro {
+      margin-bottom: 20px;
+      color: var(--muted);
+    }
+
+    .steps {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: steps;
+    }
+
+    .steps li {
+      position: relative;
+      min-height: 42px;
+      padding: 0 0 20px 50px;
+      counter-increment: steps;
+    }
+
+    .steps li:last-child {
+      padding-bottom: 0;
+    }
+
+    .steps li::before {
+      content: counter(steps);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      color: var(--white);
+      background: var(--brand);
+      border-radius: 50%;
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .steps strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--ink);
+    }
+
+    .steps span {
+      color: var(--muted);
+    }
+
+    .contents {
+      display: grid;
+      gap: 11px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .contents li {
+      position: relative;
+      padding: 13px 14px 13px 43px;
+      background: var(--soft);
+      border-radius: 11px;
+    }
+
+    .contents li::before {
+      content: "✓";
+      position: absolute;
+      top: 13px;
+      left: 15px;
+      color: var(--brand);
+      font-weight: 900;
+    }
+
+    .contents strong {
+      color: var(--brand-dark);
+    }
+
+    .bonus {
+      display: inline-block;
+      margin-right: 6px;
+      padding: 2px 7px;
+      color: var(--brand-dark);
+      background: var(--accent);
+      border-radius: 5px;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      vertical-align: 1px;
+    }
+
+    .support {
+      color: var(--white);
+      background: var(--brand-dark);
+      border-color: var(--brand-dark);
+    }
+
+    .support h2 {
+      color: var(--white);
+    }
+
+    .support p {
+      margin-bottom: 0;
+      color: #dce8e5;
+    }
+
+    .support a {
+      color: var(--accent);
+      font-weight: 800;
+      text-underline-offset: 3px;
+    }
+
+    footer {
+      padding: 28px 20px 38px;
+      color: var(--muted);
+      background: #eaf0ec;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+    }
+
+    .footer-inner {
+      width: min(100%, 760px);
+      margin: 0 auto;
+    }
+
+    .footer-brand {
+      margin-bottom: 8px;
+      color: var(--brand);
+      font-weight: 850;
+    }
+
+    .disclaimer {
+      max-width: 680px;
+      margin-bottom: 8px;
+    }
+
+    .footer-contact {
+      margin-bottom: 0;
+    }
+
+    .footer-contact a {
+      color: var(--brand);
+      font-weight: 750;
+    }
+
+    @media (min-width: 600px) {
+      .header {
+        padding-top: 30px;
+      }
+
+      main {
+        padding-top: 38px;
+      }
+
+      .hero {
+        padding: 48px;
+      }
+
+      .download-button {
+        width: auto;
+        min-width: 280px;
+      }
+
+      .section {
+        padding: 32px;
+      }
+
+      .contents {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .download-button {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="brand">MYO · Money You're Owed</div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <p class="status"><span class="status-mark" aria-hidden="true">✓</span> Secure delivery</p>
+        <h1 id="page-title">Verifying your GLP-1 Appeal Kit purchase.</h1>
+        <p class="hero-copy">Once Stripe confirms the completed payment, your kit access button will appear below.</p>
+        <a id="kit-download" class="download-button" hidden>Open the GLP-1 Appeal Kit</a>
+        <p id="purchase-status" class="delivery-note" role="status" aria-live="polite">Checking your payment…</p>
+      </section>
+
+      <section class="section" aria-labelledby="start-title">
+        <h2 id="start-title">Do this first</h2>
+        <p class="section-intro">Keep your denial letter nearby. You will use its stated reason and filing deadline.</p>
+        <ol class="steps">
+          <li>
+            <strong>Open “Start Here.”</strong>
+            <span>Match the wording in your denial notice to the decision map.</span>
+          </li>
+          <li>
+            <strong>Choose the matching template.</strong>
+            <span>Fill in the facts from your records. Do not guess or overstate anything.</span>
+          </li>
+          <li>
+            <strong>Collect the listed attachments.</strong>
+            <span>Use the prescriber worksheet when clinical information or prior authorization records are needed.</span>
+          </li>
+          <li>
+            <strong>File through the channel on your notice.</strong>
+            <span>Keep a copy of everything you send and record the date, confirmation number, and person you spoke with.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="inside-title">
+        <h2 id="inside-title">What is inside</h2>
+        <p class="section-intro">Use only the sections that fit your denial and coverage type.</p>
+        <ul class="contents">
+          <li><strong>Denial decision map</strong> to identify the right path</li>
+          <li><strong>Five appeal-letter templates</strong> for common denial reasons</li>
+          <li><strong>Doctor’s office worksheet</strong> for prior-authorization details</li>
+          <li><strong>Six insurer playbooks</strong> covering UHC, Aetna, Cigna, BCBS, Kaiser, and Humana</li>
+          <li><strong>Escalation ladder</strong> for internal appeals, external review, and complaints</li>
+          <li><strong>Medicare GLP-1 one-pager</strong> for the applicable program and Part D path</li>
+          <li><span class="bonus">Bonus</span><strong>Cost-Bridge Guide</strong> for legitimate savings and cash-price routes</li>
+          <li><span class="bonus">Bonus</span><strong>Denial-Letter Decoder</strong> for common insurance terms and phrases</li>
+        </ul>
+      </section>
+
+      <section class="section support" aria-labelledby="support-title">
+        <h2 id="support-title">Delivery problem or no clear next step?</h2>
+        <p>Email <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a>. If the kit does not give you a clear next step for your denial, ask for a full refund. You can keep the files.</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="footer-brand">MYO · part of Money You're Owed</p>
+        <p class="disclaimer">Consumer self-advocacy templates, not medical or legal advice. Coverage rules, deadlines, clinical criteria, and assistance programs can change. Confirm current requirements with your insurer, plan documents, prescriber, regulator, or program administrator before acting.</p>
+        <p class="footer-contact">Support and refunds: <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a></p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/glp1-delivery.js" defer></script>
+</body>
+</html>

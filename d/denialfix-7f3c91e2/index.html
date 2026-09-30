@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DenialFix Claim Workspace</title>
+  <meta name="description" content="A private, browser-local workspace for organizing a home insurance denial, policy, estimate, evidence, and correspondence.">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to claim workspace</a>
+  <div class="app-shell">
+    <div class="local-banner" role="status">Local-only workspace · Your document text stays in this browser</div>
+    <header class="app-header">
+      <div class="wrap app-masthead">
+        <a class="app-wordmark" href="/denialfix/">DenialFix <small>by Money You’re Owed</small></a>
+        <p class="app-header-note">Self-help organizer · not legal advice or claim representation</p>
+      </div>
+    </header>
+
+    <main id="workspace" class="workspace">
+      <div class="wrap">
+        <div class="workspace-intro">
+          <div>
+            <h1>Build a verified claim record.</h1>
+            <p>Put the denial letter, cited policy wording, repair estimate, evidence, and insurer correspondence into one preparation packet.</p>
+          </div>
+          <div class="boundary-note">
+            <strong>DenialFix finds candidate wording—it does not decide coverage.</strong><br>
+            Verify every quote against the original. Confirm deadlines with the notice, policy, insurer, or your state insurance department.
+          </div>
+        </div>
+
+        <div class="workspace-grid">
+          <nav class="workflow-nav" aria-label="DenialFix workflow">
+            <a class="workflow-link" href="#intake">1 · Documents</a>
+            <a class="workflow-link" href="#claim-map">2 · Claim map</a>
+            <a class="workflow-link" href="#evidence">3 · Evidence</a>
+            <a class="workflow-link" href="#timeline">4 · Timeline</a>
+            <a class="workflow-link" href="#export">5 · Export</a>
+          </nav>
+
+          <div class="workbench">
+            <section class="panel" id="intake" aria-labelledby="intake-title">
+              <div class="panel-head">
+                <h2 id="intake-title">Start with the three source documents.</h2>
+                <p>PDF and plain-text files are read on this device. You can also paste text. Nothing here is sent to Money You’re Owed, Stripe, analytics, or an AI service.</p>
+              </div>
+              <div class="panel-body">
+                <div class="redaction-warning">
+                  <strong>Before importing:</strong> redact Social Security numbers, banking details, signatures, medical information, and any full policy or account number you do not need in this workspace.
+                </div>
+
+                <form id="case-details" class="field-grid" novalidate>
+                  <div class="field">
+                    <label for="insurer">Insurance company</label>
+                    <input id="insurer" name="insurer" autocomplete="organization" maxlength="120">
+                  </div>
+                  <div class="field">
+                    <label for="state">Property state</label>
+                    <select id="state" name="state">
+                      <option value="">Select state</option>
+                      <option>AL</option><option>AK</option><option>AZ</option><option>AR</option><option>CA</option><option>CO</option><option>CT</option><option>DE</option><option>FL</option><option>GA</option><option>HI</option><option>ID</option><option>IL</option><option>IN</option><option>IA</option><option>KS</option><option>KY</option><option>LA</option><option>ME</option><option>MD</option><option>MA</option><option>MI</option><option>MN</option><option>MS</option><option>MO</option><option>MT</option><option>NE</option><option>NV</option><option>NH</option><option>NJ</option><option>NM</option><option>NY</option><option>NC</option><option>ND</option><option>OH</option><option>OK</option><option>OR</option><option>PA</option><option>RI</option><option>SC</option><option>SD</option><option>TN</option><option>TX</option><option>UT</option><option>VT</option><option>VA</option><option>WA</option><option>WV</option><option>WI</option><option>WY</option><option>DC</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="claim-reference">Claim reference (optional)</label>
+                    <input id="claim-reference" name="claimReference" maxlength="40" autocomplete="off" aria-describedby="claim-reference-help">
+                    <div class="field-help" id="claim-reference-help">Use a shortened reference if you do not want the full number stored locally.</div>
+                  </div>
+                  <div class="field">
+                    <label for="loss-date">Date of loss</label>
+                    <input id="loss-date" name="lossDate" type="date">
+                  </div>
+                  <div class="field">
+                    <label for="denial-received">Denial or underpayment received</label>
+                    <input id="denial-received" name="denialReceived" type="date">
+                  </div>
+                  <div class="field">
+                    <label for="confirmed-deadline">Deadline copied from a source</label>
+                    <input id="confirmed-deadline" name="confirmedDeadline" type="date" aria-describedby="deadline-help">
+                    <div class="field-help" id="deadline-help">DenialFix does not calculate this date. Enter it only after checking the notice, policy, insurer, or official source.</div>
+                  </div>
+                </form>
+
+                <div class="field">
+                  <label for="denial-file">1. Denial or underpayment letter</label>
+                  <div class="doc-tools">
+                    <input id="denial-file" type="file" accept="application/pdf,text/plain,text/markdown,.txt,.md,.pdf" data-file-for="denialText">
+                    <button class="action action--secondary action--small" type="button" data-clear-document="denialText">Clear letter</button>
+                  </div>
+                  <p class="file-status" id="denial-file-status" aria-live="polite">Paste text below or choose a PDF/TXT file.</p>
+                  <textarea class="document-text" id="denial-text" name="denialText" spellcheck="false" placeholder="Paste the complete denial or underpayment wording here."></textarea>
+                </div>
+
+                <div class="field">
+                  <label for="policy-file">2. Policy and cited endorsements</label>
+                  <div class="doc-tools">
+                    <input id="policy-file" type="file" accept="application/pdf,text/plain,text/markdown,.txt,.md,.pdf" data-file-for="policyText">
+                    <button class="action action--secondary action--small" type="button" data-clear-document="policyText">Clear policy</button>
+                  </div>
+                  <p class="file-status" id="policy-file-status" aria-live="polite">Use the full cited section, definitions, conditions, and endorsements—not a search snippet.</p>
+                  <textarea class="document-text" id="policy-text" name="policyText" spellcheck="false" placeholder="Paste the relevant policy wording here."></textarea>
+                </div>
+
+                <div class="field">
+                  <label for="estimate-file">3. Insurer and/or contractor estimate</label>
+                  <div class="doc-tools">
+                    <input id="estimate-file" type="file" accept="application/pdf,text/plain,text/markdown,.txt,.md,.pdf" data-file-for="estimateText">
+                    <button class="action action--secondary action--small" type="button" data-clear-document="estimateText">Clear estimate</button>
+                  </div>
+                  <p class="file-status" id="estimate-file-status" aria-live="polite">DenialFix indexes dollar amounts and nearby wording; it does not estimate claim value.</p>
+                  <textarea class="document-text" id="estimate-text" name="estimateText" spellcheck="false" placeholder="Paste one or more estimate texts here."></textarea>
+                </div>
+
+                <div class="action-row no-print">
+                  <button class="action" id="build-map" type="button">Build my claim map</button>
+                  <button class="action action--secondary" id="load-sample" type="button">Load sample claim</button>
+                  <button class="action action--quiet" id="save-device" type="button">Save to this device</button>
+                </div>
+                <p class="status" id="workspace-status" aria-live="polite"></p>
+              </div>
+            </section>
+
+            <section class="panel" id="claim-map" aria-labelledby="map-title">
+              <div class="panel-head">
+                <h2 id="map-title">Your claim map</h2>
+                <p>Every output below is a candidate to verify. It is not a coverage decision, legal conclusion, or success forecast.</p>
+              </div>
+              <div class="panel-body">
+                <div class="map-summary" id="map-summary" aria-live="polite">
+                  <div class="summary-cell"><strong id="reason-count">0</strong><span>reason patterns</span></div>
+                  <div class="summary-cell"><strong id="reference-count">0</strong><span>policy references</span></div>
+                  <div class="summary-cell"><strong id="amount-count">0</strong><span>estimate amounts</span></div>
+                </div>
+                <div id="map-warnings"></div>
+
+                <h3>Reason and evidence questions</h3>
+                <div class="reason-list" id="reason-list">
+                  <p class="empty-state">Load a sample or add the denial text, then build the map.</p>
+                </div>
+
+                <h3>Candidate policy wording</h3>
+                <div class="policy-list" id="policy-list">
+                  <p class="empty-state">Add policy text to compare it with the denial wording.</p>
+                </div>
+
+                <h3>Estimate amount index</h3>
+                <div class="amount-list" id="amount-list">
+                  <p class="empty-state">Add estimate text to index dollar amounts and nearby wording.</p>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" id="evidence" aria-labelledby="evidence-title">
+              <div class="panel-head">
+                <h2 id="evidence-title">Evidence tracker</h2>
+                <p>Track what you have, what you have requested, and where each item came from. Keep original files unchanged.</p>
+              </div>
+              <div class="panel-body">
+                <form class="entry-form" id="evidence-form">
+                  <div class="field wide">
+                    <label for="evidence-description">Evidence item</label>
+                    <input id="evidence-description" name="description" maxlength="500" required placeholder="Example: Plumber cause-and-origin report">
+                  </div>
+                  <div class="field">
+                    <label for="evidence-source">Source</label>
+                    <input id="evidence-source" name="source" maxlength="240" placeholder="Who supplied it?">
+                  </div>
+                  <div class="field">
+                    <label for="evidence-status">Status</label>
+                    <select id="evidence-status" name="status">
+                      <option value="request">Need to request</option>
+                      <option value="have">Have it</option>
+                      <option value="not-applicable">Not applicable</option>
+                    </select>
+                  </div>
+                  <button class="action" type="submit">Add evidence item</button>
+                </form>
+                <div class="table-wrap">
+                  <table class="data-table">
+                    <thead><tr><th>Item</th><th>Source</th><th>Status</th><th>Remove</th></tr></thead>
+                    <tbody id="evidence-body"><tr><td class="empty-state" colspan="4">No evidence items yet.</td></tr></tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" id="timeline" aria-labelledby="timeline-title">
+              <div class="panel-head">
+                <h2 id="timeline-title">Correspondence log</h2>
+                <p>Record what was asked, who responded, and what is still outstanding. Do not rely on memory alone.</p>
+              </div>
+              <div class="panel-body">
+                <form class="entry-form" id="correspondence-form">
+                  <div class="field">
+                    <label for="correspondence-date">Date</label>
+                    <input id="correspondence-date" name="date" type="date" required>
+                  </div>
+                  <div class="field">
+                    <label for="correspondence-channel">Channel</label>
+                    <select id="correspondence-channel" name="channel">
+                      <option>Email</option><option>Phone</option><option>Portal</option><option>Letter</option><option>Inspection</option><option>Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="correspondence-contact">Contact or department</label>
+                    <input id="correspondence-contact" name="contact" maxlength="160">
+                  </div>
+                  <div class="field wide">
+                    <label for="correspondence-summary">What happened and what is next?</label>
+                    <textarea id="correspondence-summary" name="summary" maxlength="1200" required></textarea>
+                  </div>
+                  <button class="action" type="submit">Add log entry</button>
+                </form>
+                <table class="data-table">
+                  <thead><tr><th>Date</th><th>Channel</th><th>Contact</th><th>Summary</th><th>Remove</th></tr></thead>
+                  <tbody id="correspondence-body"><tr><td class="empty-state" colspan="5">No correspondence entries yet.</td></tr></tbody>
+                </table>
+              </div>
+            </section>
+
+            <section class="panel" id="export" aria-labelledby="export-title">
+              <div class="panel-head">
+                <h2 id="export-title">Keep a portable record.</h2>
+                <p>Export before clearing browser data or moving devices. Review and redact every file before sharing it with an insurer, contractor, regulator, adjuster, or lawyer.</p>
+              </div>
+              <div class="panel-body">
+                <div class="export-ledger no-print">
+                  <div class="export-row">
+                    <div><h3>Preparation packet</h3><p>Readable HTML you can open, print, or save as PDF.</p></div>
+                    <div class="action-row"><button class="action" id="download-packet" type="button">Download claim packet</button><button class="action action--secondary" id="print-map" type="button">Print current map</button></div>
+                  </div>
+                  <div class="export-row">
+                    <div><h3>Backup record</h3><p>JSON backup for restoring the editable workspace.</p></div>
+                    <div class="action-row"><button class="action action--secondary" id="export-json" type="button">Export backup</button><label class="action action--secondary" for="import-json">Import backup</label><input class="sr-only" id="import-json" type="file" accept="application/json,.json"></div>
+                  </div>
+                  <div class="export-row">
+                    <div><h3>Device data</h3><p>Clears DenialFix content stored in this browser. It cannot be undone.</p></div>
+                    <div class="action-row"><button class="action action--secondary" id="clear-workspace" type="button">Clear this workspace</button></div>
+                  </div>
+                </div>
+
+                <div class="official-links">
+                  <h3>Free and official help</h3>
+                  <a href="https://content.naic.org/article/how-file-complaint-and-research-complaints-against-insurance-carriers" target="_blank" rel="noopener">Find your state insurance department through NAIC ↗</a>
+                  <a href="https://uphelp.org/claim-guidance-publications/resolving-claim-disputes/" target="_blank" rel="noopener">Read United Policyholders’ claim-dispute guidance ↗</a>
+                </div>
+                <p class="status" id="export-status" aria-live="polite"></p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="app-footer">
+      <div class="wrap">
+        <p><strong>DenialFix organizes source material. It does not decide coverage, calculate deadlines, provide legal advice, act as a public adjuster, negotiate with an insurer, or guarantee payment.</strong></p>
+        <p>Policy wording, complaint rights, appraisal rules, licensing boundaries, deadlines, and legal options vary by policy and state. Verify against your originals and current official sources.</p>
+        <div class="footer-actions"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="mailto:hello@moneyyoureowed.com">Support and refunds</a></div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* Hallmark · macrostructure: Long Document · tone: warm editorial utility · anchor hue: claim green
+ * theme: MYO custom system · nav: N6 masthead · footer: Ft5 statement
+ * contrast: pass (40–41) · honest: pass (46) · chrome: pass (47) · tokens: pass (48)
+ * mobile: source-ready; rendered gates pending harness (34, 44, 49–56)
+ * Hallmark · pre-emit critique: P5 H5 E4 S5 R5 V5
+ */
+:root {
+  color-scheme: light;
+  --color-paper: oklch(97% 0.018 86);
+  --color-paper-2: oklch(93% 0.024 86);
+  --color-paper-3: oklch(89% 0.032 86);
+  --color-ink: oklch(27% 0.055 183);
+  --color-ink-2: oklch(38% 0.045 183);
+  --color-muted: oklch(43% 0.025 183);
+  --color-accent: oklch(43% 0.102 165);
+  --color-accent-hover: oklch(36% 0.098 165);
+  --color-accent-ink: oklch(98% 0.012 86);
+  --color-signal: oklch(68% 0.13 72);
+  --color-focus: oklch(48% 0.17 35);
+  --color-rule: oklch(76% 0.032 86);
+  --color-rule-2: oklch(65% 0.035 183);
+  --color-error: oklch(45% 0.16 25);
+  --color-success: oklch(38% 0.105 150);
+  --color-info: oklch(42% 0.09 235);
+
+  --dd-paper: oklch(96% 0.012 240);
+  --dd-paper-2: oklch(91% 0.018 240);
+  --dd-ink: oklch(23% 0.065 255);
+  --dd-ink-2: oklch(35% 0.055 255);
+  --dd-muted: oklch(45% 0.026 255);
+  --dd-gold: oklch(72% 0.115 82);
+  --dd-gold-ink: oklch(22% 0.06 255);
+  --dd-green: oklch(43% 0.105 155);
+  --dd-rule: oklch(78% 0.02 245);
+
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: ui-monospace, "Cascadia Mono", "Segoe UI Mono", monospace;
+
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+  --space-4xl: 8rem;
+
+  --text-xs: 0.78rem;
+  --text-sm: 0.9rem;
+  --text-base: 1rem;
+  --text-lg: 1.2rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 2.75rem;
+  --text-display: clamp(2.55rem, 8vw, 6.4rem);
+  --text-display-s: clamp(2.35rem, 6vw, 4.8rem);
+
+  --measure: 68ch;
+  --page: 76rem;
+  --control-height: 3rem;
+  --rule-thin: 1px;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in: cubic-bezier(0.32, 0, 0.67, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 220ms;
+  --shadow-low: 0 0.5rem 1.5rem oklch(27% 0.055 183 / 0.09);
+  --z-nav: 300;
+}

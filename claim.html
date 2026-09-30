@@ -3,28 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free 50-State Unclaimed Money Checklist — search $70+ billion in unclaimed property across every official government database in under 30 minutes. No fees, no finders.">
+    <meta name="description" content="Free 50-State Unclaimed Money Checklist with direct links to official state and federal search databases. No paid finder required.">
     <title>Is the Government Holding Money With Your Name on It? | Free Checklist</title>
 
-    <!-- ============================================================
-         META PIXEL  — paste your real Pixel ID over __META_PIXEL_ID__
-         (comes from the new ad account you're setting up). Until then
-         it's inert. The 'Lead' event fires on a successful opt-in below.
-         ============================================================ -->
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      try { fbq('init', '__META_PIXEL_ID__'); fbq('track', 'PageView'); } catch (e) {}
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=__META_PIXEL_ID__&ev=PageView&noscript=1"/></noscript>
-    <!-- ============================================================ -->
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -87,6 +68,10 @@
             h2 { font-size: 1.55rem; }
         }
     </style>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://moneyyoureowed.com/unclaimed">
+    <link rel="stylesheet" href="/lead-family.css">
+    <script src="/lead-family.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -101,7 +86,7 @@
         <div id="form-content">
             <h2>Is the Government Holding Money With Your Name On It?</h2>
             <p class="subtitle">Get the free 50-State Unclaimed Money Checklist — every official government search site, in one place.</p>
-            <p class="stat">U.S. states are holding <span class="amt">$70&nbsp;billion+</span>, and the average person owed it is missing <span class="amt">$2,000+</span>.</p>
+            <p class="stat">Search official databases directly. A matching record still requires the holding agency to verify identity, ownership, and documentation.</p>
 
             <div class="benefits">
                 <ul>
@@ -134,43 +119,13 @@
             <p style="margin-top:1.25rem; font-size:0.9rem; color:#777;">Start with the national search, then check every state you've ever lived or worked in. The search is free and takes about two minutes.</p>
 
             <div class="tripwire">
-                <span class="badge">One small upgrade — optional</span>
-                <h4>Hit a wall on the phone? Don't go in unarmed.</h4>
-                <p>The checklist finds the money. The <strong>Bank &amp; Card Fee Reversal Scripts</strong> are the word-for-word lines that actually get it back — so you never freeze when the rep says no. <span class="price">Just $12.</span></p>
-                <a class="tw-btn" href="/#offer">Add the Scripts — $12 →</a>
+                <span class="badge">Optional next step</span>
+                <h4>Need recovery tools beyond unclaimed property?</h4>
+                <p>The <strong>Complete Recovery Kit</strong> organizes claim letters, phone scripts, and trackers across multiple money categories. <span class="price">$59 one time.</span></p>
+                <a class="tw-btn" href="/#offer">See the Complete Recovery Kit →</a>
             </div>
         </div>
     </div>
 
-    <script>
-        document.getElementById('lead-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            const btn = this.querySelector('button[type=submit]');
-            const email = document.getElementById('email').value.trim();
-            btn.disabled = true; btn.textContent = 'Sending…';
-
-            fetch('/api/subscribe', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    email: email,
-                    name: '',
-                    group: '189379076374398313' // 50-State Unclaimed Money Checklist
-                })
-            })
-            .then(async (response) => {
-                if (!response.ok) throw new Error('Subscribe failed: ' + response.status);
-                // Fire the Meta 'Lead' conversion (inert until a real Pixel ID is set above)
-                try { fbq('track', 'Lead', { content_name: '50-State Unclaimed Checklist' }); } catch (e) {}
-                document.getElementById('form-content').style.display = 'none';
-                document.getElementById('success-message').style.display = 'block';
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                btn.disabled = false; btn.textContent = 'Send Me the Free Checklist →';
-                alert('Sorry, something went wrong. Please try again in a moment.');
-            });
-        });
-    </script>
 </body>
 </html>

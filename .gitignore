@@ -10,3 +10,6 @@ _preview/
 .cf_token
 .env
 .env.*
+
+# Social media binaries served from /sm/ (sources live in ytwork; keep them out of git)
+sm/**/*.mp4

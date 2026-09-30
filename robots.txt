@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /sm/
+Allow: /
+Disallow: /api/
+Disallow: /kit-files/
+Disallow: /d/
+Disallow: /kit-thanks
+Disallow: /deposit-defender/app
+Disallow: /glp1-appeal/thank-you
+Sitemap: https://moneyyoureowed.com/sitemap.xml

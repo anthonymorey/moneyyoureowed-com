@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Airbnb Damage Claim Builder · Money You’re Owed</title>
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/components.css">
+  <style>
+    .delivery{min-height:78svh;display:grid;place-items:center;padding-block:var(--space-2xl)}
+    .delivery-card{width:min(100%,46rem);padding:var(--space-xl);border-block-start:.35rem solid var(--color-accent);background:var(--color-paper-2);box-shadow:var(--shadow-low)}
+    .delivery-card h1{max-width:14ch;font-size:clamp(2.4rem,7vw,4.8rem);letter-spacing:-.035em}.delivery-card p{max-width:64ch}
+    .receipt-note{padding-block:var(--space-sm);border-block:var(--rule-thin) solid var(--color-rule-2);color:var(--color-muted);font-size:var(--text-sm)}
+    .delivery-state{margin-block:var(--space-lg)}.delivery-state[data-state="loading"]{color:var(--color-info)}.delivery-state[data-state="error"]{color:var(--color-error)}.delivery-state[data-state="success"]{color:var(--color-success)}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to access check</a>
+  <header class="site-header"><div class="wrap masthead"><a class="brand" href="/"><span class="brand-mark" aria-hidden="true">$</span>Money You’re Owed</a></div></header>
+  <main class="delivery" id="main"><section class="delivery-card" aria-labelledby="delivery-title">
+    <h1 id="delivery-title">Your evidence workspace is ready.</h1>
+    <p>We are verifying the paid Stripe session before revealing the buyer route. No claim or evidence data is uploaded during this check.</p>
+    <p class="receipt-note">Keep your Stripe receipt email. The payment webhook also sends a backup access link to the checkout email address.</p>
+    <p class="delivery-state" id="delivery-state" data-state="loading" role="status" aria-live="polite">Verifying Stripe session…</p>
+    <div class="action-row" id="delivery-actions" hidden><a class="action" id="open-builder" href="#">Open the builder</a><a class="action action--secondary" href="mailto:hello@moneyyoureowed.com?subject=Airbnb%20Damage%20Claim%20Builder%20access%20help">Get access help</a></div>
+    <p class="fine">Refund requests: <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a> · <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></p>
+  </section></main>
+  <footer class="site-footer"><div class="wrap"><p class="footer-statement">Paid status is verified before the private route is revealed.</p></div></footer>
+  <script type="module" src="./thank-you.mjs"></script>
+</body>
+</html>

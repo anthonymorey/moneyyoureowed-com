@@ -1,0 +1,46 @@
+/*
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), usb=()
+
+/11ways-thanks*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/kit-thanks*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/deposit-defender/app*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/deposit-defender/demo*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/deposit-defender/privacy*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/d/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/glp1-appeal/thank-you*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/denialfix/thank-you*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/airbnb-damage-claim/thank-you*
+  X-Robots-Tag: noindex, nofollow, noarchive
+
+/d/*
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: private, no-store
+
+/sm/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: public, max-age=86400
+
+/.well-known/ard.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/
+  Link: </.well-known/ard.json>; rel="ard", </.well-known/ai-catalog.json>; rel="ai-catalog"

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tariff Refunds: Who Actually Gets the $166 Billion? — 2026 Guide</title>
+  <link rel="canonical" href="https://moneyyoureowed.com/guides/tariff-refund-windfall-tracker">
+  <meta name="description" content="The Supreme Court voided the IEEPA tariffs and Customs is refunding an estimated $166 billion. Customs pays that money to importers of record only, not to shoppers. Here is who gets paid, what retailers argue in court, and the one route consumers actually have.">
+  <style>
+    :root {
+      --ink: #1d2026;
+      --muted: #5f6470;
+      --paper: #fdfdfb;
+      --soft: #f1f2ee;
+      --line: #d6d8d2;
+      --brand: #18263e;
+      --brand-dark: #0c1626;
+      --accent: #9b7a22;
+      --link: #14536f;
+      --warning: #fff7e6;
+      --success: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #14161b;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #14161b;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3a3e46;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f6f7f4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f4f6fa;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sources-list {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/guide-family.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Tariff Refunds: Who Actually Gets the $166 Billion? — 2026 Guide","datePublished":"2026-08-07","dateModified":"2026-08-07","author":{"@type":"Organization","name":"Money You're Owed","url":"https://moneyyoureowed.com"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I file a claim with Customs for the tariff I paid on a product?","acceptedAnswer":{"@type":"Answer","text":"No. CBP issues IEEPA refunds through a CAPE Declaration, and only an importer of record, or the licensed customs broker they designate, can file one. CBP lists the affected public for that collection as “Businesses,” and estimates 330,000 respondents. There is no shopper-facing version of the form, because as far as Customs is concerned the importer paid the duty, not you."}},{"@type":"Question","name":"Did the Supreme Court say consumers get money back?","acceptedAnswer":{"@type":"Answer","text":"No. The ruling answered one question: whether IEEPA authorizes the President to impose tariffs. The Court held that it does not. Justice Kavanaugh, in dissent, observed that the government may have to refund billions to importers “even though some importers may have already passed on costs to consumers or others,” and that the Court “says nothing today about whether, and if so how,” those billions should be returned."}},{"@type":"Question","name":"How much money is actually in play?","acceptedAnswer":{"@type":"Answer","text":"CBP puts the IEEPA tariffs assessed between February 3, 2025 and February 24, 2026 at an estimated $166 billion, spread across more than 53 million entry summaries. That is the pool the refunds come out of. How much any individual retailer collects from it is not something CBP publishes company by company."}},{"@type":"Question","name":"What is Nintendo’s actual defense?","acceptedAnswer":{"@type":"Answer","text":"That you got what you paid for. In its July 20, 2026 motion to dismiss, Nintendo told the court that buyers “received exactly what they bargained and paid for: a console, game, and/or accessory at a price to which both parties agreed,” and that “Plaintiffs have no legal entitlement to the tariff refunds Nintendo stands to receive.” Whether that argument wins is now in front of Judge Richard A. Jones."}},{"@type":"Question","name":"Could the terms I clicked keep me out of the class action?","acceptedAnswer":{"@type":"Answer","text":"Quite possibly. On the same day it moved to dismiss, Nintendo separately moved to push the named plaintiff into individual arbitration, arguing he had accepted both the Nintendo Account User Agreement and the Switch end-user license agreement. Each requires arbitration in place of court, and each contains a delegation provision that sends questions about the arbitration clause itself to an arbitrator rather than a judge."}},{"@type":"Question","name":"Do I have to pay anyone to join one of these cases?","acceptedAnswer":{"@type":"Answer","text":"No, and treat anyone who asks as a red flag. Consumer class actions run on contingency, with fees approved by the court out of any recovery. Nobody needs your card details up front to add you to a class you already belong to by virtue of having bought the product."}},{"@type":"Question","name":"What should I keep in case one of these cases settles?","acceptedAnswer":{"@type":"Answer","text":"Receipts, order confirmations, and account purchase histories for imported goods bought from February 2025 onward. Settlement administrators tend to pay more, and ask fewer questions, when you can show what you bought and what you paid. A saved digital order history is the easiest version of that proof to produce two years later."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Money You're Owed","item":"https://moneyyoureowed.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://moneyyoureowed.com/guides/"},{"@type":"ListItem","position":3,"name":"Tariff Refunds: Who Actually Gets the $166 Billion? — 2026 Guide","item":"https://moneyyoureowed.com/guides/tariff-refund-windfall-tracker"}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO &mdash; part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 consumer guide</p>
+        <h1>Tariff Refunds: Who Actually Gets the $166 Billion?</h1>
+        <p class="dek">The Supreme Court threw out the IEEPA tariffs, and Customs is now refunding an estimated $166&nbsp;billion. None of it is addressed to you. Here is who Customs actually pays, why that is not an oversight, and the single route shoppers have left.</p>
+        <p class="verified">Last fact-checked: August 7, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p>You cannot claim a tariff refund. Customs pays IEEPA refunds <strong>only to the importer of record</strong>, into that company&rsquo;s own account, and only an importer or its licensed customs broker can even file the request. Customs describes the affected public for the process as &ldquo;Businesses.&rdquo; Your one realistic route is the wave of consumer class actions now running against individual retailers, which cost nothing to be part of and may well fail. <span class="source">Source: <a href="https://www.federalregister.gov/documents/2026/07/08/2026-13771/agency-information-collection-activities-extension-court-ordered-refunds-under-the-international">91&nbsp;FR&nbsp;42207</a></span></p>
+      </aside>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Three parties, one pot of money: who can actually collect</caption>
+          <thead>
+            <tr>
+              <th scope="col">&nbsp;</th>
+              <th scope="col">Importer of record</th>
+              <th scope="col">You, the shopper</th>
+              <th scope="col">You, as a class member</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Can claim from Customs?</strong></td>
+              <td>Yes &mdash; by filing a CAPE Declaration in the ACE Portal</td>
+              <td>No &mdash; no form exists for you, and only ACE account holders can file</td>
+              <td>No &mdash; a class action is against the retailer, not against Customs</td>
+            </tr>
+            <tr>
+              <td><strong>What it costs</strong></td>
+              <td>Staff or broker time; CBP estimates about an hour per filing</td>
+              <td>N/A</td>
+              <td>$0 up front. Fees come out of any recovery, if the court approves one</td>
+            </tr>
+            <tr>
+              <td><strong>Money paid to</strong></td>
+              <td>Directly into the importer&rsquo;s account by ACH, or a party it designates</td>
+              <td>Nobody</td>
+              <td>A settlement administrator, if a class is certified and a case settles</td>
+            </tr>
+            <tr>
+              <td><strong>Odds</strong></td>
+              <td>High. The duty was ruled unlawful; the process exists to return it</td>
+              <td>Zero. This is a structural fact, not a paperwork problem</td>
+              <td>Genuinely unknown. The first motions to dismiss are being briefed now</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#who-gets-paid">Who Customs actually pays</a></li>
+          <li><a href="#what-court-said">What the Supreme Court did and did not decide</a></li>
+          <li><a href="#retailer-defense">What the retailers are arguing</a></li>
+          <li><a href="#arbitration">The clause that may quietly remove you</a></li>
+          <li><a href="#what-to-do">What is actually worth doing</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+          <li><a href="#sources">Sources</a></li>
+        </ol>
+      </nav>
+
+      <section id="who-gets-paid">
+        <h2>Who Customs actually pays</h2>
+        <p>Start with the number, because it explains the noise. In a July 2026 notice, Customs and Border Protection put the tariffs assessed under the International Emergency Economic Powers Act between February 3, 2025 and February 24, 2026 at <strong>an estimated $166 billion</strong>, spread across <strong>more than 53 million entry summaries</strong>. <span class="source">Source: <a href="https://www.federalregister.gov/documents/2026/07/08/2026-13771/agency-information-collection-activities-extension-court-ordered-refunds-under-the-international">91&nbsp;FR&nbsp;42207</a></span></p>
+        <p>To move money at that scale, CBP built a tool called CAPE, short for Consolidated Administration and Processing of Entries. It sits inside the ACE Portal, the system importers already use. A refund request filed through it is called a CAPE Declaration, and the agency is explicit about who may file one: the importer of record, or a licensed customs broker the importer has designated as its notify party. As CBP puts it, the point of the design is that &ldquo;the precise duty owed to the IOR is refunded directly to the IOR&rsquo;s account&mdash;no overpayments or payments to an erroneous party.&rdquo;</p>
+        <p>Read that phrase again, because it is doing real work. An &ldquo;erroneous party&rdquo; means anyone who is not the importer. In the eyes of Customs, the shopper who paid a higher shelf price is not a party to the transaction at all. The paperwork confirms it from another angle: CBP lists the collection&rsquo;s <strong>Affected Public</strong> as &ldquo;Businesses,&rdquo; and estimates <strong>330,000 respondents</strong>. There is no consumer count because there is no consumer process.</p>
+        <p>The honest read is that this is not a gap someone forgot to fill. Customs collected the duty from the importer, so Customs returns it to the importer. Every article you have seen about &ldquo;claiming your tariff refund&rdquo; is describing something that does not exist.</p>
+      </section>
+
+      <section id="what-court-said">
+        <h2>What the Supreme Court did and did not decide</h2>
+        <p>On February 20, 2026, the Court decided <em>Learning Resources, Inc. v. Trump</em>, No.&nbsp;24&ndash;1287, holding plainly that <strong>IEEPA does not authorize the President to impose tariffs</strong>. It affirmed the Federal Circuit in the companion <em>V.O.S. Selections</em> case and vacated the judgment below in <em>Learning Resources</em> with instructions to dismiss for lack of jurisdiction. <span class="source">Source: <a href="https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf">Slip op., No.&nbsp;24&ndash;1287</a></span></p>
+        <p>That is the whole holding. It is about presidential power, not about restitution. The Court gave no instruction about how the money comes back, and the dissent said so out loud. Justice Kavanaugh wrote that the government &ldquo;may be required to refund billions of dollars to importers who paid the IEEPA tariffs, even though some importers may have already passed on costs to consumers or others,&rdquo; and that the Court &ldquo;says nothing today about whether, and if so how, the Government should go about returning the billions of dollars that it has collected from importers.&rdquo;</p>
+        <p>A dissent is not law. But it is a sitting Justice naming the exact problem this page is about, in the official reports, before any of the consumer lawsuits were filed. The pass-through of tariff costs to shoppers was visible to the Court, and the Court declined to do anything about it.</p>
+        <p>The machinery then moved to the Court of International Trade, which on March 4, 2026 ordered CBP to liquidate entries subject to IEEPA duties without regard to those duties, and to reliquidate liquidated entries where liquidation was not yet final. Two days later the CIT suspended its own order &ldquo;to the extent that it directs immediate compliance,&rdquo; giving CBP room to finish building CAPE. Refunds are flowing under a court order that is still, technically, on a leash.</p>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">There is nothing to buy here</h2>
+        <p><strong>We have no tariff kit, and we are not building one.</strong> No letter, template, or paid service can make Customs pay a shopper, so selling you one would be dishonest. The question actually worth answering is the general one: when is paying somebody to chase money worth it, and when are you being charged for something free? That is what our cost guide breaks down.</p>
+        <a class="button" href="https://moneyyoureowed.com/guides/money-recovery-cost">Read: what money recovery really costs</a>
+      </aside>
+
+      <section id="retailer-defense">
+        <h2>What the retailers are arguing</h2>
+        <p>Since the ruling, shoppers have sued retailers directly, on the theory that a company which raised prices for tariffs and then got the tariffs back has been paid twice. Two of these cases sit in the same courthouse in Seattle. <em>Briggs v. Costco Wholesale Corporation</em>, No.&nbsp;2:26-cv-01064, was filed in the Western District of Washington on March 27, 2026. <em>Hoffert v. Nintendo of America Inc.</em>, No.&nbsp;2:26-cv-01360, followed on April 21, 2026 and is assigned to Judge Richard A. Jones.</p>
+        <p>Nintendo answered first, and its answer is the clearest statement of the industry position anyone has put in writing. In a motion to dismiss filed July 20, 2026, the company told the court that buyers &ldquo;received exactly what they bargained and paid for: a console, game, and/or accessory at a price to which both parties agreed.&rdquo; It went further: &ldquo;Plaintiffs have no legal entitlement to the tariff refunds Nintendo stands to receive.&rdquo; <span class="source">Source: <a href="https://storage.courtlistener.com/recap/gov.uscourts.wawd.361585/gov.uscourts.wawd.361585.21.0.pdf">Hoffert, Dkt.&nbsp;21</a></span></p>
+        <p>The brief also makes a slippery-slope argument worth taking seriously rather than dismissing. Taken to its logical extension, Nintendo says, the plaintiffs&rsquo; theory would require every business that raises a price to recompute and repay when any input cost later falls. That is a real objection. Prices are not itemized promises, and courts have generally not treated them as such.</p>
+        <p>Where the argument gets uncomfortable is the asymmetry. The retailer is being made whole by the government for a cost it already recovered from customers at the till. Whether existing law has a name for that, and a remedy, is precisely what these judges now have to decide. Our read: the legal theory is a genuine stretch, the moral case is not, and shoppers should plan for the stretch to lose more often than it wins.</p>
+      </section>
+
+      <section id="arbitration">
+        <h2>The clause that may quietly remove you</h2>
+        <p>Here is the part that gets almost no coverage and matters more than the headline argument. On the same day Nintendo moved to dismiss, it filed a second motion asking the court to send the named plaintiff, Gregory Hoffert, into <strong>individual arbitration</strong>. The basis: he accepted the Nintendo Account User Agreement when he created an account, and the end-user license agreement when he set up a Switch console. Both require arbitration in place of court. <span class="source">Source: <a href="https://storage.courtlistener.com/recap/gov.uscourts.wawd.361585/gov.uscourts.wawd.361585.23.0.pdf">Hoffert, Dkt.&nbsp;23</a></span></p>
+        <p>Both agreements also carry delegation provisions, meaning that even the question of whether the arbitration clause applies goes to an arbitrator instead of a judge. If that motion succeeds, the lead plaintiff leaves the courtroom before anyone rules on whether shoppers deserve a cut, and he goes alone rather than as a class.</p>
+        <p>This is the mechanism to watch across all of these cases. If you bought the product through an account with terms attached, and most people did, the fight over your money may be decided by a clause you agreed to years ago rather than by the merits.</p>
+      </section>
+
+      <section id="what-to-do">
+        <h2>What is actually worth doing</h2>
+        <p>Short list, in order, and it is short on purpose.</p>
+        <ul class="checklist">
+          <li><strong>Stop looking for a claim form.</strong> There is no consumer filing route to Customs, and there is not going to be one. Any site offering to file your tariff refund is either confused or lying.</li>
+          <li><strong>Save your receipts.</strong> Order confirmations and account purchase histories for imported goods bought from February 2025 onward. If a case settles, proof of purchase is usually the difference between a full share and a token one.</li>
+          <li><strong>Pay nobody up front.</strong> Class actions are contingency work. Court-approved fees come out of a recovery, not out of your card in advance.</li>
+          <li><strong>Watch the retailer, not the government.</strong> Whether you ever see a dollar depends on a district judge in Seattle, not on Customs.</li>
+          <li><strong>Set expectations low.</strong> Motions to dismiss are pending, arbitration motions are pending, and no class has been certified in these cases yet.</li>
+        </ul>
+        <p>One more thing, since we would rather say it than have you learn it expensively. A recovery pool of $166 billion, sitting in public view with no consumer claims process attached, is close to a perfect setup for fee-charging middlemen. Expect them. Treat any unsolicited offer to recover your tariff money as a scam until proven otherwise, because the honest version of that service cannot exist.</p>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Can I file a claim with Customs for the tariff I paid on a product?</h3>
+          <p>No. CBP issues IEEPA refunds through a CAPE Declaration, and only an importer of record, or the licensed customs broker they designate, can file one. CBP lists the affected public for that collection as &ldquo;Businesses,&rdquo; and estimates 330,000 respondents. There is no shopper-facing version of the form, because as far as Customs is concerned the importer paid the duty, not you.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Did the Supreme Court say consumers get money back?</h3>
+          <p>No. The ruling answered one question: whether IEEPA authorizes the President to impose tariffs. The Court held that it does not. Justice Kavanaugh, in dissent, observed that the government may have to refund billions to importers &ldquo;even though some importers may have already passed on costs to consumers or others,&rdquo; and that the Court &ldquo;says nothing today about whether, and if so how,&rdquo; those billions should be returned.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How much money is actually in play?</h3>
+          <p>CBP puts the IEEPA tariffs assessed between February 3, 2025 and February 24, 2026 at an estimated $166 billion, spread across more than 53 million entry summaries. That is the pool the refunds come out of. How much any individual retailer collects from it is not something CBP publishes company by company.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What is Nintendo&rsquo;s actual defense?</h3>
+          <p>That you got what you paid for. In its July 20, 2026 motion to dismiss, Nintendo told the court that buyers &ldquo;received exactly what they bargained and paid for: a console, game, and/or accessory at a price to which both parties agreed,&rdquo; and that &ldquo;Plaintiffs have no legal entitlement to the tariff refunds Nintendo stands to receive.&rdquo; Whether that argument wins is now in front of Judge Richard A. Jones.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Could the terms I clicked keep me out of the class action?</h3>
+          <p>Quite possibly. On the same day it moved to dismiss, Nintendo separately moved to push the named plaintiff into individual arbitration, arguing he had accepted both the Nintendo Account User Agreement and the Switch end-user license agreement. Each requires arbitration in place of court, and each contains a delegation provision that sends questions about the arbitration clause itself to an arbitrator rather than a judge.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do I have to pay anyone to join one of these cases?</h3>
+          <p>No, and treat anyone who asks as a red flag. Consumer class actions run on contingency, with fees approved by the court out of any recovery. Nobody needs your card details up front to add you to a class you already belong to by virtue of having bought the product.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What should I keep in case one of these cases settles?</h3>
+          <p>Receipts, order confirmations, and account purchase histories for imported goods bought from February 2025 onward. Settlement administrators tend to pay more, and ask fewer questions, when you can show what you bought and what you paid. A saved digital order history is the easiest version of that proof to produce two years later.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">Before you pay anyone to chase money</h2>
+        <p><strong>No product of ours applies to tariff refunds</strong>, and we would rather say that than sell you a template for a claim that cannot be filed. What does transfer to this situation is knowing which recovery work is free, which is worth paying for, and which is a percentage cut you never needed to give away.</p>
+        <a class="button" href="https://moneyyoureowed.com/guides/money-recovery-cost">See what money recovery actually costs</a>
+      </aside>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul class="sources-list">
+          <li><a href="https://www.supremecourt.gov/opinions/25pdf/24-1287_4gcj.pdf">Learning Resources, Inc. v. Trump</a>, No.&nbsp;24&ndash;1287, slip op. (U.S. Feb.&nbsp;20, 2026) (holding that IEEPA does not authorize the President to impose tariffs; Kavanaugh, J., dissenting, on refunds to importers who passed costs to consumers).</li>
+          <li>U.S. Customs and Border Protection, <a href="https://www.federalregister.gov/documents/2026/07/08/2026-13771/agency-information-collection-activities-extension-court-ordered-refunds-under-the-international">Court-Ordered Refunds Under the International Emergency Economic Powers Act Worksheet</a>, 91&nbsp;Fed.&nbsp;Reg.&nbsp;42207 (July&nbsp;8, 2026) (estimated $166&nbsp;billion assessed; 53&nbsp;million entry summaries; CAPE filed by importer of record or designated broker; affected public &ldquo;Businesses&rdquo;; 330,000 respondents; CIT orders of March&nbsp;4 and March&nbsp;6, 2026).</li>
+          <li>Defendant&rsquo;s Motion to Dismiss, <a href="https://storage.courtlistener.com/recap/gov.uscourts.wawd.361585/gov.uscourts.wawd.361585.21.0.pdf">Hoffert v. Nintendo of America Inc.</a>, No.&nbsp;2:26-cv-01360 (W.D. Wash. July&nbsp;20, 2026), Dkt.&nbsp;21.</li>
+          <li>Defendant&rsquo;s Motion to Compel Arbitration, <a href="https://storage.courtlistener.com/recap/gov.uscourts.wawd.361585/gov.uscourts.wawd.361585.23.0.pdf">Hoffert v. Nintendo of America Inc.</a>, No.&nbsp;2:26-cv-01360 (W.D. Wash. July&nbsp;20, 2026), Dkt.&nbsp;23.</li>
+          <li>Docket, <a href="https://www.courtlistener.com/docket/73224663/hoffert-v-nintendo-of-america-inc/">Hoffert v. Nintendo of America Inc.</a>, No.&nbsp;2:26-cv-01360 (W.D. Wash., filed Apr.&nbsp;21, 2026), via CourtListener.</li>
+          <li>Docket, <a href="https://www.courtlistener.com/docket/73108699/briggs-v-costco-wholesale-corporation/">Briggs v. Costco Wholesale Corporation</a>, No.&nbsp;2:26-cv-01064 (W.D. Wash., filed Mar.&nbsp;27, 2026), via CourtListener.</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not legal advice. It describes litigation that is actively being briefed; motions to dismiss and to compel arbitration were pending when these sources were verified on August 7, 2026, and no class has been certified in the cases described. Nothing here creates a right to a refund, and no outcome is guaranteed. Filing for an IEEPA duty refund through CBP is a free official process available to importers of record and their licensed brokers; it is not available to retail purchasers. Questions or a correction? Email <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a>.</p>
+    <p><strong>Last verified:</strong> August 7, 2026. Primary references: <em>Learning Resources, Inc. v. Trump</em>, No.&nbsp;24&ndash;1287 (U.S. Feb.&nbsp;20, 2026); 91&nbsp;Fed.&nbsp;Reg.&nbsp;42207 (July&nbsp;8, 2026); and the court filings and dockets in <em>Hoffert v. Nintendo of America Inc.</em> and <em>Briggs v. Costco Wholesale Corporation</em> (W.D. Wash.).</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>

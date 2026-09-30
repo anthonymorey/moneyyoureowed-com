@@ -56,4 +56,28 @@ export const PRODUCTS = {
     name: "Money You're Owed Master Tracker", price: 2900, ml: ML_SINGLE_PURCHASED,
     files: [["Master Tracker — your claim dashboard (spreadsheet)", "Money-Youre-Owed-Master-Tracker.xlsx"], ["Master Tracker — quick-start guide", "Money-You-re-Owed-Master-Tracker.pdf"]],
   },
+  "glp1-appeal": {
+    name: "GLP-1 Appeal Kit",
+    price: 3900,
+    ml: ML_SINGLE_PURCHASED,
+    delivery: "glp1-appeal",
+    successPath: "/glp1-appeal/thank-you",
+    cancelPath: "/glp1-appeal/?checkout=cancelled",
+  },
+  denialfix: {
+    name: "DenialFix for Home Insurance Claims",
+    price: 4700,
+    ml: ML_SINGLE_PURCHASED,
+    delivery: "denialfix",
+    successPath: "/denialfix/thank-you",
+    cancelPath: "/denialfix/?checkout=cancelled",
+  },
+  "airbnb-damage-claim": {
+    name: "Airbnb Damage Claim Builder",
+    price: 4700,
+    ml: ML_SINGLE_PURCHASED,
+    delivery: "airbnb-damage-claim",
+    successPath: "/airbnb-damage-claim/thank-you",
+    cancelPath: "/airbnb-damage-claim/?checkout=cancelled",
+  },
 };

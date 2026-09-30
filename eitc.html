@@ -3,172 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free EITC Eligibility Checklist - The $1,500+ tax credit 1 in 5 Americans forget to claim. Check if you qualify in minutes.">
-    <title>Free EITC Eligibility Checklist — Claim $1,500+ | Money You're Owed</title>
+    <meta name="description" content="Free EITC eligibility checklist for reviewing current IRS requirements, filing steps, and prior-year amendment deadlines.">
+    <title>Free EITC Eligibility Checklist | Money You're Owed</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231B6B5F'/><text x='50' y='72' font-size='62' text-anchor='middle' fill='white' font-family='Georgia'>$</text></svg>">
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
+        * { margin:0; padding:0; box-sizing:border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #1a3a3a;
-            background: linear-gradient(135deg, #1B6B5F 0%, #2a8f7e 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1rem;
+            font-family:'Public Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+            line-height:1.65; color:#33413d;
+            background:
+                radial-gradient(50rem 30rem at 85% -15%, rgba(64,145,128,.4) 0%, transparent 60%),
+                radial-gradient(40rem 26rem at 0% 115%, rgba(217,165,63,.18) 0%, transparent 55%),
+                #122b26;
+            min-height:100dvh; display:flex; align-items:center; justify-content:center;
+            padding:2rem 1rem; -webkit-font-smoothing:antialiased;
         }
-        
         .container {
-            background: white;
-            border-radius: 16px;
-            max-width: 600px;
-            width: 100%;
-            padding: 3rem 2.5rem;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            background:#fffefc; border-radius:22px; max-width:600px; width:100%;
+            padding:3rem 2.5rem; box-shadow:0 30px 80px -20px rgba(0,0,0,.5);
         }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 2rem;
-        }
-        
+        .logo { display:flex; align-items:center; justify-content:center; gap:.9rem; margin-bottom:2rem; }
         .logo-circle {
-            width: 50px;
-            height: 50px;
-            background: #1B6B5F;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 24px;
-            font-weight: bold;
+            width:44px; height:44px; background:#1B6B5F; border-radius:12px;
+            display:flex; align-items:center; justify-content:center;
+            color:#fff; font-size:22px; font-weight:800; font-family:'Newsreader',Georgia,serif;
         }
-        
-        .logo-text h1 {
-            font-size: 1.3rem;
-            color: #1B6B5F;
-            font-weight: 700;
-        }
-        
+        .logo-text h1 { font-size:1.15rem; color:#14524a; font-weight:700; font-family:'Newsreader',Georgia,serif; }
         h2 {
-            font-size: 2rem;
-            color: #1B6B5F;
-            text-align: center;
-            margin-bottom: 1rem;
-            line-height: 1.2;
+            font-family:'Newsreader',Georgia,serif; font-weight:600; letter-spacing:-.015em;
+            font-size:clamp(1.6rem,4.5vw,2.05rem); color:#17221f; text-align:center;
+            margin-bottom:.9rem; line-height:1.15; text-wrap:balance;
         }
-        
-        .subtitle {
-            text-align: center;
-            color: #666;
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
+        .subtitle { text-align:center; color:#5c6b66; font-size:1.06rem; margin-bottom:2rem; text-wrap:pretty; }
+        .benefits { background:#eef4f1; padding:1.5rem 1.6rem; border-radius:14px; margin:2rem 0; border:1px solid #dde8e2; }
+        .benefits ul { list-style:none; margin:0; }
+        .benefits li { padding:.45rem 0 .45rem 1.7rem; position:relative; font-size:.97rem; color:#33413d; }
+        .benefits li:before { content:"✓"; position:absolute; left:0; color:#1B6B5F; font-weight:800; }
+        .form-group { margin:1.4rem 0; }
+        label { display:block; margin-bottom:.4rem; color:#17221f; font-weight:600; font-size:.9rem; }
+        input[type="email"], input[type="text"] {
+            width:100%; padding:.85rem 1rem; border:1.5px solid #e2e8e4; border-radius:10px;
+            font-size:1rem; font-family:inherit; transition:border-color .15s ease; background:#fff;
         }
-        
-        .benefits {
-            background: #f0f8f7;
-            padding: 1.5rem;
-            border-radius: 8px;
-            margin: 2rem 0;
-        }
-        
-        .benefits ul {
-            list-style: none;
-            margin: 0;
-        }
-        
-        .benefits li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        
-        .benefits li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #1B6B5F;
-            font-weight: bold;
-        }
-        
-        .form-group {
-            margin: 1.5rem 0;
-        }
-        
-        label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #333;
-            font-weight: 500;
-        }
-        
-        input[type="email"],
-        input[type="text"] {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 2px solid #ddd;
-            border-radius: 8px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        input:focus {
-            outline: none;
-            border-color: #1B6B5F;
-        }
-        
+        input:focus { outline:none; border-color:#1B6B5F; }
         button {
-            width: 100%;
-            background: #1B6B5F;
-            color: white;
-            padding: 1rem;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
+            width:100%; background:#1B6B5F; color:#fff; padding:1rem; border:none; border-radius:12px;
+            font-size:1.08rem; font-weight:800; font-family:inherit; cursor:pointer;
+            box-shadow:0 12px 28px -12px rgba(20,82,74,.55);
+            transition:background .18s ease, transform .18s cubic-bezier(.34,1.56,.64,1);
         }
-        
-        button:hover {
-            background: #155449;
-            transform: translateY(-2px);
-        }
-        
-        .privacy {
-            text-align: center;
-            color: #999;
-            font-size: 0.85rem;
-            margin-top: 1.5rem;
-        }
-        
-        .success {
-            display: none;
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .success h3 {
-            color: #1B6B5F;
-            margin-bottom: 1rem;
-        }
-        
-        @media (max-width: 640px) {
-            .container {
-                padding: 2rem 1.5rem;
-            }
-            
-            h2 {
-                font-size: 1.5rem;
-            }
+        button:hover { background:#14524a; transform:translateY(-2px); }
+        button:active { transform:scale(.985); }
+        button:disabled { opacity:.65; cursor:wait; transform:none; }
+        button:focus-visible, a:focus-visible, input:focus-visible { outline:3px solid #1B6B5F; outline-offset:2px; }
+        .privacy { text-align:center; color:#8a978f; font-size:.85rem; margin-top:1.4rem; }
+        .trust-strip{display:flex;flex-wrap:wrap;gap:.5rem 1.1rem;justify-content:center;margin:0 0 1.6rem;padding:0 .4rem;}
+        .trust-strip span{font-size:.82rem;color:#5c6b66;font-weight:600;white-space:nowrap;}
+        .page-footer{margin-top:2rem;padding-top:1.3rem;border-top:1px solid #e2e8e4;text-align:center;font-size:.8rem;color:#8a978f;line-height:1.7;}
+        .page-footer a{color:#5c6b66;text-decoration:none;font-weight:600;}
+        .page-footer a:hover{text-decoration:underline;}
+        .success { display:none; text-align:center; padding:2rem 0; }
+        .success h3 { color:#14524a; margin-bottom:1rem; font-family:'Newsreader',Georgia,serif; font-size:1.35rem; }
+        @media (max-width:640px) {
+            .container { padding:2rem 1.4rem; }
         }
     </style>
+    <link rel="canonical" href="https://moneyyoureowed.com/eitc">
+    <link rel="stylesheet" href="/lead-family.css">
+    <script src="/lead-family.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -181,17 +84,25 @@
         
         <div id="form-content">
             <h2>Free EITC Eligibility Checklist</h2>
-            <p class="subtitle">The $1,500+ tax credit 1 in 5 Americans forget to claim</p>
+            <p class="subtitle">Review current IRS eligibility rules, filing steps, and the deadlines that apply to prior-year claims.</p>
             
             <div class="benefits">
                 <ul>
                     <li>Check if you qualify for the Earned Income Tax Credit</li>
-                    <li>How to claim it for the past 3 years (retroactive refunds)</li>
-                    <li>Income limits and family-size breakdowns for 2024-2026</li>
+                    <li>How prior-year amended returns work within the applicable refund deadline</li>
+                    <li>Where to verify current income limits and family-size rules</li>
                     <li>Exact IRS forms and filing instructions</li>
                 </ul>
             </div>
-            
+
+            <div class="honesty"><strong>Straight talk:</strong> Eligibility and credit size depend on the tax year and household facts. Verify current IRS instructions or use qualified tax help before filing.</div>
+
+            <div class="trust-strip">
+              <span>🏛️ Built from official government sources</span>
+              <span>🔒 No card, no catch</span>
+              <span>✉️ Unsubscribe in one click</span>
+            </div>
+
             <form id="lead-form" action="https://landing.mailerlite.com/webforms/submit/..." method="POST">
                 <input type="hidden" name="ml-submit" value="1">
                 
@@ -224,8 +135,13 @@
                 <a href="/" style="color: #1B6B5F; text-decoration: none; font-weight: 600;">← Back to Money You're Owed</a>
             </p>
         </div>
+
+        <footer class="page-footer">
+          <a href="/">Money You're Owed</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="mailto:hello@moneyyoureowed.com">Contact</a><br>
+          <span>© 2026 Money You're Owed · Educational information, not financial or legal advice.</span>
+        </footer>
     </div>
-    
+
         <script>
         document.getElementById('lead-form').addEventListener('submit', function(e) {
             e.preventDefault();

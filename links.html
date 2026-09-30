@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Checklists | Money You're Owed</title>
+<meta name="description" content="Every free Money You're Owed checklist in one place: unclaimed money, airline refunds, surprise medical bills and more. Official routes, no paid middlemen.">
+<link rel="canonical" href="https://moneyyoureowed.com/links">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231B6B5F'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white' font-family='Georgia'>$</text></svg>">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family:'Public Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    line-height:1.5; color:#33413d; -webkit-font-smoothing:antialiased;
+    background:
+      radial-gradient(50rem 30rem at 85% -15%, rgba(64,145,128,.4) 0%, transparent 60%),
+      radial-gradient(40rem 26rem at 0% 115%, rgba(217,165,63,.18) 0%, transparent 55%),
+      #122b26;
+    min-height:100dvh; padding:2rem 1rem;
+  }
+  .wrap { max-width:520px; margin:0 auto; }
+  .head { text-align:center; color:#fffefc; margin-bottom:1.5rem; }
+  .badge { width:56px; height:56px; margin:0 auto .8rem; background:#1B6B5F; border-radius:16px;
+           display:flex; align-items:center; justify-content:center; font:800 28px Georgia,serif; color:#fff; }
+  .head h1 { font:700 1.5rem Georgia,'Newsreader',serif; }
+  .head p { opacity:.8; margin-top:.35rem; font-size:.95rem; }
+  a.item { display:block; background:#fffefc; border-radius:16px; padding:1rem 1.15rem; margin-bottom:.75rem;
+           text-decoration:none; color:#1a3a3a; box-shadow:0 10px 30px -12px rgba(0,0,0,.45);
+           transition:transform .12s ease; }
+  a.item:hover, a.item:focus-visible { transform:translateY(-2px); outline:none; }
+  a.item:focus-visible { box-shadow:0 0 0 3px #d9a53f; }
+  .item b { display:block; font-size:1.02rem; color:#1B6B5F; }
+  .item span { display:block; font-size:.88rem; margin-top:.2rem; color:#51605c; }
+  .item.hot { border:2px solid #d9a53f; }
+  .note { color:#cfe0db; font-size:.8rem; text-align:center; margin-top:1.25rem; }
+  .note a { color:#fffefc; }
+  @media (prefers-reduced-motion: reduce) { a.item { transition:none; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="head">
+    <div class="badge" aria-hidden="true">$</div>
+    <h1>Money You're Owed</h1>
+    <p>Free checklists. Official routes. No paid middlemen.</p>
+  </div>
+
+  <a class="item hot" href="/unclaimed"><b>50-State Unclaimed Money Checklist</b><span>Search every official state and federal database for money in your name.</span></a>
+  <a class="item" href="/airline"><b>Airline Refund Cheat-Sheet</b><span>When the airline owes you cash, not a voucher, and the exact words to say.</span></a>
+  <a class="item" href="/medical"><b>Surprise Medical Bill Checklist</b><span>Your No Surprises Act rights and the steps to fight a wrong bill.</span></a>
+  <a class="item" href="/11ways"><b>11-Way Money Checklist</b><span>Refunds, warranties, price drops, fees and more everyday routes.</span></a>
+  <a class="item" href="/propertytax"><b>Property Tax Appeal Kit</b><span>Letter, comps worksheet and checklist to appeal an over-assessment.</span></a>
+  <a class="item" href="/eitc"><b>EITC Eligibility Checklist</b><span>Check the tax credit many eligible families never claim.</span></a>
+  <a class="item" href="/glp1"><b>GLP-1 Coverage Checklist</b><span>The Medicare pilot and the private-insurance appeal path.</span></a>
+  <a class="item" href="/warranty"><b>Warranty Claim Pack</b><span>What federal law says when they tell you the warranty is void.</span></a>
+  <a class="item" href="/car-deal"><b>Out-the-Door Car Deal Checklist</b><span>The numbers to check before you sign.</span></a>
+  <a class="item" href="/salary"><b>Salary Negotiation Pack</b><span>The script most people never use.</span></a>
+
+  <p class="note">General education, not financial or legal advice. <a href="/">moneyyoureowed.com</a></p>
+</main>
+<script>
+  // Carry the traffic source (e.g. ?src=ig-bio) onto every checklist page so sign-ups are attributed.
+  (function () {
+    try {
+      var src = new URLSearchParams(location.search).get("src");
+      if (!src || !/^[a-z0-9-]{1,40}$/.test(src)) return;
+      document.querySelectorAll("a.item").forEach(function (a) { a.href = a.getAttribute("href") + "?src=" + src; });
+    } catch (e) {}
+  })();
+</script>
+</body>
+</html>

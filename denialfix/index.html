@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DenialFix · Organize a Home Insurance Denial</title>
+  <meta name="description" content="Compare your home insurance denial, cited policy wording, and repair estimate in a private browser-local claim preparation workspace.">
+  <link rel="canonical" href="https://moneyyoureowed.com/denialfix/">
+  <meta property="og:title" content="DenialFix · Put the denial, policy and estimate on one map">
+  <meta property="og:description" content="A browser-local claim review organizer for US homeowners. No AI upload. No coverage promise.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://moneyyoureowed.com/denialfix/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./landing.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap masthead">
+      <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">$</span>Money You’re Owed</a>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-button>Menu</button>
+      <nav class="site-nav" id="site-nav" data-site-nav data-open="false" aria-label="Main navigation">
+        <a class="nav-link" href="#how">How it works</a>
+        <a class="nav-link" href="#free-help">Free help</a>
+        <a class="nav-link" href="#inside">What’s inside</a>
+        <a class="nav-link" href="#buy">Get DenialFix</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="denialfix-hero">
+      <div class="wrap denialfix-hero-grid">
+        <div>
+          <h1>Put the denial, policy and estimate on one map.</h1>
+          <p class="lede">DenialFix turns three messy source documents into a private claim-preparation workspace: reason patterns, cited policy wording, estimate amounts, evidence gaps, correspondence, and one exportable record.</p>
+          <p class="truth-line"><strong>Your documents stay in your browser.</strong> DenialFix does not upload them to Money You’re Owed or an AI service. It does not decide coverage, calculate deadlines, or promise payment.</p>
+          <div class="action-row">
+            <a class="action" href="#buy">See what $47 removes</a>
+            <a class="action action--secondary" href="#mechanism">View the sample map</a>
+          </div>
+        </div>
+
+        <aside class="checkout-panel" id="buy" aria-labelledby="buy-title">
+          <h2 id="buy-title">DenialFix</h2>
+          <div class="price-lockup"><strong>$47</strong><span>one-time · USD</span></div>
+          <p>Immediate buyer access after secure Stripe checkout. Includes future V1 fixes.</p>
+          <form id="denialfix-checkout" novalidate data-product="denialfix">
+            <div class="field">
+              <label for="checkout-email">Email for receipt and access</label>
+              <input id="checkout-email" name="email" type="email" autocomplete="email" required inputmode="email" placeholder="you@example.com">
+            </div>
+            <button class="action" type="submit">Get DenialFix — $47</button>
+            <p class="status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="checkout-fine">30-day money-back guarantee. Personal-use license. <a href="/terms.html">Terms</a> · <a href="/privacy.html">Privacy</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="mechanism" id="mechanism">
+      <div class="wrap">
+        <div class="mechanism-head">
+          <h2>The product is the comparison—not another appeal template.</h2>
+          <p>This sample shows the actual local workflow with fictional wording. It labels candidates instead of pretending a keyword match is a coverage conclusion.</p>
+        </div>
+
+        <div class="sample-workbench">
+          <div class="sample-tabs" role="tablist" aria-label="Sample claim documents">
+            <button class="sample-tab" id="tab-denial" role="tab" aria-selected="true" aria-controls="sample-denial">Denial wording</button>
+            <button class="sample-tab" id="tab-policy" role="tab" aria-selected="false" aria-controls="sample-policy" tabindex="-1">Policy wording</button>
+            <button class="sample-tab" id="tab-map" role="tab" aria-selected="false" aria-controls="sample-map" tabindex="-1">Claim map</button>
+          </div>
+          <div class="sample-pane" id="sample-denial" role="tabpanel" aria-labelledby="tab-denial" data-active="true">
+            <h3>Fictional denial excerpt</h3>
+            <p class="sample-quote">“Our inspection indicates repeated seepage or leakage over a period of 14 days or more. See Section I — Exclusions, paragraph 3 and endorsement HO 04 95.”</p>
+            <p class="sample-note">The app marks “repeated seepage,” “Section I — Exclusions,” “paragraph 3,” and “HO 04 95” as candidate terms to verify.</p>
+          </div>
+          <div class="sample-pane" id="sample-policy" role="tabpanel" aria-labelledby="tab-policy" data-active="false" hidden>
+            <h3>Fictional policy excerpt</h3>
+            <p class="sample-quote">“Water damage caused by constant or repeated seepage or leakage over a period of 14 days or more is excluded. HO 04 95 modifies this policy.”</p>
+            <p class="sample-note">DenialFix surfaces nearby wording. You still compare it with the complete original policy, definitions, conditions, and endorsements.</p>
+          </div>
+          <div class="sample-pane" id="sample-map" role="tabpanel" aria-labelledby="tab-map" data-active="false" hidden>
+            <h3>Candidate evidence map</h3>
+            <div class="sample-ledger">
+              <div class="sample-row"><strong>Pattern to verify</strong><p>Repeated or gradual water—not a determination that the exclusion is correct.</p></div>
+              <div class="sample-row"><strong>Question to resolve</strong><p>Which exact facts and wording make the insurer treat the event as gradual rather than sudden?</p></div>
+              <div class="sample-row"><strong>Evidence to check</strong><p>Dated photos, first-visible-sign timeline, cause-and-origin report, maintenance records.</p></div>
+            </div>
+            <p class="sample-note">The same workspace indexes estimate amounts, tracks documents and correspondence, and exports one preparation packet.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="how">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>A fifteen-minute first pass, then a record you can improve.</h2>
+          <p>The job is not “write an angry letter.” It is to preserve the insurer’s exact position, find the controlling wording, list unresolved facts, and keep every request and response together.</p>
+        </div>
+        <div class="process-ledger">
+          <div class="process-row"><span class="step">01</span><h3>Load locally</h3><p>Import PDF/TXT files or paste the denial, relevant policy wording, and estimate. Redaction guidance appears before import.</p></div>
+          <div class="process-row"><span class="step">02</span><h3>Verify candidates</h3><p>Review detected reason patterns, references, dates, dollar amounts, and nearby policy passages against the originals.</p></div>
+          <div class="process-row"><span class="step">03</span><h3>Close evidence gaps</h3><p>Track reports, photos, estimates, receipts, requests, and correspondence without handing your documents to an AI service.</p></div>
+          <div class="process-row"><span class="step">04</span><h3>Export the record</h3><p>Download a readable claim-preparation packet and a portable JSON backup. Print or save the packet as PDF.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section free-route" id="free-help">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>You may not need to buy anything.</h2>
+          <p>If the issue is a regulator complaint or you only need general guidance, use the free official and nonprofit routes first. DenialFix is for the extra work of organizing your own documents and record.</p>
+        </div>
+        <div class="route-grid">
+          <article class="route-item">
+            <h3>Your state insurance department</h3>
+            <p>State regulators accept complaints and may review whether the insurer followed the policy and law. They do not guarantee payment or act as your lawyer.</p>
+            <a href="https://content.naic.org/article/how-file-complaint-and-research-complaints-against-insurance-carriers" target="_blank" rel="noopener">Find the official state route through NAIC ↗</a>
+          </article>
+          <article class="route-item">
+            <h3>United Policyholders</h3>
+            <p>Free current guidance covers common claim-dispute routes, including the distinction between amount/scope disputes and coverage disputes.</p>
+            <a href="https://uphelp.org/claim-guidance-publications/resolving-claim-disputes/" target="_blank" rel="noopener">Read the free dispute guide ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="inside">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>What the paid workspace does—and where it stops.</h2>
+          <p>It removes organization work. It does not sell certainty about a policy, law, deadline, settlement, or appeal outcome.</p>
+        </div>
+        <div class="inside-grid">
+          <div class="inside-main">
+            <h3>Inside DenialFix</h3>
+            <ul>
+              <li>Local PDF/TXT import and paste workflow</li>
+              <li>Common denial-reason pattern detection</li>
+              <li>Candidate policy-reference and nearby-wording index</li>
+              <li>Estimate dollar-amount index</li>
+              <li>Evidence and correspondence trackers</li>
+              <li>Printable HTML preparation packet</li>
+              <li>Portable JSON backup and restore</li>
+              <li>Fictional sample claim for a no-risk first run</li>
+            </ul>
+          </div>
+          <div class="boundary-list">
+            <div class="boundary-row"><strong>No coverage verdict</strong><p>Some denials are correct. A text match cannot decide policy interpretation, causation, exclusions, or bad faith.</p></div>
+            <div class="boundary-row"><strong>No deadline calculator</strong><p>Deadlines vary by policy, notice, state, dispute route, and facts. You enter only a date you have copied and independently confirmed.</p></div>
+            <div class="boundary-row"><strong>No public-adjuster or legal service</strong><p>DenialFix does not contact an insurer, negotiate, value a claim, recommend a settlement, or represent you.</p></div>
+            <div class="boundary-row"><strong>No document upload</strong><p>Claim text stays in browser memory unless you explicitly save it in your browser or export it to your device.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="wrap privacy-callout">
+        <h2>Your claim documents are not training data.</h2>
+        <p>The buyer workspace uses deterministic JavaScript and a locally served PDF reader. Document contents are not posted to Money You’re Owed, Stripe, Cloudflare analytics, or an AI API. Optional device saving uses your browser’s <code>localStorage</code>; export and clear controls stay under your control.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="wrap offer-grid">
+        <div class="offer-copy">
+          <h2>Buy the organization—not a promise.</h2>
+          <p>A diligent homeowner can build these tables manually for free. DenialFix earns its $47 by turning the denial, policy, estimate, evidence, and correspondence into one repeatable workspace without uploading private documents.</p>
+          <p>Current paid claim-help alternatives publicly list $97–$297 and $199 offers. That is market context, not proof that DenialFix will recover money or that $47 is the “right” price.</p>
+        </div>
+        <div class="offer-box">
+          <div class="price-lockup"><strong>$47</strong><span>one-time · USD</span></div>
+          <h3>DenialFix browser workspace</h3>
+          <ul><li>Immediate access after checkout</li><li>All V1 modules listed above</li><li>30-day money-back guarantee</li><li>Email support at hello@moneyyoureowed.com</li></ul>
+          <a class="action" href="#buy">Get DenialFix — $47</a>
+          <p class="offer-fine">No subscription. No recovery percentage. No claim-submission service.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section" id="faq">
+      <div class="wrap">
+        <div class="section-heading"><h2>Straight answers before checkout.</h2></div>
+        <div class="denialfix-faq">
+          <details open><summary>Will DenialFix tell me whether the insurer is wrong?</summary><p>No. It organizes candidate wording, questions, and evidence gaps. Coverage and legal conclusions depend on the complete policy, facts, state law, expert evidence, and sometimes professional review.</p></details>
+          <details><summary>Does it write an appeal letter?</summary><p>It exports a preparation packet and correspondence record. It does not auto-generate a legal argument or claim that coverage exists. You can use the organized record when requesting clarification, filing a complaint, or speaking with a qualified professional.</p></details>
+          <details><summary>Can I upload scanned PDFs?</summary><p>Text-based PDFs work best. Image-only scans may contain no extractable text. Use your scanner’s OCR/export-to-text function, then import the searchable PDF or paste the text. Always verify against the visible original.</p></details>
+          <details><summary>Does it replace a public adjuster or lawyer?</summary><p>No. DenialFix does not represent you, negotiate, value loss, interpret law, or recommend a settlement. Public-adjuster licensing and lawyer rules vary by state.</p></details>
+          <details><summary>What if the denial is correct?</summary><p>Then the organizer may help you see the cited exclusion and stop spending time on a route that does not fit. Use the free official/nonprofit sources and seek qualified advice when the stakes or uncertainty justify it.</p></details>
+          <details><summary>What is the refund policy?</summary><p>Money You’re Owed digital products carry a 30-day money-back guarantee. Email hello@moneyyoureowed.com within 30 days. A refund does not depend on your insurer’s decision.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="denialfix-footer">
+    <div class="wrap">
+      <p class="footer-statement">A clearer record is useful. A guaranteed outcome would be fiction.</p>
+      <p>DenialFix is consumer self-help software, not legal advice, public-adjuster activity, insurer representation, or a guarantee of coverage or payment. Policy wording, rights, complaint routes, appraisal rules, and deadlines vary.</p>
+      <div class="footer-meta"><a class="footer-link" href="/">Money You’re Owed</a><a class="footer-link" href="/privacy.html">Privacy</a><a class="footer-link" href="/terms.html">Terms</a><a class="footer-link" href="mailto:hello@moneyyoureowed.com">Support</a></div>
+    </div>
+  </footer>
+
+  <script src="/site.js" defer></script>
+  <script type="module" src="./landing.mjs"></script>
+</body>
+</html>

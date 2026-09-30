@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="no-referrer">
+  <title>Airbnb Damage Claim Builder · Private evidence workspace</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to workspace</a>
+  <header class="app-header no-print">
+    <a class="brand" href="/airbnb-damage-claim/"><span class="brand-mark" aria-hidden="true">$</span>Money You’re Owed</a>
+    <div><strong>Airbnb Damage Claim Builder</strong><span>Private evidence workspace</span></div>
+    <p id="save-status" role="status" aria-live="polite">Not saved on this device.</p>
+  </header>
+
+  <main id="workspace">
+    <section class="source-boundary">
+      <div><p class="docket">CURRENT SOURCE CHECK · JULY 26, 2026</p><h1>Organize facts. Preserve originals. Decide nothing for Airbnb.</h1></div>
+      <p>Sections 3.1–3.4 of Airbnb’s current Host Damage Protection Terms informed this organizer. It does not create evidence, write a reimbursement narrative, determine eligibility, provide legal advice or predict payment.</p>
+    </section>
+
+    <nav class="workspace-nav no-print" aria-label="Workspace sections">
+      <a href="#case">Case</a><a href="#losses">Loss items</a><a href="#evidence">Evidence</a><a href="#timeline">Timeline</a><a href="#correspondence">Correspondence</a><a href="#review">Review</a>
+    </nav>
+
+    <section class="tool-dock no-print" aria-label="Record tools">
+      <button type="button" id="load-sample">Load fictional sample</button>
+      <button type="button" id="save-record">Save on this device</button>
+      <button type="button" id="export-json">Download JSON backup</button>
+      <label class="file-control">Restore JSON<input id="restore-json" type="file" accept="application/json,.json"></label>
+      <button type="button" id="clear-record" class="danger">Clear all local data</button>
+    </section>
+
+    <section class="workspace-section" id="case">
+      <header><p class="docket">CASE RECORD</p><h2>Start with the event, not the argument.</h2><p>Enter observed facts and preserve uncertainty. The app calculates two reference dates from checkout only after you provide it.</p></header>
+      <form id="case-form" class="form-grid no-print">
+        <label>Listing or property label<input name="listing" data-case type="text" autocomplete="off" placeholder="Lake House — private label"></label>
+        <label>Reservation code<input name="reservationCode" data-case type="text" autocomplete="off" placeholder="HM…"></label>
+        <label>Guest name as shown<input name="guestName" data-case type="text" autocomplete="off"></label>
+        <label>Incident type<select name="incidentType" data-case><option value="">Select</option><option value="guest-damage">Guest damage</option><option value="missing-item">Missing item</option><option value="extra-cleaning">Unexpected extra cleaning</option><option value="smoke-odor">Smoke odor</option><option value="income-loss">Booking income loss</option><option value="other">Other / verify scope</option></select></label>
+        <label>Guest checkout date<input name="checkoutDate" data-case type="date"></label>
+        <label>Incident discovered<input name="incidentDiscovered" data-case type="datetime-local"></label>
+        <label class="wide">Observed factual summary<textarea name="factualSummary" data-case rows="5" placeholder="What was observed, where, and when. Do not infer motive or add unsupported facts."></textarea></label>
+        <label class="wide">Time, cause and origin record<textarea name="causeOrigin" data-case rows="4" placeholder="State what is known, who observed it, and what remains unconfirmed."></textarea></label>
+        <label class="check"><input name="guestContacted" data-case type="checkbox">Guest-recovery step recorded</label>
+        <label class="check"><input name="platformNotified" data-case type="checkbox">Platform complaint notification recorded</label>
+        <label class="check"><input name="termsVerified" data-case type="checkbox">I checked the live official terms</label>
+        <label>Terms checked on<input name="termsVerifiedDate" data-case type="date"></label>
+        <button type="submit" hidden>Update case record</button>
+      </form>
+      <div class="date-docket" id="date-docket"><div><span>Guest-action reference</span><strong id="guest-date">—</strong></div><div><span>Formal-request reference</span><strong id="formal-date">—</strong></div><p>Current general terms: 14 and 30 days from checkout. Verify before relying on either date.</p></div>
+    </section>
+
+    <section class="workspace-section" id="losses">
+      <header><p class="docket">SECTION 3.3.2 INVENTORY</p><h2>One amount. One basis. One evidence trail.</h2><p>Add each lost, damaged or cleaning item separately. The total is arithmetic only—not a payable value.</p></header>
+      <form id="line-item-form" class="entry-form no-print">
+        <label>Description<input name="description" type="text" required></label><label>Make/model<input name="makeModel" type="text"></label><label>Purchase date<input name="purchaseDate" type="date"></label>
+        <label>Condition before<textarea name="conditionBefore" rows="2"></textarea></label><label>Condition after<textarea name="conditionAfter" rows="2"></textarea></label>
+        <label>Basis<select name="remedy"><option value="repair">Repair</option><option value="replace">Replacement</option><option value="cleaning">Cleaning</option><option value="income-loss">Booking income loss</option><option value="other">Other</option></select></label>
+        <label>Amount (USD)<input name="amount" type="number" min="0" step="0.01" required></label><label>Ownership proof<input name="ownershipProof" type="text"></label><label>Estimate/receipt proof<input name="estimateProof" type="text"></label><label>Evidence IDs<input name="evidenceRefs" type="text" placeholder="EV-01, EV-02"></label>
+        <button type="submit">Add loss item</button>
+      </form>
+      <div class="table-scroll"><table><thead><tr><th>Item</th><th>Before → after</th><th>Basis</th><th>Amount</th><th>Proof / evidence</th><th class="no-print">Action</th></tr></thead><tbody id="loss-rows"></tbody><tfoot><tr><th colspan="3">Entered total</th><th id="loss-total">$0.00</th><td colspan="2">Not a payment prediction.</td></tr></tfoot></table></div>
+    </section>
+
+    <section class="workspace-section" id="evidence">
+      <header><p class="docket">EVIDENCE REGISTER</p><h2>Index the original. Do not upload it.</h2><p>The software stores labels and relationships only. Keep authentic originals in your own storage.</p></header>
+      <form id="evidence-form" class="entry-form no-print">
+        <label>ID<input name="id" type="text" placeholder="EV-01" required></label><label>Type<select name="type"><option value="photo">Photo</option><option value="video">Video</option><option value="receipt">Receipt</option><option value="estimate">Estimate</option><option value="message">Message</option><option value="condition-record">Condition record</option><option value="police-report">Police report</option><option value="other">Other</option></select></label>
+        <label>Label<input name="label" type="text" required></label><label>Captured/date<input name="capturedAt" type="datetime-local"></label><label>Source<input name="source" type="text"></label><label class="wide">What it supports<textarea name="proves" rows="2" required></textarea></label>
+        <label>Original status<select name="originalStatus"><option value="original-retained">Original retained</option><option value="copy-only">Copy only</option><option value="unknown">Unknown</option><option value="altered">Altered / do not present as original</option></select></label><button type="submit">Add evidence row</button>
+      </form>
+      <div class="table-scroll"><table><thead><tr><th>ID</th><th>Evidence</th><th>Date/source</th><th>What it supports</th><th>Status</th><th class="no-print">Action</th></tr></thead><tbody id="evidence-rows"></tbody></table></div>
+    </section>
+
+    <section class="workspace-section" id="timeline">
+      <header><p class="docket">DATED TIMELINE</p><h2>Every event needs a source.</h2></header>
+      <form id="timeline-form" class="entry-form compact no-print"><label>Date/time<input name="at" type="datetime-local" required></label><label>Fact<input name="fact" type="text" required></label><label>Source<input name="source" type="text" required></label><button type="submit">Add timeline fact</button></form>
+      <div class="table-scroll"><table><thead><tr><th>Date/time</th><th>Fact</th><th>Source</th><th class="no-print">Action</th></tr></thead><tbody id="timeline-rows"></tbody></table></div>
+    </section>
+
+    <section class="workspace-section" id="correspondence">
+      <header><p class="docket">CORRESPONDENCE REGISTER</p><h2>Record what happened. Do not rewrite it.</h2></header>
+      <form id="correspondence-form" class="entry-form compact no-print"><label>Date/time<input name="at" type="datetime-local" required></label><label>Party<input name="party" type="text" required placeholder="Guest / Airbnb"></label><label>Channel<input name="channel" type="text" required placeholder="Airbnb message"></label><label>Factual note<input name="fact" type="text" required></label><button type="submit">Add correspondence</button></form>
+      <div class="table-scroll"><table><thead><tr><th>Date/time</th><th>Party</th><th>Channel</th><th>Factual note</th><th class="no-print">Action</th></tr></thead><tbody id="correspondence-rows"></tbody></table></div>
+    </section>
+
+    <section class="workspace-section review-section" id="review">
+      <header><p class="docket">COMPLETENESS REVIEW</p><h2>Complete enough to review is not eligible enough to pay.</h2></header>
+      <div class="readiness" id="readiness" data-state="incomplete"><strong id="readiness-status">INCOMPLETE</strong><div id="readiness-detail"></div></div>
+      <div class="review-grid"><article><h3>Incident facts</h3><p id="review-facts">Not entered.</p></article><article><h3>Current-source timing</h3><p id="review-dates">No checkout date entered.</p></article><article><h3>Loss inventory</h3><p id="review-losses">No line items.</p></article><article><h3>Evidence and chronology</h3><p id="review-evidence">No evidence rows.</p></article></div>
+      <div class="export-actions no-print"><button type="button" id="print-record">Print / save as PDF</button><button type="button" id="download-html">Download standalone HTML packet</button></div>
+      <p class="boundary-note"><strong>Independent and not affiliated with Airbnb.</strong> This record is self-help organization, not legal advice, filing, representation, eligibility, valuation, verification or a guarantee. Before sharing, compare every field with authentic source material and the current official process.</p>
+    </section>
+  </main>
+
+  <footer class="app-footer"><a href="https://www.airbnb.com/help/article/2869" target="_blank" rel="nofollow noopener">Official Host Damage Protection Terms ↗</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="mailto:hello@moneyyoureowed.com">Support</a></footer>
+  <script type="module" src="./app.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MOHELA Overcharged or Misapplied Your Payment? The Dispute Paper Trail</title>
+  <link rel="canonical" href="https://moneyyoureowed.com/guides/mohela-student-loan-overcharge-misapplied-payment-dispute-ki">
+  <meta name="description" content="MOHELA is accused in federal court of misapplying payments and debiting accounts without consent. There is no settlement fund to claim. What you do have is Regulation E, the Fair Credit Reporting Act, and a written record. Here is the order to use them in.">
+  <style>
+    :root {
+      --ink: #1d2026;
+      --muted: #5f6470;
+      --paper: #fdfdfb;
+      --soft: #f1f2ee;
+      --line: #d6d8d2;
+      --brand: #18263e;
+      --brand-dark: #0c1626;
+      --accent: #9b7a22;
+      --link: #14536f;
+      --warning: #fff7e6;
+      --success: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #14161b;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #14161b;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3a3e46;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f6f7f4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f4f6fa;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sources-list {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/guide-family.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"MOHELA Overcharged or Misapplied Your Payment? The Dispute Paper Trail","datePublished":"2026-08-06","dateModified":"2026-08-06","author":{"@type":"Organization","name":"Money You’re Owed","url":"https://moneyyoureowed.com"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is there a MOHELA settlement I can claim money from?","acceptedAnswer":{"@type":"Answer","text":"No. The case people are reading about is American Federation of Teachers v. Higher Education Loan Authority of the State of Missouri, No. 1:24-cv-02460-TSC, in the U.S. District Court for the District of Columbia. It is a District of Columbia consumer-protection action brought by a union on behalf of its members and the general public, not a class action with a settlement fund. On September 29, 2025 the court denied MOHELA’s motion to dismiss without prejudice and denied the union’s motion to send the case back to D.C. Superior Court. Nothing has been decided on the merits. There is no payout to sign up for, and any site telling you to register for one is not describing this case."}},{"@type":"Question","name":"Why didn’t my extra payment reduce what I owe?","acceptedAnswer":{"@type":"Answer","text":"Because of how federal rules order the application of money. Under 34 CFR § 685.211(a)(1)(i), a payment on a Direct Loan outside the Income-Based Repayment plan or the Repayment Assistance Plan goes first to accrued charges and collection costs, then to outstanding interest, then to principal. And under § 685.211(a)(3)(ii), when a prepayment equals or exceeds your monthly amount, the due date of your next payment is advanced “unless the borrower requests otherwise.” That is the sentence that catches people. A lump sum quietly puts you in paid-ahead status instead of knocking down principal, unless you asked in writing for something else."}},{"@type":"Question","name":"MOHELA debited my bank account and I never signed up for auto-pay. What do I do?","acceptedAnswer":{"@type":"Answer","text":"Treat it as a bank error, not a servicer conversation. Regulation E says a preauthorized electronic fund transfer from your account “may be authorized only by a writing signed or similarly authenticated by the consumer,” and whoever obtains that authorization has to give you a copy (12 CFR § 1005.10(b)). If no such writing exists, the debit is an unauthorized transfer, which 12 CFR § 1005.11(a)(1)(i) defines as an error. Notify your bank in writing no later than 60 days after it sent the statement the debit first appeared on. The bank then has 10 business days to decide, or up to 45 days if it provisionally credits your account for the disputed amount."}},{"@type":"Question","name":"How long does MOHELA have to fix a credit report error?","acceptedAnswer":{"@type":"Answer","text":"Dispute it with the credit bureau, not only with MOHELA, because that is what starts the clock. Under 15 U.S.C. § 1681i(a)(1)(A) the bureau has 30 days to complete a reasonable reinvestigation, free of charge. That can stretch by no more than 15 extra days if you send more information during the 30 (§ 1681i(a)(1)(B)). The bureau must tell MOHELA about your dispute within 5 business days (§ 1681i(a)(2)(A)). MOHELA then has duties of its own under 15 U.S.C. § 1681s-2(b): investigate, review what the bureau sent, report back, and if the item is inaccurate, incomplete, or cannot be verified, promptly modify, delete, or permanently block it."}},{"@type":"Question","name":"Does filing a CFPB complaint actually do anything?","acceptedAnswer":{"@type":"Answer","text":"It does one thing reliably, which is create a dated, public, government-logged record that MOHELA has to answer. The CFPB says companies generally respond in 15 days, and in some cases will say the response is in progress and give a final response in 60 days. You then get 60 days to give feedback on that response. It is not an adjudication and nobody orders a refund at the end of it. The honest reason to file is that it is the cheapest way to convert an unanswered phone queue into a written record with a timestamp."}},{"@type":"Question","name":"Can I just sue MOHELA myself?","acceptedAnswer":{"@type":"Answer","text":"Possibly, but go in knowing the defense. In Biden v. Nebraska the Supreme Court held that “By law and function, MOHELA is an instrumentality of Missouri,” and MOHELA now leans on that to claim state sovereign immunity from consumer claims. In the AFT case the court found that defense “colorable,” without reaching whether it actually wins. Cutting the other way, the Department of Education’s own servicing contract says the servicer “acknowledges that any claim or defense of Sovereign Immunity or Qualified Immunity is not applicable to work performed under the Contract.” That question is unresolved. Talk to a consumer attorney before you spend money on a filing fee."}},{"@type":"Question","name":"I can’t get anyone on the phone. Is that just me?","acceptedAnswer":{"@type":"Answer","text":"It is not just you, and it may not be an accident. The amended complaint alleges MOHELA runs a deliberate “call deflection” practice that routes borrowers to its website and self-service tools instead of staffing the phones, and it cites the Department of Education’s own Loan Servicer Performance data for the last quarter of 2024 showing MOHELA’s Average Speed to Answer and Average Call Abandonment Rate as considerably worse than the other federal servicers. Those are allegations, not findings. The practical takeaway is the same either way: stop treating the phone as your primary channel and put everything in writing."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Money You’re Owed","item":"https://moneyyoureowed.com/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://moneyyoureowed.com/guides/"},{"@type":"ListItem","position":3,"name":"MOHELA Overcharged or Misapplied Your Payment? The Dispute Paper Trail","item":"https://moneyyoureowed.com/guides/mohela-student-loan-overcharge-misapplied-payment-dispute-ki"}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO &mdash; part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 borrower&rsquo;s guide</p>
+        <h1>MOHELA Overcharged or Misapplied Your Payment?</h1>
+        <p class="dek">There is no settlement fund, no claim form, and no compensation scheme. What there is: a live federal case, three federal rules with real deadlines attached, and a paper trail you can start today.</p>
+        <p class="verified">Last fact-checked: August 6, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p><strong>Nobody is going to send you a check for this.</strong> The lawsuit borrowers keep hearing about is a District of Columbia consumer-protection case brought by a teachers&rsquo; union, not a class action with a payout. What you can actually push on sits elsewhere, and it is better than it sounds. If MOHELA took money you never authorized, that is a <strong>bank dispute under Regulation E</strong> with a 60-day filing window and a 10-business-day answer. If it wrecked your credit file, that is a <strong>credit-bureau dispute under the Fair Credit Reporting Act</strong> with a hard 30-day clock. Neither of those depends on reaching MOHELA by phone, which is the whole point.</p>
+      </aside>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Four MOHELA problems and where each one actually gets resolved</caption>
+          <thead>
+            <tr>
+              <th scope="col">What went wrong</th>
+              <th scope="col">Who you file with</th>
+              <th scope="col">The deadline that matters</th>
+              <th scope="col">What the rule requires</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Money left your account and you never authorized auto-pay</strong></td>
+              <td>Your bank or credit union</td>
+              <td>Within 60 days of the statement the debit first appeared on</td>
+              <td>Decision in 10 business days, or up to 45 days with a provisional credit to your account (12 CFR &sect;&nbsp;1005.11)</td>
+            </tr>
+            <tr>
+              <td><strong>Wrong amount debited, different from the last transfer</strong></td>
+              <td>Your bank, same error process</td>
+              <td>Same 60-day window</td>
+              <td>Varying-amount transfers require written notice at least 10 days ahead (12 CFR &sect;&nbsp;1005.10(d)(1))</td>
+            </tr>
+            <tr>
+              <td><strong>A late mark or wrong balance on your credit report</strong></td>
+              <td>Equifax, Experian, TransUnion &mdash; all three</td>
+              <td>No filing deadline, but the clock starts the day they receive it</td>
+              <td>Reinvestigation in 30 days, plus at most 15 more (15 U.S.C. &sect;&nbsp;1681i)</td>
+            </tr>
+            <tr>
+              <td><strong>A lump-sum payment that did not reduce your balance</strong></td>
+              <td>MOHELA in writing, then the CFPB</td>
+              <td>None, which is exactly the problem</td>
+              <td>Payments apply to charges, then interest, then principal; prepayments advance your due date unless you say otherwise (34 CFR &sect;&nbsp;685.211(a))</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#court-record">What the court record actually says</a></li>
+          <li><a href="#paid-ahead">The paid-ahead trap that eats lump-sum payments</a></li>
+          <li><a href="#unauthorized">Money taken without authorization: go to your bank</a></li>
+          <li><a href="#credit">Fixing the credit-report damage</a></li>
+          <li><a href="#ladder">The escalation ladder when the phone never answers</a></li>
+          <li><a href="#immunity">The uncomfortable part: no fund, and an immunity defense</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+          <li><a href="#sources">Sources</a></li>
+        </ol>
+      </nav>
+
+      <section id="court-record">
+        <h2>What the court record actually says</h2>
+        <p>Strip away the aggregator pages and there is one case worth knowing about. The American Federation of Teachers sued MOHELA in July 2024; MOHELA moved the case to federal court; the union filed an amended complaint on January 15, 2026. In that amended complaint the union alleges MOHELA &ldquo;traps more than 6.5 million borrowers in a system of its own design, rife with errors, misinformation, and broken promises,&rdquo; in violation of the D.C. Consumer Protection Procedures Act. <span class="source">Source: <a href="https://protectborrowers.org/wp-content/uploads/2026/01/D.D.C.-24-cv-02460-dckt-000050_000-filed-2026-01-15.pdf">Amended Complaint, AFT v. MOHELA, No. 1:24-cv-02460-TSC (D.D.C. Jan. 15, 2026)</a></span></p>
+        <p>Two allegations in that filing map directly onto what borrowers describe. First, that MOHELA debited borrowers&rsquo; bank accounts &ldquo;without their affirmative consent,&rdquo; including people who had never opted back into auto-pay after the payment pause ended. Second, that some borrowers watched funds leave their accounts &ldquo;without a corresponding credit against their loans.&rdquo; Money out, balance unchanged.</p>
+        <p>The filing also points at the Department of Education&rsquo;s own numbers, alleging that in the Loan Servicer Performance data for the last quarter of 2024, MOHELA&rsquo;s Average Speed to Answer and Average Call Abandonment Rate were considerably worse than the other federal servicers, and that this is the intended result of a &ldquo;call deflection&rdquo; practice rather than an accident of staffing.</p>
+        <p>Say the obvious thing out loud: these are allegations in a pending case, not proven facts, and MOHELA disputes them. But they are allegations made under penalty in a federal filing, which puts them a long way above a screenshot on social media. If your experience matches them, you are not imagining it, and you are not the only one.</p>
+      </section>
+
+      <section id="paid-ahead">
+        <h2>The paid-ahead trap that eats lump-sum payments</h2>
+        <p>This is the single most useful thing on this page, and almost nobody explains it before the damage is done.</p>
+        <p>Federal regulation sets the order your payment is applied in. For a Direct Loan outside the Income-Based Repayment plan or the Repayment Assistance Plan, money goes to accrued charges and collection costs first, then outstanding interest, then principal. That part is 34 CFR &sect;&nbsp;685.211(a)(1)(i), and it is why a payment can land without visibly moving your balance.</p>
+        <p>Then comes the trap. Under &sect;&nbsp;685.211(a)(3)(ii), when a prepayment equals or exceeds your monthly repayment amount, the due date of your next payment is advanced <em>unless the borrower requests otherwise</em>. Read that again. Send a big payment and the default behavior is not &ldquo;knock down my principal.&rdquo; It is &ldquo;you are now paid ahead, we will see you in a few months.&rdquo; <span class="source">Source: <a href="https://www.ecfr.gov/current/title-34/section-685.211">34 CFR &sect;&nbsp;685.211</a></span></p>
+        <p>For anyone chasing Public Service Loan Forgiveness, that default is quietly expensive, because months you are paid ahead are months you may not be making qualifying payments. The fix costs nothing and takes one sentence: before or with any payment above your monthly amount, send written instructions telling the servicer how to apply it and that you do not want your due date advanced. Keep the copy. If the payment is misapplied anyway, that written instruction is the whole case.</p>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">A straight answer about what we sell</h2>
+        <p><strong>We do not have a MOHELA-specific template.</strong> There is no student-loan servicer product in our catalog, and we are not going to invent one to put a button here. What the <strong>$59 Money You&rsquo;re Owed Kit</strong> does contain is the generic machinery this fight runs on: a dispute-letter vault you edit yourself, bank and card reversal scripts, and a claim tracker for a dispute that drags on for months. If you want that scaffolding, it is there. If you would rather write your own letters using the rules cited on this page, that route is free and works.</p>
+        <a class="button" href="https://moneyyoureowed.com/">See what the $59 Kit includes</a>
+      </aside>
+
+      <section id="unauthorized">
+        <h2>Money taken without authorization: go to your bank</h2>
+        <p>Borrowers lose weeks here by arguing with the servicer. Wrong counterparty. An unauthorized debit is a Regulation E matter, and Regulation E points you at the institution holding your account.</p>
+        <p>Start with the authorization question. A preauthorized electronic fund transfer out of your account &ldquo;may be authorized only by a writing signed or similarly authenticated by the consumer,&rdquo; and whoever obtained that authorization has to give you a copy (12 CFR &sect;&nbsp;1005.10(b)). So ask MOHELA in writing for a copy of the signed authorization. Either it produces one, in which case you know where you stand, or it cannot, in which case you have a documented unauthorized transfer.</p>
+        <p>There is a second, narrower rule worth knowing if the amount changed. When a preauthorized transfer varies in amount from the previous one, the payee or the bank has to send you written notice of the amount and date at least 10 days before the transfer (12 CFR &sect;&nbsp;1005.10(d)(1)). A surprise larger debit with no advance notice is its own violation, separate from whether you authorized anything at all. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-12/section-1005.10">12 CFR &sect;&nbsp;1005.10</a></span></p>
+        <p>Then file the error notice with your bank. Regulation E defines an &ldquo;error&rdquo; to include an unauthorized transfer and an incorrect transfer to or from your account. Your notice has to reach the bank no later than <strong>60 days after it sent the statement on which the error first appeared</strong>, and it has to identify you, your account, and why you think there is an error. The bank must investigate promptly and decide within 10 business days, or take up to 45 days if it provisionally credits your account for the disputed amount in the meantime. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-12/section-1005.11">12 CFR &sect;&nbsp;1005.11</a></span></p>
+        <p>That 60-day window is the reason this section sits above the credit-report section. It is the only deadline on this page that can expire on you.</p>
+      </section>
+
+      <section id="credit">
+        <h2>Fixing the credit-report damage</h2>
+        <p>A servicing error that turns into a 30-day late mark costs more than the payment did. Dispute it with the credit bureaus, not just with MOHELA, because the bureau dispute is what triggers the statutory clock on both of them.</p>
+        <p>Under 15 U.S.C. &sect;&nbsp;1681i(a)(1)(A), a credit bureau has 30 days from receiving your dispute to complete a reasonable reinvestigation, free of charge. That window extends by no more than 15 additional days, and only if you send relevant information during the original 30 (&sect;&nbsp;1681i(a)(1)(B)). Within 5 business days of getting your dispute, the bureau has to notify MOHELA as the furnisher of the information (&sect;&nbsp;1681i(a)(2)(A)). <span class="source">Source: <a href="https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap41-subchapIII-sec1681i.htm">15 U.S.C. &sect;&nbsp;1681i</a></span></p>
+        <p>Once that notice lands, MOHELA has obligations it cannot answer with a shrug. Under 15 U.S.C. &sect;&nbsp;1681s-2(b) it must investigate, review all relevant information the bureau sent, report the results back, and if the item turns out to be inaccurate, incomplete, or unverifiable, promptly modify it, delete it, or permanently block it from being reported. <span class="source">Source: <a href="https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap41-subchapIII-sec1681s-2.htm">15 U.S.C. &sect;&nbsp;1681s-2</a></span></p>
+        <p>Send it to all three bureaus, in writing, with copies of your payment confirmations and bank statements attached. Send it certified. The point is not politeness; the point is that a dated delivery receipt turns a vague complaint into a countdown.</p>
+      </section>
+
+      <section id="ladder">
+        <h2>The escalation ladder when the phone never answers</h2>
+        <p>If call deflection is the strategy, then the phone is the one channel where you have no record and no clock. Everything below produces both. Work down the list, keep every copy, and stop expecting the call center to be step one.</p>
+        <ul class="checklist">
+          <li><strong>Write, do not call.</strong> Use MOHELA&rsquo;s secure message system and its mailing address for the same request, on the same day. Ask for one specific thing, name the date and dollar amount, and ask for a written response.</li>
+          <li><strong>Request the authorization.</strong> If money left your account, ask in writing for a copy of the signed or similarly authenticated authorization Regulation E requires. The answer, or the silence, is evidence either way.</li>
+          <li><strong>File the bank error notice within 60 days.</strong> Do not wait for MOHELA to reply first. This is the deadline that expires.</li>
+          <li><strong>Dispute with all three credit bureaus in writing</strong> if anything reached your credit file. Certified mail, documents attached.</li>
+          <li><strong>File a CFPB complaint.</strong> Companies generally respond in 15 days, or say the response is in progress and give a final answer within 60 days; you then get 60 days to comment on what they said. The record is public and dated. <span class="source">Source: <a href="https://www.consumerfinance.gov/complaint/process/">CFPB, Complaint process</a></span></li>
+          <li><strong>Then, and only then, consider a lawyer.</strong> By that point you have a file: written requests, delivery receipts, a bank determination, a bureau result, and a federal complaint number. That file is what makes a consumer attorney return your call.</li>
+        </ul>
+        <p>The honest read on this sequence is that it is slow and irritating and it works more often than the phone does. Every step generates a document with a date on it, and documents with dates are the only thing that has ever moved a servicer.</p>
+      </section>
+
+      <section id="immunity">
+        <h2>The uncomfortable part: no fund, and an immunity defense</h2>
+        <p>Two things you should know before you plan around a lawsuit.</p>
+        <p>On September 29, 2025 the district court denied the union&rsquo;s motion to send the case back to D.C. Superior Court and denied MOHELA&rsquo;s motion to dismiss without prejudice. In doing so it found that the arm-of-the-state factors &ldquo;support a finding that MOHELA has a colorable state sovereign immunity defense, although it does not reach the merits of its defense.&rdquo; Colorable is not the same as winning, and the court was explicit that it was not deciding. But it means the immunity question is live. <span class="source">Source: <a href="https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_24-cv-02460/pdf/USCOURTS-dcd-1_24-cv-02460-0.pdf">Memorandum Opinion, AFT v. MOHELA (D.D.C. Sept. 29, 2025)</a></span></p>
+        <p>That defense traces back to the Supreme Court, which held in <em>Biden v. Nebraska</em> that &ldquo;By law and function, MOHELA is an instrumentality of Missouri.&rdquo; A holding that once helped block student debt cancellation is now doing double duty as a shield against consumer claims. <span class="source">Source: <a href="https://www.supremecourt.gov/opinions/22pdf/22-506_nmip.pdf">Biden v. Nebraska, No. 22-506 (U.S. 2023)</a></span></p>
+        <p>Cutting the other way, and quoted at page 9 of that same September 2025 opinion, the Department of Education&rsquo;s servicing contract says: &ldquo;USDS Servicer acknowledges that it is not the U.S. Department of Education, and is not acting as the U.S. Government under this Contract. As such the USDS Servicer acknowledges that any claim or defense of Sovereign Immunity or Qualified Immunity is not applicable to work performed under the Contract and any Task Order issued under the Contract.&rdquo; MOHELA signed that. Whether it binds MOHELA against a borrower is unresolved.</p>
+        <p>Here is the judgment call this page exists to make. Do not wait on that case. It has no claims administrator, no fund, and no timetable that helps you. The Regulation E window closes in 60 days whether or not a court in Washington ever reaches the merits, and the credit bureau clock starts the day you mail the letter. Work the rules you can enforce yourself, and treat the litigation as somebody else&rsquo;s long game.</p>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Is there a MOHELA settlement I can claim money from?</h3>
+          <p>No. The case people are reading about is American Federation of Teachers v. Higher Education Loan Authority of the State of Missouri, No. 1:24-cv-02460-TSC, in the U.S. District Court for the District of Columbia. It is a District of Columbia consumer-protection action brought by a union on behalf of its members and the general public, not a class action with a settlement fund. On September 29, 2025 the court denied MOHELA&rsquo;s motion to dismiss without prejudice and denied the union&rsquo;s motion to send the case back to D.C. Superior Court. Nothing has been decided on the merits. There is no payout to sign up for, and any site telling you to register for one is not describing this case.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why didn&rsquo;t my extra payment reduce what I owe?</h3>
+          <p>Because of how federal rules order the application of money. Under 34 CFR &sect; 685.211(a)(1)(i), a payment on a Direct Loan outside the Income-Based Repayment plan or the Repayment Assistance Plan goes first to accrued charges and collection costs, then to outstanding interest, then to principal. And under &sect; 685.211(a)(3)(ii), when a prepayment equals or exceeds your monthly amount, the due date of your next payment is advanced &ldquo;unless the borrower requests otherwise.&rdquo; That is the sentence that catches people. A lump sum quietly puts you in paid-ahead status instead of knocking down principal, unless you asked in writing for something else.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>MOHELA debited my bank account and I never signed up for auto-pay. What do I do?</h3>
+          <p>Treat it as a bank error, not a servicer conversation. Regulation E says a preauthorized electronic fund transfer from your account &ldquo;may be authorized only by a writing signed or similarly authenticated by the consumer,&rdquo; and whoever obtains that authorization has to give you a copy (12 CFR &sect; 1005.10(b)). If no such writing exists, the debit is an unauthorized transfer, which 12 CFR &sect; 1005.11(a)(1)(i) defines as an error. Notify your bank in writing no later than 60 days after it sent the statement the debit first appeared on. The bank then has 10 business days to decide, or up to 45 days if it provisionally credits your account for the disputed amount.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How long does MOHELA have to fix a credit report error?</h3>
+          <p>Dispute it with the credit bureau, not only with MOHELA, because that is what starts the clock. Under 15 U.S.C. &sect; 1681i(a)(1)(A) the bureau has 30 days to complete a reasonable reinvestigation, free of charge. That can stretch by no more than 15 extra days if you send more information during the 30 (&sect; 1681i(a)(1)(B)). The bureau must tell MOHELA about your dispute within 5 business days (&sect; 1681i(a)(2)(A)). MOHELA then has duties of its own under 15 U.S.C. &sect; 1681s-2(b): investigate, review what the bureau sent, report back, and if the item is inaccurate, incomplete, or cannot be verified, promptly modify, delete, or permanently block it.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Does filing a CFPB complaint actually do anything?</h3>
+          <p>It does one thing reliably, which is create a dated, public, government-logged record that MOHELA has to answer. The CFPB says companies generally respond in 15 days, and in some cases will say the response is in progress and give a final response in 60 days. You then get 60 days to give feedback on that response. It is not an adjudication and nobody orders a refund at the end of it. The honest reason to file is that it is the cheapest way to convert an unanswered phone queue into a written record with a timestamp.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I just sue MOHELA myself?</h3>
+          <p>Possibly, but go in knowing the defense. In Biden v. Nebraska the Supreme Court held that &ldquo;By law and function, MOHELA is an instrumentality of Missouri,&rdquo; and MOHELA now leans on that to claim state sovereign immunity from consumer claims. In the AFT case the court found that defense &ldquo;colorable,&rdquo; without reaching whether it actually wins. Cutting the other way, the Department of Education&rsquo;s own servicing contract says the servicer &ldquo;acknowledges that any claim or defense of Sovereign Immunity or Qualified Immunity is not applicable to work performed under the Contract.&rdquo; That question is unresolved. Talk to a consumer attorney before you spend money on a filing fee.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>I can&rsquo;t get anyone on the phone. Is that just me?</h3>
+          <p>It is not just you, and it may not be an accident. The amended complaint alleges MOHELA runs a deliberate &ldquo;call deflection&rdquo; practice that routes borrowers to its website and self-service tools instead of staffing the phones, and it cites the Department of Education&rsquo;s own Loan Servicer Performance data for the last quarter of 2024 showing MOHELA&rsquo;s Average Speed to Answer and Average Call Abandonment Rate as considerably worse than the other federal servicers. Those are allegations, not findings. The practical takeaway is the same either way: stop treating the phone as your primary channel and put everything in writing.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">If you want the paperwork scaffolding</h2>
+        <p><strong>Money You&rsquo;re Owed Kit &mdash; $59:</strong> six editable tools, including a dispute-letter vault, bank and card reversal scripts, and a claim tracker built for a dispute that runs for months. It is general-purpose, not student-loan software, and it will not file anything for you. Everything on this page can also be done for free using the rules cited above; the Kit organizes the work, nothing more. One-time payment, 30-day money-back guarantee.</p>
+        <a class="button" href="https://moneyyoureowed.com/">See the $59 Kit</a>
+      </aside>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul class="sources-list">
+          <li>Amended Complaint, <a href="https://protectborrowers.org/wp-content/uploads/2026/01/D.D.C.-24-cv-02460-dckt-000050_000-filed-2026-01-15.pdf">American Federation of Teachers v. Higher Education Loan Authority of the State of Missouri</a>, No. 1:24-cv-02460-TSC (D.D.C., ECF No. 50, filed Jan. 15, 2026) (6.5 million borrowers; unauthorized debits; call deflection; Department of Education servicer performance metrics).</li>
+          <li>Memorandum Opinion, <a href="https://www.govinfo.gov/content/pkg/USCOURTS-dcd-1_24-cv-02460/pdf/USCOURTS-dcd-1_24-cv-02460-0.pdf">AFT v. MOHELA</a>, No. 24-cv-2460 (D.D.C., ECF No. 47, Sept. 29, 2025) (remand denied; dismissal denied without prejudice; colorable sovereign immunity defense; USDS contract language at page 9). Published by the U.S. Government Publishing Office.</li>
+          <li><a href="https://www.supremecourt.gov/opinions/22pdf/22-506_nmip.pdf">Biden v. Nebraska</a>, No. 22-506 (U.S. June 30, 2023) (MOHELA is an instrumentality of Missouri).</li>
+          <li><a href="https://www.ecfr.gov/current/title-34/section-685.211">34 CFR &sect;&nbsp;685.211</a> (Direct Loan payment application order; prepayment advances the next due date unless the borrower requests otherwise).</li>
+          <li><a href="https://www.ecfr.gov/current/title-12/section-1005.10">12 CFR &sect;&nbsp;1005.10</a> (Regulation E: written authorization required for preauthorized transfers; 10-day notice for varying amounts; stop-payment rights).</li>
+          <li><a href="https://www.ecfr.gov/current/title-12/section-1005.11">12 CFR &sect;&nbsp;1005.11</a> (Regulation E error resolution: 60-day notice window; 10-business-day determination; 45 days with provisional credit).</li>
+          <li><a href="https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap41-subchapIII-sec1681i.htm">15 U.S.C. &sect;&nbsp;1681i</a> (Fair Credit Reporting Act: 30-day reinvestigation, 15-day extension, 5-business-day furnisher notice).</li>
+          <li><a href="https://www.govinfo.gov/content/pkg/USCODE-2023-title15/html/USCODE-2023-title15-chap41-subchapIII-sec1681s-2.htm">15 U.S.C. &sect;&nbsp;1681s-2</a> (furnisher duties on notice of dispute: investigate, report, modify, delete, or block).</li>
+          <li><a href="https://www.consumerfinance.gov/complaint/process/">Consumer Financial Protection Bureau, Complaint process</a> (15-day general company response; 60-day final response; 60-day consumer feedback window).</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not legal or financial advice. The AFT v. MOHELA allegations described here are unproven claims in a pending case, and MOHELA disputes them. Federal regulations, statutory deadlines, and agency complaint procedures change; the sources cited were verified against their published text on August 6, 2026, but your rights depend on your loan type, your bank&rsquo;s procedures, and your own facts. No outcome, refund, or recovery is guaranteed. Disputing a debit with your bank, disputing an item with the credit bureaus, and filing a CFPB complaint are all free official processes; the Money You&rsquo;re Owed Kit is paid software that organizes the paperwork and is not affiliated with MOHELA or the U.S. Department of Education. Questions about an order, or about the 30-day money-back guarantee, go to <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a>.</p>
+    <p><strong>Last verified:</strong> August 6, 2026. Primary references: AFT v. MOHELA amended complaint (ECF No. 50) and memorandum opinion (ECF No. 47), Biden v. Nebraska, 34 CFR &sect;&nbsp;685.211, 12 CFR &sect;&sect;&nbsp;1005.10 and 1005.11, 15 U.S.C. &sect;&sect;&nbsp;1681i and 1681s-2, and the CFPB complaint process.</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>

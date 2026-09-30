@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The GLP-1 Appeal Kit | Money You’re Owed</title>
+  <meta name="description" content="Plain-English GLP-1 insurance appeal templates, a prior-authorization worksheet, insurer playbooks, and an escalation guide for US consumers.">
+  <meta name="theme-color" content="#143f38">
+  <link rel="canonical" href="https://moneyyoureowed.com/glp1-appeal/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Money You're Owed">
+  <meta property="og:title" content="The GLP-1 Appeal Kit">
+  <meta property="og:description" content="Letters, filing steps and escalation tools for the insurance denial you received.">
+  <meta property="og:url" content="https://moneyyoureowed.com/glp1-appeal/">
+  <meta property="og:image" content="https://moneyyoureowed.com/glp1-appeal/social-card.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The GLP-1 Appeal Kit">
+  <meta name="twitter:description" content="Letters, filing steps and escalation tools for the insurance denial you received.">
+  <meta name="twitter:image" content="https://moneyyoureowed.com/glp1-appeal/social-card.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      --ink: #17201e;
+      --muted: #56635f;
+      --paper: #fffdf8;
+      --soft: #f1f5ef;
+      --soft-blue: #edf5f5;
+      --brand: #143f38;
+      --brand-dark: #0c2d28;
+      --accent: #e6b84b;
+      --border: #ccd8d3;
+      --white: #ffffff;
+      --danger: #8b342d;
+      --shadow: 0 16px 36px rgba(0, 0, 0, 0.16);
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.14;
+      letter-spacing: -0.025em;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: clamp(2.35rem, 11vw, 4.9rem);
+      max-width: 900px;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      font-size: clamp(1.85rem, 7vw, 3.1rem);
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .wrap {
+      width: min(calc(100% - 36px), var(--max));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 18px;
+      color: var(--brand);
+      font-size: 0.79rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .fine-print {
+      color: var(--muted);
+      font-size: 0.82rem;
+      line-height: 1.45;
+    }
+
+    .hero {
+      overflow: hidden;
+      padding: 34px 0 62px;
+      color: var(--white);
+      background: var(--brand-dark);
+    }
+
+    .brand {
+      margin-bottom: 54px;
+      font-size: 1rem;
+      font-weight: 900;
+      letter-spacing: 0.14em;
+    }
+
+    .brand span {
+      color: #d8e6e1;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 36px;
+    }
+
+    .hero .eyebrow {
+      color: #f3d78e;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+    }
+
+    .hero-copy > p {
+      max-width: 720px;
+      color: #deebe7;
+      font-size: clamp(1.05rem, 4.6vw, 1.35rem);
+    }
+
+    .proof-stat {
+      margin: 28px 0;
+      padding: 18px;
+      color: var(--ink);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    .proof-stat strong {
+      display: block;
+      color: var(--brand-dark);
+      font-size: 1.15rem;
+    }
+
+    .proof-stat p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.45;
+    }
+
+    .buy-box {
+      max-width: 560px;
+      padding: 22px;
+      color: var(--ink);
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .price-line {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+
+    .price {
+      color: var(--brand-dark);
+      font-size: 2.45rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .delivery {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .buy-box ul {
+      margin: 16px 0 20px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .buy-box li {
+      position: relative;
+      margin: 7px 0;
+      padding-left: 27px;
+      font-size: 0.94rem;
+    }
+
+    .buy-box li::before {
+      position: absolute;
+      left: 0;
+      color: var(--brand);
+      font-weight: 900;
+      content: "✓";
+    }
+
+    .cta {
+      display: block;
+      width: 100%;
+      padding: 16px 19px;
+      color: var(--brand-dark);
+      background: var(--accent);
+      border: 2px solid #d7a62f;
+      border-radius: 12px;
+      box-shadow: 0 5px 0 #bd8b18;
+      font-size: 1.03rem;
+      font-weight: 900;
+      line-height: 1.25;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 0 #bd8b18;
+    }
+
+    .cta:active {
+      transform: translateY(4px);
+      box-shadow: 0 1px 0 #bd8b18;
+    }
+
+    .cta:focus-visible {
+      outline: 4px solid rgba(230, 184, 75, 0.4);
+      outline-offset: 4px;
+    }
+
+    .checkout-form {
+      display: grid;
+      gap: 10px;
+    }
+
+    .checkout-form label {
+      color: var(--brand-dark);
+      font-size: 0.84rem;
+      font-weight: 800;
+    }
+
+    .checkout-form input {
+      width: 100%;
+      min-height: 50px;
+      padding: 12px 14px;
+      color: var(--ink);
+      background: var(--white);
+      border: 2px solid var(--border);
+      border-radius: 10px;
+      font: inherit;
+    }
+
+    .checkout-form input:focus-visible {
+      border-color: var(--brand);
+      outline: 3px solid rgba(20, 63, 56, 0.18);
+      outline-offset: 2px;
+    }
+
+    .checkout-form .cta {
+      cursor: pointer;
+    }
+
+    .checkout-form .cta:disabled {
+      cursor: wait;
+      opacity: 0.72;
+      transform: none;
+    }
+
+    .checkout-status {
+      min-height: 1.4em;
+      margin: 0;
+      color: var(--danger);
+      font-size: 0.82rem;
+      line-height: 1.4;
+    }
+
+    .checkout-legal {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+      line-height: 1.45;
+    }
+
+    .mobile-checkout-jump {
+      display: inline-flex;
+      min-height: 48px;
+      margin-top: 18px;
+      padding: 12px 16px;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid var(--accent);
+      border-radius: 10px;
+      background: var(--accent);
+      color: var(--brand-dark);
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .guarantee {
+      margin: 18px 0 0;
+      padding-top: 17px;
+      border-top: 1px solid var(--border);
+      font-size: 0.87rem;
+      line-height: 1.45;
+    }
+
+    .guarantee strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--brand);
+    }
+
+    section {
+      padding: 68px 0;
+    }
+
+    .section-intro {
+      max-width: 750px;
+      margin-bottom: 34px;
+    }
+
+    .section-intro p {
+      color: var(--muted);
+    }
+
+    .proof {
+      background: var(--soft);
+    }
+
+    .preview-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .preview-card {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 9px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    .preview-card img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      object-position: top;
+      background: #e7ece9;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .preview-copy {
+      padding: 19px;
+    }
+
+    .preview-copy p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .decision-map {
+      display: grid;
+      gap: 15px;
+      margin-top: 42px;
+      padding: 23px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .decision-step {
+      position: relative;
+      padding: 17px 17px 17px 56px;
+      background: var(--soft-blue);
+      border-radius: 12px;
+    }
+
+    .decision-step b {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      display: grid;
+      width: 29px;
+      height: 29px;
+      place-items: center;
+      color: var(--white);
+      background: var(--brand);
+      border-radius: 50%;
+      font-size: 0.82rem;
+    }
+
+    .decision-step p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .contents-grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 30px;
+    }
+
+    .content-card {
+      padding: 22px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    .content-card .number {
+      display: inline-grid;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 13px;
+      place-items: center;
+      color: var(--white);
+      background: var(--brand);
+      border-radius: 9px;
+      font-size: 0.83rem;
+      font-weight: 900;
+    }
+
+    .content-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .insurers {
+      padding: 24px;
+      background: var(--brand);
+      border-radius: var(--radius);
+      color: var(--white);
+    }
+
+    .insurer-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 16px;
+      margin-bottom: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .insurer-list li {
+      padding: 7px 11px;
+      color: var(--brand-dark);
+      background: #e8f0ed;
+      border-radius: 999px;
+      font-size: 0.83rem;
+      font-weight: 800;
+    }
+
+    .bonus-section {
+      color: var(--white);
+      background: var(--brand-dark);
+    }
+
+    .bonus-section .eyebrow {
+      color: #f3d78e;
+    }
+
+    .bonus-section .section-intro p {
+      color: #cfdfda;
+    }
+
+    .bonus-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .bonus-card {
+      padding: 27px;
+      color: var(--ink);
+      background: var(--white);
+      border-top: 7px solid var(--accent);
+      border-radius: var(--radius);
+    }
+
+    .bonus-tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 5px 9px;
+      color: var(--brand-dark);
+      background: #f5dfaa;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .bonus-card ul {
+      margin-bottom: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .value {
+      background: var(--soft);
+    }
+
+    .value-table {
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .value-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 15px;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .value-row:last-child {
+      border-bottom: 0;
+    }
+
+    .value-row span:last-child {
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .value-row.bonus-row {
+      background: #fff8e7;
+    }
+
+    .value-row.total {
+      color: var(--white);
+      background: var(--brand);
+      font-size: 1.06rem;
+      font-weight: 900;
+    }
+
+    .value-row.price-row {
+      align-items: center;
+      padding: 22px 18px;
+      color: var(--brand-dark);
+      background: var(--accent);
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    .value-row.price-row span:last-child {
+      font-size: 2rem;
+    }
+
+    .value-note {
+      margin: 13px 0 0;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .objections {
+      background: var(--paper);
+    }
+
+    .objection-list {
+      display: grid;
+      gap: 15px;
+    }
+
+    details {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+    }
+
+    summary {
+      padding: 19px 48px 19px 19px;
+      cursor: pointer;
+      font-weight: 850;
+      list-style: none;
+      position: relative;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary::after {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      color: var(--brand);
+      font-size: 1.25rem;
+      font-weight: 900;
+      content: "+";
+    }
+
+    details[open] summary::after {
+      content: "−";
+    }
+
+    details p {
+      margin: 0;
+      padding: 0 19px 20px;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .final {
+      padding: 72px 0;
+      color: var(--white);
+      background: var(--brand);
+      text-align: center;
+    }
+
+    .final-inner {
+      max-width: 720px;
+      margin-inline: auto;
+    }
+
+    .final p {
+      color: #d9e7e3;
+    }
+
+    .final .buy-box {
+      margin: 30px auto 0;
+      text-align: left;
+    }
+
+    .final .buy-box .guarantee {
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 36px 0;
+      color: #d9e4e1;
+      background: #081f1c;
+      font-size: 0.82rem;
+    }
+
+    footer strong {
+      color: var(--white);
+    }
+
+    footer p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer a {
+      color: var(--white);
+    }
+
+    @media (min-width: 700px) {
+      .wrap {
+        width: min(calc(100% - 64px), var(--max));
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+
+      .preview-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .decision-map {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .contents-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .bonus-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .value-row {
+        padding-inline: 25px;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .mobile-checkout-jump {
+        display: none;
+      }
+
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.25fr) minmax(340px, 0.75fr);
+        align-items: center;
+      }
+
+      .hero .buy-box {
+        justify-self: end;
+      }
+
+      .contents-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .content-card.wide {
+        grid-column: span 2;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .cta {
+        transition: none;
+      }
+    }
+  
+    .doc-mock { background:#fff; border:1px solid #e2e2df; border-radius:6px 6px 0 0;
+      min-height:150px; padding:16px 18px; display:flex; flex-direction:column; gap:8px;
+      font-size:12.5px; color:#444; box-shadow: inset 0 -40px 30px -30px #f2f2ee; }
+    .doc-mock i { font-style:normal; font-weight:700; letter-spacing:.08em; font-size:10.5px; color:#8a6d3b; }
+    .doc-mock span { border-bottom:1px dashed #ddd; padding-bottom:6px; }
+    </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="brand">MYO <span>part of Money You’re Owed</span></div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <div class="eyebrow">A denial is a decision, not the end of the process</div>
+            <h1>Denied your GLP-1? Your insurer is counting on you giving up.</h1>
+            <p>
+              The GLP-1 Appeal Kit gives you the letters, evidence checklist, insurer-specific filing steps, and escalation path to answer the denial you actually received.
+            </p>
+            <a class="mobile-checkout-jump" href="#glp1-checkout">Get the kit — $39</a>
+
+            <div class="proof-stat">
+              <strong>Appeals can change the result.</strong>
+              Across KFF’s latest analyses, <strong>34% of appealed ACA-marketplace claim denials were overturned (2024 data)</strong> — and for Medicare Advantage prior-authorization denials, <strong>80.7% of appeals succeeded</strong> (2024 data, published 2026). Fewer than 1 in 100 people appeal at all. These figures cover all claim types, not GLP-1 cases specifically, and don’t predict your outcome — but they show why the insurers count on you not appealing. Sources: KFF, “Claims Denials and Appeals in ACA Marketplace Plans” (2024); KFF Medicare Advantage prior-authorization analysis (Jan 2026).
+            </div>
+
+            <p class="fine-print">
+              Built for US consumers dealing with a denial involving Wegovy, Zepbound, or Ozempic, including prior-authorization failures, medical-necessity decisions, plan exclusions, step or quantity limits, and compounded-product issues.
+            </p>
+          </div>
+
+          <div class="buy-box">
+            <div class="price-line">
+              <span class="price">$39</span>
+              <span class="delivery">one-time payment</span>
+            </div>
+            <strong>PDF and browser-friendly HTML pack</strong>
+            <ul>
+              <li>Five fill-in appeal letter templates</li>
+              <li>Prescriber prior-authorization worksheet</li>
+              <li>Six named insurer playbooks</li>
+              <li>External-review and complaint templates</li>
+              <li>Two practical cost and denial-decoding bonuses</li>
+            </ul>
+            <form id="glp1-checkout" class="checkout-form" novalidate>
+              <label for="checkout-email">Email for your receipt and backup access link</label>
+              <input id="checkout-email" name="email" type="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
+              <button class="cta" type="submit">Get the GLP-1 Appeal Kit — $39</button>
+              <p class="checkout-status" role="status" aria-live="polite"></p>
+            </form>
+            <p class="checkout-legal">By continuing to secure Stripe checkout, you agree to the <a href="/terms.html">Terms</a> and acknowledge the <a href="/privacy.html">Privacy Policy</a>.</p>
+            <p class="guarantee">
+              <strong>The Clear Next Step Guarantee</strong>
+              If this kit doesn't give you a clear next step for YOUR denial, email us — full refund, keep the files.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof">
+      <div class="wrap">
+        <div class="section-intro">
+          <div class="eyebrow">See what you are getting</div>
+          <h2>Start with the denial letter in front of you.</h2>
+          <p>
+            This is not one generic letter with your name pasted at the top. The opening decision map routes you to the correct template, attachments, filing channel, and escalation path.
+          </p>
+        </div>
+
+        <div class="preview-grid">
+          <article class="preview-card">
+            <div class="doc-mock" role="img" aria-label="Preview of kit document"><i>DECISION MAP</i><span>Are you on Medicare? →</span><span>Denial reason code →</span><span>Letter #3 + attachments</span></div>
+            <div class="preview-copy">
+              <h3>Denial decision map</h3>
+              <p>Match the insurer’s stated reason to the letter and next step built for that reason.</p>
+            </div>
+          </article>
+
+          <article class="preview-card">
+            <div class="doc-mock" role="img" aria-label="Preview of kit document"><i>APPEAL LETTER</i><span>Re: Appeal of denial</span><span>[Your plan ID] · [Date]</span><span>“I am appealing because…”</span></div>
+            <div class="preview-copy">
+              <h3>Fill-in appeal letters</h3>
+              <p>Prompts show where your facts, plan language, clinical criteria, and supporting documents belong.</p>
+            </div>
+          </article>
+
+          <article class="preview-card">
+            <div class="doc-mock" role="img" aria-label="Preview of kit document"><i>UHC · AETNA · CIGNA</i><span>Where to file →</span><span>Deadline: 180 days</span><span>Phone script included</span></div>
+            <div class="preview-copy">
+              <h3>Named insurer playbooks</h3>
+              <p>Filing instructions, appeal levels, deadline checks, and call scripts for six major insurers.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="decision-map" role="group" aria-label="Three-step denial decision map">
+          <div class="decision-step">
+            <b>1</b>
+            <h3>Find the reason</h3>
+            <p>Locate the denial phrase, reason code, deadline, and appeal address or portal.</p>
+          </div>
+          <div class="decision-step">
+            <b>2</b>
+            <h3>Build the record</h3>
+            <p>Use the matching letter and attach the clinical and plan documents listed beside it.</p>
+          </div>
+          <div class="decision-step">
+            <b>3</b>
+            <h3>File and track</h3>
+            <p>Send it through the stated channel, save proof, and calendar the next escalation date.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-intro">
+          <div class="eyebrow">The complete kit</div>
+          <h2>Seven working documents. Each has one job.</h2>
+          <p>
+            Use only the pieces that fit your denial. The kit explains where plan-specific and clinical language belongs without telling you what your medical record should say.
+          </p>
+        </div>
+
+        <div class="contents-grid">
+          <article class="content-card">
+            <span class="number">01</span>
+            <h3>Start Here: Which denial do you have?</h3>
+            <p>A plain-English map for prior authorization, medical necessity, exclusions, limits, and compounded-product language.</p>
+          </article>
+
+          <article class="content-card wide">
+            <span class="number">02</span>
+            <h3>Appeal Letter Pack</h3>
+            <p>Five separate templates: prior authorization required, not medically necessary, weight-loss plan exclusion, quantity or step limits, and compounded-version denial. Each includes an attachment checklist and a marked place for the applicable clinical criteria.</p>
+          </article>
+
+          <article class="content-card">
+            <span class="number">03</span>
+            <h3>Doctor’s Office Prior-Auth Worksheet</h3>
+            <p>A one-page handoff covering BMI history, relevant comorbidities, previous therapies, A1C where applicable, and supporting records.</p>
+          </article>
+
+          <article class="content-card wide">
+            <span class="number">04</span>
+            <h3>Top-Six Insurer Playbooks</h3>
+            <p>Where to begin, what deadline to confirm, likely appeal levels, and what to ask by phone. BCBS rules can vary by state, employer, and specific Blue plan, so the playbook shows you how to verify your own route.</p>
+          </article>
+
+          <article class="content-card">
+            <span class="number">05</span>
+            <h3>Escalation Ladder</h3>
+            <p>Internal appeal, external independent review when available, and state insurance complaint steps, with tracking prompts and templates.</p>
+          </article>
+
+          <article class="content-card">
+            <span class="number">06</span>
+            <h3>Medicare GLP-1 Bridge Program One-Pager</h3>
+            <p>The verified guide to the Medicare GLP-1 Bridge — the CMS pilot (July 2026 – December 2027) offering Wegovy, Foundayo, or Zepbound KwikPen at a flat $50/month for qualifying beneficiaries — who qualifies, how it interacts with Part D, and when an appeal is the better route.</p>
+          </article>
+
+          <aside class="insurers">
+            <h3>Named insurer playbooks</h3>
+            <p>Plan documents control. The kit helps you find and confirm the rules that apply to your coverage.</p>
+            <ul class="insurer-list" aria-label="Insurers covered">
+              <li>UnitedHealthcare</li>
+              <li>Aetna</li>
+              <li>Cigna</li>
+              <li>BCBS</li>
+              <li>Kaiser</li>
+              <li>Humana</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="bonus-section">
+      <div class="wrap">
+        <div class="section-intro">
+          <div class="eyebrow">Included bonuses</div>
+          <h2>Because an appeal does not solve tonight’s price problem.</h2>
+          <p>
+            These two guides help you make sense of costs and insurer language while the coverage process is still moving.
+          </p>
+        </div>
+
+        <div class="bonus-grid">
+          <article class="bonus-card">
+            <span class="bonus-tag">Bonus 1</span>
+            <h3>Cost-Bridge Guide</h3>
+            <p>Legitimate options to check while an appeal is pending, without pretending every program works for every person.</p>
+            <ul>
+              <li>Manufacturer savings-card eligibility checks</li>
+              <li>Cash-price comparison routes</li>
+              <li>Questions to ask before paying outside insurance</li>
+              <li>Compounded GLP-1s: why the cheap online offers are mostly no longer legal (verified July 2026) and the narrow exception that remains</li>
+            </ul>
+          </article>
+
+          <article class="bonus-card">
+            <span class="bonus-tag">Bonus 2</span>
+            <h3>Denial-Letter Decoder</h3>
+            <p>Translate the phrases that make a denial look more final than it may be.</p>
+            <ul>
+              <li>“Not medically necessary”</li>
+              <li>“Benefit exclusion”</li>
+              <li>“Fail first” or step therapy</li>
+              <li>“Administrative denial”</li>
+              <li>Adverse benefit determination and external review</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="value">
+      <div class="wrap">
+        <div class="section-intro">
+          <div class="eyebrow">One price</div>
+          <h2>The whole process in one pack.</h2>
+          <p>No subscription and no per-letter charge. Download the files and keep them for this appeal and any later appeal level.</p>
+        </div>
+
+        <div class="value-table" role="group" aria-label="GLP-1 Appeal Kit value stack">
+          <div class="value-row">
+            <span>Five-letter Appeal Pack</span>
+            <span>$39 value</span>
+          </div>
+          <div class="value-row">
+            <span>Doctor’s Office Prior-Auth Worksheet</span>
+            <span>$19 value</span>
+          </div>
+          <div class="value-row">
+            <span>Six Insurer Playbooks</span>
+            <span>$39 value</span>
+          </div>
+          <div class="value-row">
+            <span>Escalation Ladder and Templates</span>
+            <span>$29 value</span>
+          </div>
+          <div class="value-row">
+            <span>Medicare GLP-1 Bridge Program One-Pager</span>
+            <span>$15 value</span>
+          </div>
+          <div class="value-row bonus-row">
+            <span><strong>Bonus:</strong> Cost-Bridge Guide</span>
+            <span>$99 value</span>
+          </div>
+          <div class="value-row bonus-row">
+            <span><strong>Bonus:</strong> Denial-Letter Decoder</span>
+            <span>$49 value</span>
+          </div>
+          <div class="value-row total">
+            <span>Total itemized value</span>
+            <span>$289</span>
+          </div>
+          <div class="value-row price-row">
+            <span>Your one-time price</span>
+            <span>$39</span>
+          </div>
+        </div>
+        <p class="value-note">Itemized amounts are internal bundle allocations for comparison. The components are not currently sold separately and these are not former retail prices.</p>
+      </div>
+    </section>
+
+    <section class="objections">
+      <div class="wrap">
+        <div class="section-intro">
+          <div class="eyebrow">Straight answers</div>
+          <h2>What this kit can and cannot do.</h2>
+        </div>
+
+        <div class="objection-list">
+          <details open>
+            <summary>“My doctor already tried.”</summary>
+            <p>
+              Your doctor may have submitted a prior authorization, but the denial should state why it failed. The worksheet helps the office compare that reason with the information the insurer requested. It does not replace your prescriber or tell the office to change your medical record.
+            </p>
+          </details>
+
+          <details>
+            <summary>“Appeals never work.”</summary>
+            <p>
+              Some appeals succeed and others do not. A documented plan exclusion may leave less room than a denial caused by missing records or unmet prior-authorization fields. The kit helps you identify that difference before you spend more time. It does not guarantee coverage, reimbursement, or a particular decision.
+            </p>
+          </details>
+
+          <details>
+            <summary>“I’ll just pay cash.”</summary>
+            <p>
+              Paying cash may be a workable choice, but recurring costs can add up and purchases outside your plan may not count toward your deductible or out-of-pocket limit. The Cost-Bridge Guide helps you compare legitimate routes while preserving any appeal rights. Confirm medication and treatment decisions with your licensed clinician.
+            </p>
+          </details>
+
+          <details>
+            <summary>“My employer plan dropped weight-loss coverage.”</summary>
+            <p>
+              A true benefit exclusion is different from a medical-necessity denial. The kit shows you how to request the controlling plan language, check whether the exclusion applies to your exact claim, and identify the correct complaint or employer-benefits route. It does not promise that an excluded benefit can be restored through an individual appeal.
+            </p>
+          </details>
+
+          <details>
+            <summary>“Is this a lawyer or appeal service?”</summary>
+            <p>
+              No. You receive consumer self-advocacy templates and process guides that you complete and submit yourself. The kit does not provide legal representation, medical advice, claim filing, or communication with your insurer.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="wrap final-inner">
+        <div class="eyebrow">Your coverage. Your next step.</div>
+        <h2>Turn the denial letter into a documented response.</h2>
+        <p>
+          Start with the reason code, use the matching template, attach the right records, and keep a clean trail if you need to escalate.
+        </p>
+
+        <div class="buy-box">
+          <div class="price-line">
+            <span class="price">$39</span>
+            <span class="delivery">one-time payment</span>
+          </div>
+          <strong>The GLP-1 Appeal Kit</strong>
+          <ul>
+            <li>Complete PDF and HTML pack</li>
+            <li>Five denial-specific letters</li>
+            <li>Prior-auth worksheet and insurer playbooks</li>
+            <li>Escalation, cost, and decoding guides</li>
+          </ul>
+          <a class="cta" href="#glp1-checkout">Get the GLP-1 Appeal Kit — $39</a>
+          <p class="guarantee">
+            <strong>The Clear Next Step Guarantee</strong>
+            If this kit doesn't give you a clear next step for YOUR denial, email us — full refund, keep the files.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p><strong>MYO</strong> — part of Money You’re Owed</p>
+      <p>Questions or refund requests: <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a></p>
+      <p><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></p>
+      <p>Consumer self-advocacy templates, not medical or legal advice. Coverage rules, deadlines, clinical criteria, and appeal rights vary by plan and jurisdiction. Confirm all instructions against your denial notice and current plan documents. MYO is not affiliated with or endorsed by any insurer, drug manufacturer, government agency, or healthcare provider named in the kit.</p>
+    </div>
+  </footer>
+
+  <script src="/glp1-checkout.js" defer></script>
+</body>
+</html>

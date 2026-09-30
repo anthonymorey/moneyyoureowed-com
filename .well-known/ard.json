@@ -1,0 +1,55 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Money You're Owed",
+    "documentationUrl": "https://moneyyoureowed.com/connect"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:moneyyoureowed.com:agent:catalog",
+      "displayName": "Money You're Owed catalog agent",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://agent.moneyyoureowed.com/.well-known/agent-card.json",
+      "description": "Answers consumer questions about money owed (deposits, refunds, denied claims) with primary-sourced facts and points to self-help kits.",
+      "capabilities": [
+        "answer-money-questions"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "identifier": "urn:air:moneyyoureowed.com:server:mcp-catalog",
+      "displayName": "Money You're Owed Catalog",
+      "type": "application/mcp-server-card+json",
+      "data": {
+        "name": "moneyyoureowed-catalog-mcp",
+        "version": "1.0.0",
+        "protocolVersion": "2025-06-18",
+        "endpoint": "https://mcp.moneyyoureowed.com/mcp",
+        "transport": "streamable-http",
+        "tools": [
+          {
+            "name": "answer_money_question",
+            "description": "Look up verified, source-cited facts and a linked educational resource for a consumer money-recovery question (security deposits, denied refunds, denied insurance/warranty claims, unclaimed property). Read-only lookup: it does not collect personal data, make payments, or change anything.",
+            "inputSchema": {
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "description": "The consumer's question in plain language, e.g. 'my landlord kept my security deposit'"
+                }
+              },
+              "required": [
+                "question"
+              ]
+            }
+          }
+        ]
+      },
+      "description": "Look up verified, source-cited facts and a linked educational resource for a consumer money-recovery question (security deposits, denied refunds, denied insurance/warranty claims, unclaimed property). Read-only lookup: it does not collect personal data, make payments, or change anything.",
+      "capabilities": [
+        "answer_money_question"
+      ],
+      "version": "1.0.0"
+    }
+  ]
+}

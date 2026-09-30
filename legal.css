@@ -1,0 +1,8 @@
+@import url("./components.css");
+.legal { padding-block: var(--space-xl) var(--space-3xl); }
+.legal-header { margin-block-end: var(--space-xl); padding-block-end: var(--space-lg); border-block-end: var(--rule-thin) solid var(--color-ink); }
+.legal-header h1 { max-width: 14ch; font-size: var(--text-display-s); letter-spacing: -0.035em; }
+.legal-copy { max-width: var(--measure); }
+.legal-copy h2 { margin-block: var(--space-xl) var(--space-xs); font-size: var(--text-xl); }
+.legal-copy h3 { margin-block: var(--space-lg) var(--space-xs); font-size: var(--text-lg); }
+.legal-copy code { overflow-wrap: anywhere; }
