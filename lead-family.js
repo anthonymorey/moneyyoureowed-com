@@ -72,8 +72,9 @@ document.addEventListener("submit", async (event) => {
     if (!response.ok) throw new Error("We could not submit that address");
     status.dataset.state = "success";
     status.textContent = "Success. Your resource is ready.";
-    if (config.success) {
-      window.setTimeout(() => window.location.assign(config.success), 450);
+    const successUrl = form.dataset.success || config.success;   // a page may override per visit (e.g. /unclaimed for ?src=ig-*)
+    if (successUrl) {
+      window.setTimeout(() => window.location.assign(successUrl), 450);
       return;
     }
     const content = document.getElementById("form-content");

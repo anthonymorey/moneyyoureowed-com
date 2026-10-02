@@ -103,14 +103,16 @@
               <span>✉️ Unsubscribe in one click</span>
             </div>
 
+            <div id="free-dl">
             <p style="text-align:center; margin: 1.75rem 0 0.5rem;">
                 <a href="/unclaimed-thanks" style="display:inline-block; background:#1B6B5F; color:#fff; padding:16px 34px; border-radius:8px; text-decoration:none; font-weight:700; font-size:1.15rem;">⬇ Get the Free Checklist (PDF)</a>
             </p>
             <p style="text-align:center; color:#888; font-size:0.9rem;">No email required — instant download.</p>
 
             <hr style="border:none; border-top:1px solid #eee; margin:2rem 0 1.5rem;">
+            </div>
 
-            <p class="subtitle" style="font-size:1rem; margin-bottom:1rem;"><strong>Want the rest?</strong> Get the other free money guides as they drop (optional).</p>
+            <p id="form-intro" class="subtitle" style="font-size:1rem; margin-bottom:1rem;"><strong>Want the rest?</strong> Get the other free money guides as they drop (optional).</p>
             <form id="lead-form">
                 <div class="form-group">
                     <label for="email">Email Address</label>
@@ -125,7 +127,7 @@
                 <button type="submit">Join the list →</button>
             </form>
 
-            <p class="privacy">
+            <p id="form-privacy" class="privacy">
                 🔒 Optional. Unsubscribe anytime. No spam, ever.
             </p>
         </div>
@@ -145,6 +147,19 @@
     </div>
 
     <script>
+        // Instagram traffic (?src=ig-*) is email-first: the checklist is delivered after sign-up (owner decision 2026-10-02).
+        // Everyone else keeps the ungated download that V01 promises ("no email wall").
+        const pageSrc = (new URLSearchParams(window.location.search).get('src') || '').slice(0, 40);
+        const igGate = /^ig-/.test(pageSrc);
+        const thanksUrl = '/unclaimed-thanks' + (pageSrc ? '?src=' + encodeURIComponent(pageSrc) : '');   // keep attribution on the thanks page
+        document.querySelector('#free-dl a').href = thanksUrl;
+        if (igGate) {
+            document.getElementById('free-dl').style.display = 'none';
+            document.getElementById('form-intro').innerHTML = '<strong>Where should I send your checklist?</strong> Enter your email and it opens straight away, with a copy in your inbox.';
+            document.querySelector('#lead-form button[type=submit]').textContent = 'Send me the checklist →';
+            document.getElementById('form-privacy').textContent = '🔒 Unsubscribe anytime. No spam, ever.';
+            document.getElementById('lead-form').dataset.success = thanksUrl;   // read by lead-family.js
+        }
         document.getElementById('lead-form').addEventListener('submit', function(e) {
                     e.preventDefault();
                     const btn = this.querySelector('button[type=submit]');
