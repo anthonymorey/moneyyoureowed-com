@@ -124,7 +124,7 @@
       const response = await fetch("/api/subscribe", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+        body: JSON.stringify({ src: (new URLSearchParams(window.location.search).get('src') || '').slice(0, 40),
           email: email.value.trim(),
           group: "193450189555500253",
         }),
