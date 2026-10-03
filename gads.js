@@ -2,7 +2,7 @@
 // Conversions are URL-based in Google Ads (/glp1-thanks = sign-up, /glp1-appeal/thank-you = purchase),
 // so the base tag on each page is all that is needed.
 (function () {
-  var AW_ID = "";
+  var AW_ID = "AW-18492662230";
   if (!AW_ID) return;
   var s = document.createElement("script");
   s.async = true;
