@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solar Installer Went Bankrupt? Why You Probably Still Owe the Payment, and What to Do</title>
+  <link rel="canonical" href="https://moneyyoureowed.com/guides/solar-installer-bankruptcy-payment-trap">
+  <meta name="description" content="Freedom Forever’s bankruptcy is now a Chapter 7 liquidation, and Sunnova told customers to keep paying through its sale. Here’s who you actually owe, what the FTC Holder Rule can and can’t do, and the paper trail to build now.">
+  <style>
+    :root {
+      --ink: #1d2026;
+      --muted: #5f6470;
+      --paper: #fdfdfb;
+      --soft: #f1f2ee;
+      --line: #d6d8d2;
+      --brand: #18263e;
+      --brand-dark: #0c1626;
+      --accent: #9b7a22;
+      --link: #14536f;
+      --warning: #fff7e6;
+      --success: #eef2f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.68;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--brand-dark);
+      text-decoration-thickness: 2px;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--line);
+      background: #fff;
+    }
+
+    .site-header-inner,
+    main,
+    footer {
+      width: min(100% - 32px, 760px);
+      margin: 0 auto;
+    }
+
+    .site-header-inner {
+      padding: 14px 0;
+    }
+
+    .brand {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .brand a {
+      color: var(--brand);
+      text-decoration: none;
+    }
+
+    main {
+      padding: 42px 0 28px;
+    }
+
+    article > header {
+      margin-bottom: 34px;
+    }
+
+    .eyebrow {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #14161b;
+      line-height: 1.2;
+      text-wrap: balance;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: clamp(35px, 7vw, 54px);
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      margin: 48px 0 16px;
+      padding-top: 4px;
+      font-size: clamp(27px, 5vw, 35px);
+      letter-spacing: -0.015em;
+    }
+
+    h3 {
+      margin: 30px 0 10px;
+      font-size: 23px;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 22px;
+      padding-left: 26px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      padding-left: 3px;
+    }
+
+    strong {
+      color: #14161b;
+    }
+
+    .dek {
+      margin-bottom: 16px;
+      color: #3a3e46;
+      font-size: 21px;
+      line-height: 1.55;
+    }
+
+    .verified {
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    .quick-answer,
+    .note,
+    .warning,
+    .cta {
+      margin: 28px 0;
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .quick-answer {
+      border-left: 5px solid var(--brand);
+      background: var(--success);
+    }
+
+    .quick-answer h2,
+    .note h3,
+    .warning h3,
+    .cta h2 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    .quick-answer h2 {
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .note {
+      border: 1px solid var(--line);
+      background: var(--soft);
+    }
+
+    .warning {
+      border: 1px solid #e6cb93;
+      background: var(--warning);
+    }
+
+    .note > :last-child,
+    .warning > :last-child,
+    .quick-answer > :last-child,
+    .cta > :last-child {
+      margin-bottom: 0;
+    }
+
+    .toc {
+      margin: 30px 0 36px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px 22px;
+      background: #fff;
+    }
+
+    .toc h2 {
+      margin: 0 0 10px;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .toc ol {
+      margin-bottom: 0;
+    }
+
+    .toc li {
+      margin-bottom: 5px;
+    }
+
+    .table-wrap {
+      margin: 24px 0 30px;
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    caption {
+      padding: 14px 16px;
+      background: var(--soft);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    th,
+    td {
+      padding: 13px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f6f7f4;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .checklist {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .checklist li {
+      position: relative;
+      padding-left: 34px;
+    }
+
+    .checklist li::before {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--brand);
+      content: "✓";
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .cta {
+      border: 2px solid var(--brand);
+      background: #f4f6fa;
+    }
+
+    .cta h2 {
+      margin-bottom: 10px;
+      color: var(--brand-dark);
+      font-size: 27px;
+    }
+
+    .cta p {
+      font-size: 19px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 4px;
+      border-radius: 6px;
+      padding: 12px 18px;
+      background: var(--brand);
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .source {
+      white-space: nowrap;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+    }
+
+    .faq-item {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item h3 {
+      margin: 0 0 9px;
+      font-size: 22px;
+    }
+
+    .faq-item p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sources-list {
+      font-size: 16px;
+    }
+
+    footer {
+      padding: 26px 0 44px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    footer p {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 640px) {
+      body {
+        font-size: 19px;
+      }
+
+      main {
+        padding-top: 56px;
+      }
+
+      .quick-answer,
+      .note,
+      .warning,
+      .cta {
+        padding: 26px 28px;
+      }
+
+      th,
+      td {
+        padding: 15px 17px;
+      }
+    }
+
+    @media print {
+      body {
+        color: #000;
+        background: #fff;
+      }
+
+      .site-header,
+      .cta .button {
+        display: none;
+      }
+
+      main,
+      footer {
+        width: 100%;
+      }
+
+      a {
+        color: #000;
+      }
+
+      .cta,
+      .note,
+      .warning,
+      .quick-answer {
+        break-inside: avoid;
+      }
+    }
+  </style>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/guide-family.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Solar Installer Went Bankrupt? Why You Probably Still Owe the Payment, and What to Do", "description": "Freedom Forever’s bankruptcy is now a Chapter 7 liquidation, and Sunnova told customers to keep paying through its sale. Here’s who you actually owe, what the FTC Holder Rule can and can’t do, and the paper trail to build now.", "datePublished": "2026-10-05", "dateModified": "2026-10-05", "mainEntityOfPage": "https://moneyyoureowed.com/guides/solar-installer-bankruptcy-payment-trap", "author": {"@type": "Organization", "name": "Money You’re Owed", "url": "https://moneyyoureowed.com"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does the installer’s bankruptcy cancel my solar loan?", "acceptedAnswer": {"@type": "Answer", "text": "Not by itself. The installer going under doesn’t erase a contract you signed with someone else, and Sunnova’s own customer notice told people to continue their payments as usual. Check who is named as the lender, lessor, or provider on your paperwork. That party, or whoever it sold the account to, is who you still owe."}}, {"@type": "Question", "name": "Freedom Forever went to Chapter 7. What does that mean for me?", "acceptedAnswer": {"@type": "Answer", "text": "It means the company is being liquidated, not reorganized. By court order effective August 7, 2026, its Chapter 11 cases were converted to Chapter 7, and Alfred T. Giuliano was appointed Chapter 7 Trustee. A liquidating company isn’t going to send a crew to fix your roof, so plan around that."}}, {"@type": "Question", "name": "I had a Sunnova system. Who services it now?", "acceptedAnswer": {"@type": "Answer", "text": "Sunnova’s customer notice says SunStrong Management took over system monitoring, billing, collections, and customer service for accounts acquired by the new owner group. Start with SunStrong, and keep a written record of every request you make."}}, {"@type": "Question", "name": "Can the FTC Holder Rule get me out of paying?", "acceptedAnswer": {"@type": "Answer", "text": "It can help, within limits. Covered consumer credit contracts must say the holder is subject to all claims and defenses you could raise against the seller, but recovery can’t exceed what you paid under the contract. It gives you a way to press the lender over the installer’s misconduct. It isn’t an automatic exit, and leases or PPAs may not count as credit contracts at all."}}, {"@type": "Question", "name": "Should I just stop paying until someone fixes my system?", "acceptedAnswer": {"@type": "Answer", "text": "We wouldn’t, at least not on your own. Withholding payment turns your complaint into their collections case. The stronger move is to keep paying while you put your claim in writing to whoever holds the contract, and get a consumer attorney’s read before you stop."}}, {"@type": "Question", "name": "Where can I see the Freedom Forever court filings?", "acceptedAnswer": {"@type": "Answer", "text": "The claims agent, Kroll Restructuring Administration, runs a free public case site with Docket and Claims sections for Case No. 26-10522. Check the Claims section for the current proof-of-claim deadline and form rather than relying on a date you read secondhand."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Money You’re Owed", "item": "https://moneyyoureowed.com/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://moneyyoureowed.com/guides/"}, {"@type": "ListItem", "position": 3, "name": "Solar Installer Went Bankrupt? Why You Probably Still Owe the Payment, and What to Do", "item": "https://moneyyoureowed.com/guides/solar-installer-bankruptcy-payment-trap"}]}]}</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="brand"><a href="https://moneyyoureowed.com">MYO — part of Money You are Owed</a></p>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <p class="eyebrow">2026 homeowner’s guide</p>
+        <h1>Your Solar Installer Went Bankrupt. Your Payment Didn’t.</h1>
+        <p class="dek">When a solar company goes under, the people who lose the most are the homeowners still making monthly payments on a system nobody is servicing. Here’s what the court records and company notices actually say, who you owe now, and how to protect yourself without making things worse.</p>
+        <p class="verified">Last fact-checked: October 5, 2026</p>
+      </header>
+
+      <aside class="quick-answer" aria-labelledby="quick-answer-heading">
+        <h2 id="quick-answer-heading">The short answer</h2>
+        <p><strong>Yes, you almost certainly still owe the payment.</strong> Your loan, lease, or power purchase agreement is a contract with whoever is named on it, and the installer’s bankruptcy doesn’t tear that up. Sunnova’s own notice to customers says it plainly: <em>“You should continue your payments as usual.”</em> <span class="source">Source: <a href="https://www.sunnova.com/financialrestructuring">Sunnova customer notice</a></span></p>
+        <p>What you <em>can</em> do is identify who holds your contract today, put every defect and broken promise in writing to them, and find out whether the FTC Holder Rule lets you raise the installer’s failures against the lender. Freedom Forever is now in Chapter 7 liquidation, so don’t wait on it for repairs. <span class="source">Source: <a href="https://restructuring.ra.kroll.com/freedomforever/">Kroll case site, No. 26-10522</a></span></p>
+      </aside>
+
+      <div class="table-wrap">
+        <table>
+          <caption>The two bankruptcies homeowners are asking about</caption>
+          <thead>
+            <tr>
+              <th scope="col">&nbsp;</th>
+              <th scope="col">Freedom Forever</th>
+              <th scope="col">Sunnova</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Filed</strong></td>
+              <td>Chapter 11, April 15, 2026</td>
+              <td>Chapter 11, June 8, 2025</td>
+            </tr>
+            <tr>
+              <td><strong>Court</strong></td>
+              <td>U.S. Bankruptcy Court, District of Delaware, Case No. 26-10522</td>
+              <td>U.S. Bankruptcy Court, Southern District of Texas</td>
+            </tr>
+            <tr>
+              <td><strong>Where it stands</strong></td>
+              <td>Converted to Chapter 7 (liquidation) effective August 7, 2026; Alfred T. Giuliano appointed trustee</td>
+              <td>Filed to run a sale process; customer accounts acquired by a new owner group</td>
+            </tr>
+            <tr>
+              <td><strong>Who to contact</strong></td>
+              <td>Your lender or contract holder for payments; the Kroll case site for court filings and claims</td>
+              <td>SunStrong Management, which took over monitoring, billing, collections, and customer service</td>
+            </tr>
+            <tr>
+              <td><strong>Keep paying?</strong></td>
+              <td>Your contract with the lender or provider still stands; check who holds it</td>
+              <td>Sunnova’s notice: “continue your payments as usual”</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <nav class="toc" aria-label="Article contents">
+        <h2>In this guide</h2>
+        <ol>
+          <li><a href="#why-you-still-owe">Why the payment survives the installer</a></li>
+          <li><a href="#freedom-forever">Freedom Forever: what Chapter 7 means</a></li>
+          <li><a href="#sunnova">Sunnova: who services your system now</a></li>
+          <li><a href="#holder-rule">The FTC Holder Rule: your strongest tool</a></li>
+          <li><a href="#what-to-do">What to do this week</a></li>
+          <li><a href="#faq">Frequently asked questions</a></li>
+          <li><a href="#sources">Sources</a></li>
+        </ol>
+      </nav>
+
+      <section id="why-you-still-owe">
+        <h2>Why the payment survives the installer</h2>
+        <p>Most homeowners met one company: the one that knocked on the door, designed the system, and put panels on the roof. But the money often flows through a different contract. You may have signed a loan with a finance company, a lease, or a power purchase agreement. Whoever is named on that paper is who you owe. If that party sold your account, the buyer steps into its shoes.</p>
+        <p>That’s why an installer’s bankruptcy feels like a trap. The company that promised service and warranties can disappear while the monthly bill keeps arriving from someone else. Sunnova’s customer notice is the clearest statement you’ll find from a company in this position: keep paying as usual, and expect any changes to come directly from the new servicer. <span class="source">Source: <a href="https://www.sunnova.com/financialrestructuring">Sunnova customer notice</a></span></p>
+        <p>The honest read: the bill is real, but so is your right to complain loudly, in writing, to the people collecting it.</p>
+      </section>
+
+      <section id="freedom-forever">
+        <h2>Freedom Forever: what Chapter 7 means</h2>
+        <p>Freedom Forever LLC filed for Chapter 11 on April 15, 2026, in the U.S. Bankruptcy Court for the District of Delaware. The case is pending under Case No. 26-10522 before Judge Brendan L. Shannon. <span class="source">Source: <a href="https://restructuring.ra.kroll.com/freedomforever/">Kroll case site</a></span></p>
+        <p>Chapter 11 is supposed to keep a business running while it restructures or sells. That didn’t happen here. By court order effective August 7, 2026, the cases were converted to Chapter 7, and Alfred T. Giuliano was appointed Chapter 7 Trustee. <span class="source">Source: <a href="https://restructuring.ra.kroll.com/freedomforever/">Kroll case site</a></span> Chapter 7 means the trustee’s job is to liquidate what’s left, not to service rooftops.</p>
+        <p>If Freedom Forever owes <em>you</em> something (unfinished work, a deposit, a broken promise you can put a number on), the case site’s Claims section is where you check the current proof-of-claim deadline and form. Go read it today. Don’t rely on a date you saw secondhand, including from us.</p>
+      </section>
+
+      <aside class="cta" aria-labelledby="mid-cta-heading">
+        <h2 id="mid-cta-heading">We don’t have a solar-specific kit. Here’s what we do have.</h2>
+        <p><strong>The Complete Recovery Kit &mdash; $59 one-time:</strong> ready-to-edit refund and dispute letter templates plus a master tracker for logging every payment, servicer call, and deadline. It is general-purpose. It wasn’t built for solar bankruptcies, it doesn’t file a proof of claim for you, and it won’t get your panels repaired. If you’d rather write your own letters from this guide, that works too. 30-day money-back guarantee.</p>
+        <a class="button" href="https://moneyyoureowed.com/">See what’s in the Recovery Kit</a>
+      </aside>
+
+      <section id="sunnova">
+        <h2>Sunnova: who services your system now</h2>
+        <p>Sunnova Energy International and certain subsidiaries filed Chapter 11 on June 8, 2025, in the U.S. Bankruptcy Court for the Southern District of Texas, to run a sale process. <span class="source">Source: <a href="https://www.sec.gov/Archives/edgar/data/1772695/000177269525000110/exhibit991-filingpressrele.htm">Sunnova press release, SEC Form 8-K exhibit</a></span> At filing, the company said it had secured interim court relief to keep honoring loan agreements, lease agreements, power purchase agreements, service agreements, warranties, and production guarantees through the Chapter 11 process. <span class="source">Source: <a href="https://www.sec.gov/Archives/edgar/data/1772695/000177269525000110/exhibit991-filingpressrele.htm">SEC Form 8-K exhibit</a></span></p>
+        <p>For customers whose accounts went to the new owner group, Sunnova’s notice says SunStrong Management took over system monitoring, billing, collections, and customer service. <span class="source">Source: <a href="https://www.sunnova.com/financialrestructuring">Sunnova customer notice</a></span> So SunStrong is your first call for a dead inverter or a production shortfall. Ask in writing, and ask specifically whether your warranty and any production guarantee carried over to the new owner. Get the answer in writing too.</p>
+      </section>
+
+      <section id="holder-rule">
+        <h2>The FTC Holder Rule: your strongest tool</h2>
+        <p>Here’s the piece most homeowners never hear about. Under the FTC’s Holder Rule, covered consumer credit contracts must carry a notice saying that <strong>any holder of the contract is subject to all claims and defenses you could assert against the seller</strong>. The same notice caps your recovery at the amount you’ve paid under the contract. <span class="source">Source: <a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-433">16 CFR 433.2</a></span></p>
+        <p>In plain terms: if your solar loan was a covered credit contract and the installer misrepresented the system, never finished it, or broke its promises, you may be able to raise those problems against the lender instead of just the bankrupt installer. That matters a lot when the installer has nothing left to pay you with.</p>
+        <p>Two honest limits. First, the cap means it can’t pay you more than you’ve put in. Second, the rule is written for consumer credit contracts. Whether a lease or a power purchase agreement qualifies is a real legal question, and a consumer attorney is who should answer it for your contract. Look for the Holder notice language in your own loan paperwork before you assume either way.</p>
+      </section>
+
+      <section id="what-to-do">
+        <h2>What to do this week</h2>
+        <ul class="checklist">
+          <li><strong>Pull every document you signed.</strong> Find the loan, lease, or PPA and note exactly who is named as lender, lessor, or provider.</li>
+          <li><strong>Find out who collects your payment today.</strong> Look at your most recent statement or autopay record. That’s the party your written complaints go to.</li>
+          <li><strong>Search your loan contract for the Holder notice.</strong> Look for the sentence starting “ANY HOLDER OF THIS CONSUMER CREDIT CONTRACT IS SUBJECT TO ALL CLAIMS AND DEFENSES.”</li>
+          <li><strong>Document the system’s condition.</strong> Save monitoring screenshots, utility bills, photos of damage or unfinished work, and every promise in writing from the sales process.</li>
+          <li><strong>Write to the contract holder.</strong> List each defect or unkept promise, what you want done, and a reasonable response date. Send it in a way you can prove they received it.</li>
+          <li><strong>If Freedom Forever owes you money, check the Claims section on the Kroll case site</strong> for the current deadline and form.</li>
+          <li><strong>Keep paying while you fight,</strong> unless a consumer attorney who has read your contract tells you otherwise.</li>
+        </ul>
+        <p>We’ll take a side on the last one. Stopping payment feels like the only pressure you have, but it hands the other side a clean collections story. A documented written dispute is a stronger position than a missed payment.</p>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>Does the installer’s bankruptcy cancel my solar loan?</h3>
+          <p>Not by itself. The installer going under doesn’t erase a contract you signed with someone else, and Sunnova’s own customer notice told people to continue their payments as usual. Check who is named as the lender, lessor, or provider on your paperwork. That party, or whoever it sold the account to, is who you still owe.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Freedom Forever went to Chapter 7. What does that mean for me?</h3>
+          <p>It means the company is being liquidated, not reorganized. By court order effective August 7, 2026, its Chapter 11 cases were converted to Chapter 7, and Alfred T. Giuliano was appointed Chapter 7 Trustee. A liquidating company isn’t going to send a crew to fix your roof, so plan around that.</p>
+        </div>
+        <div class="faq-item">
+          <h3>I had a Sunnova system. Who services it now?</h3>
+          <p>Sunnova’s customer notice says SunStrong Management took over system monitoring, billing, collections, and customer service for accounts acquired by the new owner group. Start with SunStrong, and keep a written record of every request you make.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Can the FTC Holder Rule get me out of paying?</h3>
+          <p>It can help, within limits. Covered consumer credit contracts must say the holder is subject to all claims and defenses you could raise against the seller, but recovery can’t exceed what you paid under the contract. It gives you a way to press the lender over the installer’s misconduct. It isn’t an automatic exit, and leases or PPAs may not count as credit contracts at all.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Should I just stop paying until someone fixes my system?</h3>
+          <p>We wouldn’t, at least not on your own. Withholding payment turns your complaint into their collections case. The stronger move is to keep paying while you put your claim in writing to whoever holds the contract, and get a consumer attorney’s read before you stop.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Where can I see the Freedom Forever court filings?</h3>
+          <p>The claims agent, Kroll Restructuring Administration, runs a free public case site with Docket and Claims sections for Case No. 26-10522. Check the Claims section for the current proof-of-claim deadline and form rather than relying on a date you read secondhand.</p>
+        </div>
+      </section>
+
+      <aside class="cta" aria-labelledby="end-cta-heading">
+        <h2 id="end-cta-heading">Keep the paper trail organized</h2>
+        <p><strong>The Complete Recovery Kit &mdash; $59 one-time:</strong> general refund and dispute letter templates you edit for your own case, plus a master tracker for payments, servicer contacts, written complaints, and court deadlines. It isn’t a solar service, it isn’t legal advice, and it makes no recovery promise. The free routes in this guide are always open to you. 30-day money-back guarantee.</p>
+        <a class="button" href="https://moneyyoureowed.com/">Get the Recovery Kit</a>
+      </aside>
+
+      <section id="sources">
+        <h2>Sources</h2>
+        <ul class="sources-list">
+          <li>Kroll Restructuring Administration, <a href="https://restructuring.ra.kroll.com/freedomforever/">Freedom Forever LLC case site, Case No. 26-10522</a> (Chapter 11 petition April 15, 2026; conversion to Chapter 7 effective August 7, 2026; appointment of Alfred T. Giuliano as Chapter 7 Trustee; Docket and Claims sections).</li>
+          <li>Sunnova Energy International Inc., <a href="https://www.sec.gov/Archives/edgar/data/1772695/000177269525000110/exhibit991-filingpressrele.htm">press release filed as Exhibit 99.1 to SEC Form 8-K</a> (Chapter 11 filing June 8, 2025, Southern District of Texas; interim relief to honor loan, lease, PPA, service, warranty, and production-guarantee agreements).</li>
+          <li>Sunnova, <a href="https://www.sunnova.com/financialrestructuring">customer notice on its financial restructuring</a> (“You should continue your payments as usual”; SunStrong Management assumed monitoring, billing, collections, and customer service).</li>
+          <li>Federal Trade Commission, <a href="https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-433">16 CFR Part 433, Preservation of Consumers’ Claims and Defenses</a> (the Holder Rule notice in &sect;&nbsp;433.2).</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p><strong>Disclaimer:</strong> This guide provides general educational information and is not legal or financial advice. Bankruptcy cases move quickly, and deadlines, servicers, and contract terms change; the sources cited were verified against their published text on October 5, 2026, but your rights depend on your own contract, your state’s law, and the current court record. No outcome is guaranteed. Checking the court’s case site, contacting your servicer, and filing a proof of claim are free; the Recovery Kit is optional paid organizing material.</p>
+    <p><strong>Questions or a refund request on a Money You’re Owed product?</strong> Email <a href="mailto:hello@moneyyoureowed.com">hello@moneyyoureowed.com</a>.</p>
+    <p><strong>Last verified:</strong> October 5, 2026. Primary references: Kroll Restructuring Administration case site for Freedom Forever LLC (No. 26-10522), Sunnova’s SEC Form 8-K press release exhibit and customer notice, and 16 CFR Part 433.</p>
+    <p>&copy; 2026 <a href="https://moneyyoureowed.com">Money You are Owed</a>.</p>
+  </footer>
+</body>
+</html>
