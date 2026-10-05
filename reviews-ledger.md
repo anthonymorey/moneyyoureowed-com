@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-09-28 (run 14) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
+- 2026-10-05 (run 15) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -41,6 +41,10 @@ processed, and a **heartbeat** proving the routine can push each week.
 1a0e33844d88d4ef
 1a0a3f38b635738c
 1a091f33b5e758ef
+1a0ec9832ce6b972
+1a0ed8d9f516266d
+1a1031dc707574fa
+1a102a6f01a4c389
 
 ## Published reviews (audit trail)
 <!-- firstname | amount | date | gmail-msgid -->
@@ -78,3 +82,7 @@ amorey74@gmail.com | Owner's daily scoreboard to self (2026-09-27) — not a cus
 amorey74@gmail.com | Owner's channel performance digest to self (2026-09-27) — not a customer review | 1a0e33844d88d4ef
 hi@eonnext.com | EOn Next energy tariff notification — not an MYO sale or review | 1a0a3f38b635738c
 p.rivard@fi.com | Fisher Investments portfolio review — not an MYO sale or review | 1a091f33b5e758ef
+hello@moneyyoureowed.com | Internal [TEST] email from MYO system to owner re "Did you find anything?" follow-up sequence — not a customer review | 1a0ec9832ce6b972
+info@mailerlite.com | Owner's MailerLite subscription payment receipt (246.24 EUR, moneyyoureowed account) — not an MYO customer sale | 1a0ed8d9f516266d
+payments-noreply@google.com | Google Ads payments profile linked to Moneyyoureowed (304-281-5480) — not an MYO sale or review | 1a1031dc707574fa
+ads-account-noreply@google.com | Google Ads manager account (Moneyyoureowed 304-281-5480) linked to new sub-account — not an MYO sale or review | 1a102a6f01a4c389
