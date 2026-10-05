@@ -15,3 +15,8 @@
 /03           /11ways     302
 /04           /eitc       302
 /taxcredits   /eitc       302
+
+# AirHelp affiliate (approved 2026-10-05). EU261/UK261 claims ONLY: use only on "flying to/from the EU or UK?" lines,
+# never as a general US airline offer. One slug per placement so clicks can be told apart (utm_content).
+/go/airhelp     https://www.airhelp.com/en-int/?utm_medium=affiliate&utm_source=pap&utm_campaign=aff-moneyyoureowed&utm_content=myo-cheatsheet&a_aid=moneyyoureowed&a_bid=7f1ca9fa  302
+/go/airhelp-yt  https://www.airhelp.com/en-int/?utm_medium=affiliate&utm_source=pap&utm_campaign=aff-moneyyoureowed&utm_content=myo-yt-v02&a_aid=moneyyoureowed&a_bid=7f1ca9fa  302
