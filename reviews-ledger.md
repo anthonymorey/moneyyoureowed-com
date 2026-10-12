@@ -6,7 +6,7 @@ inserts deploy). It serves two purposes: a **dedupe list** of Gmail message ids 
 processed, and a **heartbeat** proving the routine can push each week.
 
 ## Heartbeat (last run)
-- 2026-10-05 (run 15) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
+- 2026-10-12 (run 16) — ran; 0 new MYO Recovery Kit sales or review emails found this week; nothing published
 
 ## Processed Gmail message IDs
 <!-- one id per line; the routine skips any id already here -->
@@ -86,3 +86,8 @@ hello@moneyyoureowed.com | Internal [TEST] email from MYO system to owner re "Di
 info@mailerlite.com | Owner's MailerLite subscription payment receipt (246.24 EUR, moneyyoureowed account) — not an MYO customer sale | 1a0ed8d9f516266d
 payments-noreply@google.com | Google Ads payments profile linked to Moneyyoureowed (304-281-5480) — not an MYO sale or review | 1a1031dc707574fa
 ads-account-noreply@google.com | Google Ads manager account (Moneyyoureowed 304-281-5480) linked to new sub-account — not an MYO sale or review | 1a102a6f01a4c389
+amorey74@gmail.com | Owner's daily advisor digest to self (2026-10-12) — not a customer review | 1a12eb42ee464198
+hello@moneyyoureowed.com | Internal MYO nurture email "What's in the Recovery Kit" to owner test alias (amorey74+nurture-20261002@gmail.com) — not a customer review | 1a1219086f496b3e
+hello@moneyyoureowed.com | Internal MYO nurture email "What's in the Recovery Kit" to owner test alias (amorey74+myonurture1002@gmail.com) — not a customer review | 1a12227a69d27ee8
+forwarding-noreply@google.com | Google mail forwarding confirmation from anthony@moneyyoureowed.com — not an MYO sale or review | 1a11cd59a201b6ae
+workspace@google.com | Google Workspace billing info received — not an MYO sale or review | 1a11caf8a78bfe89
